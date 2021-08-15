@@ -13,15 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core Entities", "Core Entit
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{30E932F0-B784-43F3-AC10-335BE5CDD9DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafCos.Core", "SafCosCore\SafCos.Core.csproj", "{C46D066E-9D5C-4EBD-B940-7440C4D1ED91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafCos.Core", "SafCosCore\SafCos.Core.csproj", "{C46D066E-9D5C-4EBD-B940-7440C4D1ED91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafCos.Core.Entities", "SafCos.Core.Entities\SafCos.Core.Entities.csproj", "{04269C30-D99A-49AB-8563-EF305DE72763}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafCos.Core.Entities", "SafCos.Core.Entities\SafCos.Core.Entities.csproj", "{04269C30-D99A-49AB-8563-EF305DE72763}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.SQL.Data", "Infra.SQL.Data\Infra.SQL.Data.csproj", "{77E0E288-ECEE-43D5-99D3-7932D29B4C5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.SQL.Data", "Infra.SQL.Data\Infra.SQL.Data.csproj", "{77E0E288-ECEE-43D5-99D3-7932D29B4C5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafCos.Backend", "SafCos.Backend\SafCos.Backend.csproj", "{F90C92DD-9B7B-4C25-9704-8F71D52E56A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafCos.Backend", "SafCos.Backend\SafCos.Backend.csproj", "{F90C92DD-9B7B-4C25-9704-8F71D52E56A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafCos.UnitTest", "SafCos.UnitTest\SafCos.UnitTest.csproj", "{93E6DCA5-DC71-4994-8206-57B342E7C32E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafCos.UnitTest", "SafCos.UnitTest\SafCos.UnitTest.csproj", "{93E6DCA5-DC71-4994-8206-57B342E7C32E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

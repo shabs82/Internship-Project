@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj": {}
+    "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj": {
+    "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
+        "projectUniqueName": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
         "projectName": "SafCos.Core",
-        "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
+        "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
         "packagesPath": "C:\\Users\\kulsoom-Abbas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\SafCosCore\\obj\\",
+        "outputPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

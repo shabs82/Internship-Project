@@ -104,11 +104,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\SafCos.Backend\\SafCos.Backend.csproj",
+      "projectUniqueName": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Backend\\SafCos.Backend.csproj",
       "projectName": "SafCos.Backend",
-      "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\SafCos.Backend\\SafCos.Backend.csproj",
+      "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Backend\\SafCos.Backend.csproj",
       "packagesPath": "C:\\Users\\kulsoom-Abbas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\SafCos.Backend\\obj\\",
+      "outputPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

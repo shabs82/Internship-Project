@@ -5856,11 +5856,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\SafCos.UnitTest.csproj",
+      "projectUniqueName": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\SafCos.UnitTest.csproj",
       "projectName": "SafCos.UnitTest",
-      "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\SafCos.UnitTest.csproj",
+      "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\SafCos.UnitTest.csproj",
       "packagesPath": "C:\\Users\\kulsoom-Abbas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\obj\\",
+      "outputPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

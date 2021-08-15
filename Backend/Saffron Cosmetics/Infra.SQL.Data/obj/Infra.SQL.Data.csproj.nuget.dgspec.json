@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj": {}
+    "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj": {
+    "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj",
+        "projectUniqueName": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj",
         "projectName": "Infra.SQL.Data",
-        "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj",
+        "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj",
         "packagesPath": "C:\\Users\\kulsoom-Abbas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\obj\\",
+        "outputPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

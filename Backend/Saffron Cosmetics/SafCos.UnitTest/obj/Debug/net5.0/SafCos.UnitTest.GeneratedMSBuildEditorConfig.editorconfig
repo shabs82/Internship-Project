@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = SafCos.UnitTest
-build_property.ProjectDir = C:\Users\kulsoom-Abbas\source\Internship Project\Backend\Saffron Cosmetics\SafCos.UnitTest\
+build_property.ProjectDir = C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCos.UnitTest\
