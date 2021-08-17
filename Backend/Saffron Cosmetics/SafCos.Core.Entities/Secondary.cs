@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SafCos.Core.Entities
+{
+    public class Secondary
+    {
+        public int Id { get; set; }
+
+        public int PrimaryId { get; set; }
+
+        public string SecondaryName { get; set; }
+        
+    }
+}

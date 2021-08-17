@@ -1,0 +1,16 @@
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\Infra.SQL.Data.exe
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\Infra.SQL.Data.deps.json
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\Infra.SQL.Data.runtimeconfig.json
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\Infra.SQL.Data.runtimeconfig.dev.json
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\Infra.SQL.Data.dll
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\ref\Infra.SQL.Data.dll
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\Infra.SQL.Data.pdb
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.csproj.AssemblyReference.cache
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.AssemblyInfoInputs.cache
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.AssemblyInfo.cs
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.csproj.CoreCompileInputs.cache
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.dll
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\ref\Infra.SQL.Data.dll
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.pdb
+C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.genruntimeconfig.cache
