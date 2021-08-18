@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace SafCos.Core.Entities
 {
-   public  class Primary
+   public  class PrimaryClassifier
     {
-        public int Id { get; set; }
-        
+        public int Id { get; set; }   
         public string Name { get; set; }
     }
 }

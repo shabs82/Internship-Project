@@ -9,7 +9,6 @@ namespace SafCos.Core.Entities
     public class Brand
     {
         public int id { get; set; }
-
         public string BrandName { get; set; }
     }
 }

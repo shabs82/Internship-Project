@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace SafCos.Core.Entities
 {
-    public class Secondary
+    public class SecondaryClassifier
     {
         public int Id { get; set; }
-
-        public int PrimaryId { get; set; }
-
-        public string SecondaryName { get; set; }
+        public string Name { get; set; }
+        public string PrimaryClassifier { get; set; }
+        public int PrimaryClassifierId { get; set; }
+       
         
     }
 }
