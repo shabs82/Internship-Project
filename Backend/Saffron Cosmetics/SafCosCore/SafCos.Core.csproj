@@ -6,9 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="AppService\" />
+    <Folder Include="AppService\ValidatorInterface\" />
+    <Folder Include="AppService\Validator\" />
     <Folder Include="DomainService\" />
     <Folder Include="AuthHelper\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SafCos.Core.Entities\SafCos.Core.Entities.csproj" />
   </ItemGroup>
 
 </Project>

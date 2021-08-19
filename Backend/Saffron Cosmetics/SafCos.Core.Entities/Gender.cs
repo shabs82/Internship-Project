@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace SafCos.Core.Entities
 {
-    public class Brand
+    public class Gender
     {
         public int Id { get; set; }
-        public string BrandName { get; set; }
+        public string Sex { get; set; }
+
     }
 }

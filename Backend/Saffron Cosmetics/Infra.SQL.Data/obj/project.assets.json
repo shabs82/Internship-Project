@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "SafCos.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SafCos.Core.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SafCos.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SafCos.Core.dll": {}
+        }
+      },
+      "SafCos.Core.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SafCos.Core.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SafCos.Core.Entities.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SafCos.Core/1.0.0": {
+      "type": "project",
+      "path": "../SafCosCore/SafCos.Core.csproj",
+      "msbuildProject": "../SafCosCore/SafCos.Core.csproj"
+    },
+    "SafCos.Core.Entities/1.0.0": {
+      "type": "project",
+      "path": "../SafCos.Core.Entities/SafCos.Core.Entities.csproj",
+      "msbuildProject": "../SafCos.Core.Entities/SafCos.Core.Entities.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "SafCos.Core >= 1.0.0",
+      "SafCos.Core.Entities >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\kulsoom-Abbas\\.nuget\\packages\\": {},
@@ -37,7 +75,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj": {
+              "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj"
+            },
+            "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj": {
+              "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

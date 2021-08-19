@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafCos.Core.Entities", "Saf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.SQL.Data", "Infra.SQL.Data\Infra.SQL.Data.csproj", "{77E0E288-ECEE-43D5-99D3-7932D29B4C5B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafCos.Backend", "SafCos.Backend\SafCos.Backend.csproj", "{F90C92DD-9B7B-4C25-9704-8F71D52E56A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafCos.WebApi", "SafCos.Backend\SafCos.WebApi.csproj", "{F90C92DD-9B7B-4C25-9704-8F71D52E56A8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafCos.UnitTest", "SafCos.UnitTest\SafCos.UnitTest.csproj", "{93E6DCA5-DC71-4994-8206-57B342E7C32E}"
 EndProject

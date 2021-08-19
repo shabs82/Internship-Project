@@ -8,6 +8,43 @@
           "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props": {},
           "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets": {}
         }
+      },
+      "Infra.SQL.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SafCos.Core": "1.0.0",
+          "SafCos.Core.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infra.SQL.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infra.SQL.Data.dll": {}
+        }
+      },
+      "SafCos.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SafCos.Core.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SafCos.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SafCos.Core.dll": {}
+        }
+      },
+      "SafCos.Core.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/SafCos.Core.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SafCos.Core.Entities.dll": {}
+        }
       }
     }
   },
@@ -90,11 +127,29 @@
         "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
         "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll"
       ]
+    },
+    "Infra.SQL.Data/1.0.0": {
+      "type": "project",
+      "path": "../Infra.SQL.Data/Infra.SQL.Data.csproj",
+      "msbuildProject": "../Infra.SQL.Data/Infra.SQL.Data.csproj"
+    },
+    "SafCos.Core/1.0.0": {
+      "type": "project",
+      "path": "../SafCosCore/SafCos.Core.csproj",
+      "msbuildProject": "../SafCosCore/SafCos.Core.csproj"
+    },
+    "SafCos.Core.Entities/1.0.0": {
+      "type": "project",
+      "path": "../SafCos.Core.Entities/SafCos.Core.Entities.csproj",
+      "msbuildProject": "../SafCos.Core.Entities/SafCos.Core.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.11.1"
+      "Infra.SQL.Data >= 1.0.0",
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.11.1",
+      "SafCos.Core >= 1.0.0",
+      "SafCos.Core.Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -104,9 +159,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Backend\\SafCos.Backend.csproj",
-      "projectName": "SafCos.Backend",
-      "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Backend\\SafCos.Backend.csproj",
+      "projectUniqueName": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Backend\\SafCos.WebApi.csproj",
+      "projectName": "SafCos.WebApi",
+      "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Backend\\SafCos.WebApi.csproj",
       "packagesPath": "C:\\Users\\kulsoom-Abbas\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Backend\\obj\\",
       "projectStyle": "PackageReference",
@@ -127,7 +182,17 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj": {
+              "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj"
+            },
+            "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj": {
+              "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj"
+            },
+            "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj": {
+              "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

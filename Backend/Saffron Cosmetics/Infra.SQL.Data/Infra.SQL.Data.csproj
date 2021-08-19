@@ -9,4 +9,9 @@
     <Folder Include="Repositories\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SafCos.Core.Entities\SafCos.Core.Entities.csproj" />
+    <ProjectReference Include="..\SafCosCore\SafCos.Core.csproj" />
+  </ItemGroup>
+
 </Project>

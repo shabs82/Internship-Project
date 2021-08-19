@@ -14,4 +14,10 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Infra.SQL.Data\Infra.SQL.Data.csproj" />
+    <ProjectReference Include="..\SafCos.Core.Entities\SafCos.Core.Entities.csproj" />
+    <ProjectReference Include="..\SafCosCore\SafCos.Core.csproj" />
+  </ItemGroup>
+
 </Project>

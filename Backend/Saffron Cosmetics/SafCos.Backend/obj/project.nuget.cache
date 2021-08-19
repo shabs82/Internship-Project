@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D1DR+uyaEOyZwPWeECwt2GhWE45IXmxPSVceJ0plBYPP9FIXBPkxE00ELDnDFC8IHQpbHR0jlwNtqAM3HkEUpQ==",
+  "dgSpecHash": "J5xO5GTmaJYYFEgGGCjU+3yw5DLL4mKnnQ9gEoUDrTI/m5A2KqwEMMVay89OhxOPJyT/WSeiWxfjZIkZ7dJP3w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Backend\\SafCos.Backend.csproj",
+  "projectFilePath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Backend\\SafCos.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kulsoom-Abbas\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512"
   ],
