@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "jWMQcIL3VcUvmlGTWYQtK3qa3TDyeOm5PEZKPKhRZk6NW+7VKKL/0VSDBzNPAoTNmJvUQVTX4G9qfzmpbZW0yw==",
+  "dgSpecHash": "oGYy2bEFFx6U0uNmuKyGgmxPZGF+PFraeAAPvDKTfzNwiS8f9NvVVHzcFbGwfzLWkE3RlvyvgoG6lzVJQniMJA==",
   "success": true,
   "projectFilePath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\kulsoom-Abbas\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.12.1\\microsoft.identitymodel.jsonwebtokens.6.12.1.nupkg.sha512",
+    "C:\\Users\\kulsoom-Abbas\\.nuget\\packages\\microsoft.identitymodel.logging\\6.12.1\\microsoft.identitymodel.logging.6.12.1.nupkg.sha512",
+    "C:\\Users\\kulsoom-Abbas\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.12.1\\microsoft.identitymodel.tokens.6.12.1.nupkg.sha512",
+    "C:\\Users\\kulsoom-Abbas\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.12.1\\system.identitymodel.tokens.jwt.6.12.1.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }
