@@ -9,10 +9,10 @@ namespace SafCos.Core.AppService.ServiceInterface
    public interface IProductService
     {
         Product CreateProduct(Product product);
-        Product GetProductById(int id);
+        Product GetProductById(string id);
         List<Product> ReadAllProducts();
-        Product UpdateProduct(int id);
-        Product DeleteProduct(int id);
+        Product UpdateProduct(string id);
+        Product DeleteProduct(string id);
 
        
 

@@ -8,11 +8,11 @@ namespace SafCos.Core.AppService.ServiceInterface
 {
    public interface ISecondaryClassifierService
     {
-        SecondaryClassifier CreateSecClass(int Id, string Name, int PrimaryClassifierId);
-        SecondaryClassifier ReadSecClass(int id);
+        SecondaryClassifier CreateSecClass(SecondaryClassifier secondaryClassifier);
+        SecondaryClassifier ReadSecClass(string id);
         List<SecondaryClassifier> ReadAllSecClass();
-        SecondaryClassifier UpdateSecClass(int id);
-        SecondaryClassifier DeleteSecClass(int id);
+        SecondaryClassifier UpdateSecClass(string id);
+        SecondaryClassifier DeleteSecClass(string id);
 
 
     }

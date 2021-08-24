@@ -10,12 +10,12 @@ namespace SafCos.Core.AppService.Service
 {
     public class PrimaryClassifierService : IPrimaryClassifierService
     {
-        public PrimaryClassifier CreatePrimClass(int Id, string Name)
+        public PrimaryClassifier CreatePrimClass(PrimaryClassifier primaryClassifier)
         {
             throw new NotImplementedException();
         }
 
-        public PrimaryClassifier DeletePrimClass(int Id)
+        public PrimaryClassifier DeletePrimClass(string Id)
         {
             throw new NotImplementedException();
         }
@@ -25,12 +25,12 @@ namespace SafCos.Core.AppService.Service
             throw new NotImplementedException();
         }
 
-        public PrimaryClassifier ReadPrimClassById(int Id)
+        public PrimaryClassifier ReadPrimClassById(string Id)
         {
             throw new NotImplementedException();
         }
 
-        public PrimaryClassifier UpdatePrimClass(int Id)
+        public PrimaryClassifier UpdatePrimClass(string Id)
         {
             throw new NotImplementedException();
         }

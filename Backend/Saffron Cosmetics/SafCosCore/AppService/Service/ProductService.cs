@@ -15,12 +15,12 @@ namespace SafCos.Core.AppService.Service
             throw new NotImplementedException();
         }
 
-        public Product DeleteProduct(int id)
+        public Product DeleteProduct(string id)
         {
             throw new NotImplementedException();
         }
 
-        public Product GetProductById(int id)
+        public Product GetProductById(string id)
         {
             throw new NotImplementedException();
         }
@@ -30,7 +30,7 @@ namespace SafCos.Core.AppService.Service
             throw new NotImplementedException();
         }
 
-        public Product UpdateProduct(int id)
+        public Product UpdateProduct(string id)
         {
             throw new NotImplementedException();
         }

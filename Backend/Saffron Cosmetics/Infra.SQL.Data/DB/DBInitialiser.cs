@@ -45,7 +45,7 @@ namespace Infra.SQL.Data.DB
                 Name = "Makeup/Accessories"
             }).Entity;
 
-            PrimaryClassifier primClass = ctx.PrimaryClassifiers.Add(new PrimaryClassifier()
+            PrimaryClassifier primClass7 = ctx.PrimaryClassifiers.Add(new PrimaryClassifier()
             {
                 Name = "GiftSets"
             }).Entity;
@@ -53,7 +53,68 @@ namespace Infra.SQL.Data.DB
 
             //Create secondary classifier
 
+            SecondaryClassifier secClass1 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            {
+                Name = "Eye Pencil",
+                PrimaryClassifierId = "primClass5"
 
+            }).Entity;
+
+            SecondaryClassifier secClass2 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            {
+                Name = "Mascara",
+                PrimaryClassifierId = "primClass5"
+
+            }).Entity;
+
+            SecondaryClassifier secClass3 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            {
+                Name = "Eyebrows",
+                PrimaryClassifierId = "primClass5"
+
+            }).Entity;
+
+            SecondaryClassifier secClass4 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            {
+                Name = "Eyelenses",
+                PrimaryClassifierId = "primClass5"
+
+            }).Entity;
+
+            SecondaryClassifier secClass5 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            {
+                Name = "Eyeliner",
+                PrimaryClassifierId = "primClass5"
+
+            }).Entity;
+
+            SecondaryClassifier secClass6 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            {
+                Name = "Eyeshadow",
+                PrimaryClassifierId = "primClass5"
+
+            }).Entity;
+
+            SecondaryClassifier secClass7 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            {
+                Name = "Kajal&Eyelash",
+                PrimaryClassifierId = "primClass5"
+
+            }).Entity;
+
+            SecondaryClassifier secClass8 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            {
+                Name = "Eyelashes",
+                PrimaryClassifierId = "primClass5"
+
+            }).Entity;
+
+            SecondaryClassifier secClass9 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            {
+                Name = "Eyepencil",
+                PrimaryClassifierId = "primClass5"
+
+            }).Entity;
 
             //create Brand
 
@@ -61,7 +122,7 @@ namespace Infra.SQL.Data.DB
 
             //Create Product
 
-            
+
         }
     }
 }

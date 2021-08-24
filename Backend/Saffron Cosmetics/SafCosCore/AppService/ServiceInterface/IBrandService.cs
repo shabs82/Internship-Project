@@ -8,11 +8,11 @@ namespace SafCos.Core.AppService.ServiceInterface
 {
    public interface IBrandService
     {
-        Brand CreateBrand(int id, string Name);
-        Brand GetBrandById(int id);
+        Brand CreateBrand(Brand brand);
+        Brand GetBrandById(string id);
         List<Brand> GetAllBrands();
-        Brand UpdateBrand(int id);
-        Brand DeleteBrand(int id);
+        Brand UpdateBrand(string id);
+        Brand DeleteBrand(string id);
 
 
        

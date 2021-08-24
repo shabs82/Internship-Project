@@ -8,10 +8,10 @@ namespace SafCos.Core.Entities
 {
     public class SecondaryClassifier
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public string PrimaryClassifier { get; set; }
-        public int PrimaryClassifierId { get; set; }
+        public string PrimaryClassifierId { get; set; }
        
         
     }

@@ -10,12 +10,12 @@ namespace SafCos.Core.AppService.Service
 {
     public class SecondaryClassifierService : ISecondaryClassifierService
     {
-        public SecondaryClassifier CreateSecClass(int Id, string Name, int PrimaryClassifierId)
+        public SecondaryClassifier CreateSecClass(SecondaryClassifier secondaryClassifier)
         {
             throw new NotImplementedException();
         }
 
-        public SecondaryClassifier DeleteSecClass(int id)
+        public SecondaryClassifier DeleteSecClass(string id)
         {
             throw new NotImplementedException();
         }
@@ -25,12 +25,12 @@ namespace SafCos.Core.AppService.Service
             throw new NotImplementedException();
         }
 
-        public SecondaryClassifier ReadSecClass(int id)
+        public SecondaryClassifier ReadSecClass(string id)
         {
             throw new NotImplementedException();
         }
 
-        public SecondaryClassifier UpdateSecClass(int id)
+        public SecondaryClassifier UpdateSecClass(string id)
         {
             throw new NotImplementedException();
         }
