@@ -8,5 +8,6 @@ namespace Infra.SQL.Data.DB
 {
    public interface IDBInitialiser
     {
+        void SeedDB(SafCosmeticsContext ctx);
     }
 }

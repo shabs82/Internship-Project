@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Infra.SQL.Data\Infra.SQL.Data.csproj" />
+    <ProjectReference Include="..\SafCos.Core.Entities\SafCos.Core.Entities.csproj" />
+    <ProjectReference Include="..\SafCosCore\SafCos.Core.csproj" />
+  </ItemGroup>
+
+</Project>
