@@ -236,13 +236,67 @@ namespace Infra.SQL.Data.DB
 
             Brand brand1 = ctx.Brands.Add(new Brand()
             {
-
+                BrandName = "L'oreal"
 
             }).Entity;
 
+            Brand brand2 = ctx.Brands.Add(new Brand()
+            {
+                BrandName = "Revlon"
+
+            }).Entity;
+
+            Brand brand3 = ctx.Brands.Add(new Brand()
+            {
+                BrandName = "Wet n Wild"
+
+            }).Entity;
+
+            Brand brand4 = ctx.Brands.Add(new Brand()
+            {
+                BrandName = "Collection2000"
+
+            }).Entity;
+
+            Brand brand5 = ctx.Brands.Add(new Brand()
+            {
+                BrandName = "ConstanceCarroll"
+
+            }).Entity;
+
+            Brand brand6 = ctx.Brands.Add(new Brand()
+            {
+                BrandName = "Bourjois"
+
+            }).Entity;
+
+
             //Create Gender
 
+            Gender gender1 = ctx.Genders.Add(new Gender()
+            {
+               Sex = "Female"
+
+            }).Entity;
+
+            Gender gender2 = ctx.Genders.Add(new Gender()
+            {
+                Sex = "Male"
+
+            }).Entity;
+
+            Gender gender3 = ctx.Genders.Add(new Gender()
+            {
+                Sex = "Unisex"
+
+            }).Entity;
+
             //Create Product
+
+            Product product1 = ctx.Products.Add(new Product()
+            {
+
+            }).Entity;
 
 
         }
