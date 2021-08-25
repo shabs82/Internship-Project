@@ -385,6 +385,41 @@ namespace Infra.SQL.Data.DB
                               "Rich in pigments for amazing eye intensity.",
 
             }).Entity;
+
+            Product product6 = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "1",
+                ProductCode = "207",
+                Name = "Saffron Glitter Makeup Pencil Black",
+                Price = 2.25 ,
+                BrandId = "7",
+                Availability = 24,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
+                             " They are very easy to blend and can be used as eyeshadows. " +
+                             " Glitter Liner Pencil for dazzling looks with an intense colour finish.  " +
+                             "Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. With Free Sharpener, Net.:1.2.",
+
+            }).Entity;
+
+            Product product7 = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "1",
+                ProductCode = "208",
+                Name = "Saffron Glitter Makeup Pencil Blue",
+                Price = 2.25,
+                BrandId = "7",
+                Availability = 24,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply. " +
+                "They are very easy to blend and can be used as eyeshadows.  " +
+                "Glitter Liner Pencil for dazzling looks with an intense colour finish.  " +
+                "Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, " +
+                "Purple, Red.With Free Sharpener,   Net.:1.2.",
+
+            }).Entity;
         }
     }
 }
