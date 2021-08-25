@@ -270,6 +270,12 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
+            Brand brand7 = ctx.Brands.Add(new Brand()
+            {
+                BrandName = "SaffronLondon"
+
+            }).Entity;
+
 
             //Create Gender
 
@@ -291,14 +297,94 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
-            //Create Product
-
-            Product product1 = ctx.Products.Add(new Product()
+            Gender gender4 = ctx.Genders.Add(new Gender()
             {
+                Sex = "0"
 
             }).Entity;
 
 
+
+            //Create Product
+
+            Product product1 = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "1",
+                ProductCode = "120 ",
+                Name = "Saffron 2in1 Black & White Pencil",
+                Price = 2.25,
+                BrandId ="7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Black & White Eyeliner is a stunning duo eyeliner pencil that can be used to line, " +
+                              "define and create stunning effects with this great value eye liner pencil duo. " +
+                              "A must have addition to every girls makeup bag!!!",
+            }).Entity;
+
+
+            Product product2 = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "1",
+                ProductCode = " 101",
+                Name = " Saffron Eye Brow Pencil-Black",
+                Price = 1.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
+                              "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
+                              "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. " +
+                              "It's easy to use, easy to sharpen.",
+            }).Entity;
+
+            Product product3 = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "1",
+                ProductCode = "104",
+                Name = "Saffron Eye Brow Pencil–Blonde",
+                Price = 2.25 ,
+                BrandId = "7",
+                Availability =72 ,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
+                              "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
+                              "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
+
+            }).Entity;
+
+            Product product4 = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "1",
+                ProductCode = "102",
+                Name = "Saffron Eye Brow Pencil – Brown",
+                Price = 1.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
+                              "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
+                              "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
+
+            }).Entity;
+
+            Product product5 = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "1",
+                ProductCode = "113",
+                Name = "Saffron Eye Liner Pencil – Golden Chrome",
+                Price = 1.99,
+                BrandId = "7",
+                Availability = 63,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Kohl pencil with smooth texture glides on easily for precise lines or Smokey looks. " +
+                              "Rich in pigments for amazing eye intensity.",
+
+            }).Entity;
         }
     }
 }

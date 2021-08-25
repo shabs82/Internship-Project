@@ -13,11 +13,13 @@ namespace SafCos.Core.Entities
         public string SecondaryClassifierId { get; set; }
         public string ProductCode { get; set; }
         public string Name { get; set; }
-        public decimal Price { get; set; }
+        public double Price { get; set; }
         public Brand Brand { get; set; }
         public string BrandId { get; set; }
         public int Availability { get; set; }
         public string Description { get; set; }
+
+        public string Currency { get; set; }
         public string GenderId { get; set; }
         public Gender Gender { get; set; }
 
