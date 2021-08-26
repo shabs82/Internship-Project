@@ -306,8 +306,9 @@ namespace Infra.SQL.Data.DB
 
 
             //Create Product
+            // Eye Pencil
 
-            Product product1 = ctx.Products.Add(new Product()
+            Product product1ep = ctx.Products.Add(new Product()
             {
                 SecondaryClassifierId = "1",
                 ProductCode = "120 ",
@@ -323,7 +324,7 @@ namespace Infra.SQL.Data.DB
             }).Entity;
 
 
-            Product product2 = ctx.Products.Add(new Product()
+            Product product2ep = ctx.Products.Add(new Product()
             {
                 SecondaryClassifierId = "1",
                 ProductCode = " 101",
@@ -339,7 +340,7 @@ namespace Infra.SQL.Data.DB
                               "It's easy to use, easy to sharpen.",
             }).Entity;
 
-            Product product3 = ctx.Products.Add(new Product()
+            Product product3ep = ctx.Products.Add(new Product()
             {
                 SecondaryClassifierId = "1",
                 ProductCode = "104",
@@ -355,7 +356,7 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
-            Product product4 = ctx.Products.Add(new Product()
+            Product product4ep = ctx.Products.Add(new Product()
             {
                 SecondaryClassifierId = "1",
                 ProductCode = "102",
@@ -371,7 +372,7 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
-            Product product5 = ctx.Products.Add(new Product()
+            Product product5ep = ctx.Products.Add(new Product()
             {
                 SecondaryClassifierId = "1",
                 ProductCode = "113",
@@ -386,7 +387,7 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
-            Product product6 = ctx.Products.Add(new Product()
+            Product product6ep = ctx.Products.Add(new Product()
             {
                 SecondaryClassifierId = "1",
                 ProductCode = "207",
@@ -399,11 +400,11 @@ namespace Infra.SQL.Data.DB
                 Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
                              " They are very easy to blend and can be used as eyeshadows. " +
                              " Glitter Liner Pencil for dazzling looks with an intense colour finish.  " +
-                             "Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. With Free Sharpener, Net.:1.2.",
+                             "Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. With Free Sharpener",
 
             }).Entity;
 
-            Product product7 = ctx.Products.Add(new Product()
+            Product product7ep = ctx.Products.Add(new Product()
             {
                 SecondaryClassifierId = "1",
                 ProductCode = "208",
@@ -417,9 +418,161 @@ namespace Infra.SQL.Data.DB
                 "They are very easy to blend and can be used as eyeshadows.  " +
                 "Glitter Liner Pencil for dazzling looks with an intense colour finish.  " +
                 "Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, " +
-                "Purple, Red.With Free Sharpener,   Net.:1.2.",
+                "Purple, Red.With Free Sharpener",
 
             }).Entity;
+
+            Product product8ep = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "1",
+                ProductCode = "209",
+                Name = "Saffron Glitter Makeup Pencil Silver",
+                Price = 2.25,
+                BrandId = "7",
+                Availability = 24,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
+                              " They are very easy to blend and can be used as eyeshadows. " +
+                              "Glitter Liner Pencil for dazzling looks with an intense colour finish." +
+                              " Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. " +
+                              "With Free Sharpener",
+
+            }).Entity;
+
+
+            Product product9ep = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "1",
+                ProductCode = "210",
+                Name = "Saffron Glitter Makeup Pencil Gold",
+                Price = 2.25,
+                BrandId = "7",
+                Availability = 24,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
+                              " They are very easy to blend and can be used as eyeshadows. " +
+                              "Glitter Liner Pencil for dazzling looks with an intense colour finish." +
+                              " Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. " +
+                              "With Free Sharpener",
+                
+
+            }).Entity;
+
+            Product product10ep = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "1",
+                ProductCode = "211",
+                Name = "Saffron Glitter Makeup Pencil Green",
+                Price = 2.25,
+                BrandId = "7",
+                Availability = 24,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
+                             " They are very easy to blend and can be used as eyeshadows. " +
+                             "Glitter Liner Pencil for dazzling looks with an intense colour finish." +
+                             " Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. " +
+                             "With Free Sharpener",
+
+
+            }).Entity;
+
+            //Lipstick
+
+            Product product1ls = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "10",
+                ProductCode = " 10 #0134",// is the product code correct, # is it needed???
+                Name = "Saffron Lipstick Berry",
+                Price = 1.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+                              "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+                              "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+                              "Colour Nos. 43 to 48 Catwalk Colours. " +
+                              "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+
+            }).Entity;
+
+            Product product2ls = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "10",
+                ProductCode = "19", // is the product code correct, # is it needed???
+                Name = "Saffron Lipstick Black Coffee",
+                Price = 1.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+                             "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+                             "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+                             "Colour Nos. 43 to 48 Catwalk Colours. " +
+                             "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+
+            }).Entity;
+
+            Product product3ls = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "10",
+                ProductCode = "3", // is the product code correct, # is it needed???
+                Name = "Saffron Lipstick Brick",
+                Price = 1.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+                           "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+                           "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+                           "Colour Nos. 43 to 48 Catwalk Colours. " +
+                           "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+
+            }).Entity;
+
+            Product product4ls = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "10",
+                ProductCode = "48", // is the product code correct, # is it needed???
+                Name = "Saffron Lipstick Burgundy Beauty",
+                Price = 1.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+                          "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+                          "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+                          "Colour Nos. 43 to 48 Catwalk Colours. " +
+                          "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+
+            }).Entity;
+
+            Product product5ls = ctx.Products.Add(new Product()
+            {
+                SecondaryClassifierId = "10",
+                ProductCode = "31", // is the product code correct, # is it needed???
+                Name = "Saffron Lipstick Cabaret",
+                Price = 1.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+                         "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+                         "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+                         "Colour Nos. 43 to 48 Catwalk Colours. " +
+                         "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+
+            }).Entity;
+
+
+
         }
     }
 }
