@@ -8,7 +8,7 @@ using System.Text;
 
 namespace SafCos.Core.AppService.Service
 {
-    public class PrimaryClassifierService : IPrimaryClassifierService
+    public class PrimaryCategoryService : IPrimaryCategoryService
     {
         public PrimaryClassifier CreatePrimClass(PrimaryClassifier primaryClassifier)
         {

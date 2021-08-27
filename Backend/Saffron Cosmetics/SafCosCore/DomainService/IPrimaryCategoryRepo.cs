@@ -6,7 +6,7 @@ using SafCos.Core.Entities;
 
 namespace SafCos.Core.DomainService
 {
-    public interface IPrimaryClassifierRepo
+    public interface IPrimaryCategoryRepo
     {
     }
 }

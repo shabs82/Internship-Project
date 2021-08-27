@@ -13,40 +13,40 @@ namespace Infra.SQL.Data.DB
         {
 
 
-     // Create Primary classifier
-            
-           PrimaryClassifier primClass1 = ctx.PrimaryClassifiers.Add(new PrimaryClassifier()
+            // Create Primary classifier
+
+            PrimaryCategory primClass1 = ctx.PrimaryCategories.Add(new PrimaryCategory()
             {
                 Name = "Eyes"
             }).Entity;
 
-            PrimaryClassifier primClass2 = ctx.PrimaryClassifiers.Add(new PrimaryClassifier()
+            PrimaryCategory primClass2 = ctx.PrimaryCategories.Add(new PrimaryCategory()
             {
                 Name = "Lips"
             }).Entity;
 
-            PrimaryClassifier primClass3 = ctx.PrimaryClassifiers.Add(new PrimaryClassifier()
+            PrimaryCategory primClass3 = ctx.PrimaryCategories.Add(new PrimaryCategory()
             {
                 Name = "Nails"
             }).Entity;
 
-            PrimaryClassifier primClass4 = ctx.PrimaryClassifiers.Add(new PrimaryClassifier()
+            PrimaryCategory primClass4 = ctx.PrimaryCategories.Add(new PrimaryCategory()
             {
                 Name = "Face"
             }).Entity;
 
-           
-            PrimaryClassifier primClass5 = ctx.PrimaryClassifiers.Add(new PrimaryClassifier()
+
+            PrimaryCategory primClass5 = ctx.PrimaryCategories.Add(new PrimaryCategory()
             {
                 Name = "Makeup/Accessories"
             }).Entity;
 
-            PrimaryClassifier primClass6 = ctx.PrimaryClassifiers.Add(new PrimaryClassifier()
+            PrimaryCategory primClass6 = ctx.PrimaryCategories.Add(new PrimaryCategory()
             {
                 Name = "GiftSets"
             }).Entity;
 
-            PrimaryClassifier primClass7 = ctx.PrimaryClassifiers.Add(new PrimaryClassifier()
+            PrimaryCategory primClass7 = ctx.PrimaryCategories.Add(new PrimaryCategory()
             {
                 Name = "Fragrance"
             }).Entity;
@@ -54,178 +54,178 @@ namespace Infra.SQL.Data.DB
 
             //Create secondary classifier
 
-            SecondaryClassifier secClass1 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass1 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "EyePencil",
-                PrimaryClassifierId = "1"
+                PrimaryCategoryId = "1"
 
             }).Entity;
 
-            SecondaryClassifier secClass2 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass2 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Mascara",
-                PrimaryClassifierId = "1"
+                PrimaryCategoryId = "1"
 
             }).Entity;
 
-            SecondaryClassifier secClass3 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass3 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Eyebrows",
-                PrimaryClassifierId = "1"
+                PrimaryCategoryId = "1"
 
             }).Entity;
 
-            SecondaryClassifier secClass4 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass4 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "EyeLenses",
-                PrimaryClassifierId = "1"
+                PrimaryCategoryId = "1"
 
             }).Entity;
 
-            SecondaryClassifier secClass5 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass5 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "EyeLiner",
-                PrimaryClassifierId = "1"
+                PrimaryCategoryId = "1"
 
             }).Entity;
 
-            SecondaryClassifier secClass6 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass6 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "EyeShadow",
-                PrimaryClassifierId = "1"
+                PrimaryCategoryId = "1"
 
             }).Entity;
 
-            SecondaryClassifier secClass7 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass7 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Kajal & EyeShade",
-                PrimaryClassifierId = "1"
+                PrimaryCategoryId = "1"
 
             }).Entity;
 
-            SecondaryClassifier secClass8 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass8 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "EyeLashes",
-                PrimaryClassifierId = "1"
+                PrimaryCategoryId = "1"
 
             }).Entity;
 
-            SecondaryClassifier secClass9 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass9 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "EyePencil",
-                PrimaryClassifierId = "1"
+                PrimaryCategoryId = "1"
 
             }).Entity;
 
-            SecondaryClassifier secClass10 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass10 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "LipStick",
-                PrimaryClassifierId = "2"
+                PrimaryCategoryId = "2"
 
             }).Entity;//loads of variant , needs filter
 
-            SecondaryClassifier secClass11 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass11 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "LipGloss",
-                PrimaryClassifierId = "2"
+                PrimaryCategoryId = "2"
 
             }).Entity;
 
-            SecondaryClassifier secClass12 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass12 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "LipLiner",
-                PrimaryClassifierId = "2"
+                PrimaryCategoryId = "2"
 
             }).Entity;
 
-            SecondaryClassifier secClass13 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass13 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "LipPencil",
-                PrimaryClassifierId = "2"
+                PrimaryCategoryId = "2"
 
             }).Entity;
 
-            SecondaryClassifier secClass14 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass14 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "NailPolish",
-                PrimaryClassifierId = "3"
+                PrimaryCategoryId = "3"
 
             }).Entity; // loads of polishes , will need filter
 
-            SecondaryClassifier secClass15 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass15 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "NailAccessories",
-                PrimaryClassifierId = "3"
+                PrimaryCategoryId = "3"
 
             }).Entity;
 
-            SecondaryClassifier secClass16 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass16 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "CompactPowder",
-                PrimaryClassifierId = "4"
+                PrimaryCategoryId = "4"
 
             }).Entity;
 
-            SecondaryClassifier secClass17 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass17 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Foundation",
-                PrimaryClassifierId = "4"
+                PrimaryCategoryId = "4"
 
             }).Entity;
 
-            SecondaryClassifier secClass18 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass18 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Blushes",
-                PrimaryClassifierId = "4"
+                PrimaryCategoryId = "4"
 
             }).Entity;
 
-            SecondaryClassifier secClass19 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass19 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Concealer",
-                PrimaryClassifierId = "4"
+                PrimaryCategoryId = "4"
 
             }).Entity; // contour and pencil needs filtering.
 
-            SecondaryClassifier secClass20 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass20 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Primer",
-                PrimaryClassifierId = "4"
+                PrimaryCategoryId = "4"
 
             }).Entity;
 
-            SecondaryClassifier secClass21 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass21 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Highlighters / Bronzing",
-                PrimaryClassifierId = "4"
+                PrimaryCategoryId = "4"
 
             }).Entity;
 
-            SecondaryClassifier secClass22 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass22 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Applicators",
-                PrimaryClassifierId = "5"
+                PrimaryCategoryId = "5"
 
             }).Entity;
 
-            SecondaryClassifier secClass23 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass23 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Brushes",
-                PrimaryClassifierId = "5"
+                PrimaryCategoryId = "5"
 
             }).Entity;
 
-            SecondaryClassifier secClass24 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass24 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "VanityCase",
-                PrimaryClassifierId = "5"
+                PrimaryCategoryId = "5"
 
             }).Entity;
 
-            SecondaryClassifier secClass25 = ctx.SecondaryClassifiers.Add(new SecondaryClassifier()
+            SecondaryCategory secClass25 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "",
-                PrimaryClassifierId = "6"
+                PrimaryCategoryId = "6"
 
             }).Entity;
 
@@ -276,6 +276,12 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
+            Brand brand8 = ctx.Brands.Add(new Brand()
+            {
+                BrandName = "Fragrance World"
+
+            }).Entity;
+
 
             //Create Gender
 
@@ -310,12 +316,14 @@ namespace Infra.SQL.Data.DB
 
             Product product1ep = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "1",
+                SecondaryCategoryId = "1",
                 ProductCode = "120 ",
                 Name = "Saffron 2in1 Black & White Pencil",
+                Variant = "",
                 Price = 2.25,
                 BrandId ="7",
                 Availability = 72,
+                SkuCode = ,
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Black & White Eyeliner is a stunning duo eyeliner pencil that can be used to line, " +
@@ -326,7 +334,7 @@ namespace Infra.SQL.Data.DB
 
             Product product2ep = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "1",
+                SecondaryCategoryId = "1",
                 ProductCode = " 101",
                 Name = " Saffron Eye Brow Pencil-Black",
                 Price = 1.99,
@@ -342,7 +350,7 @@ namespace Infra.SQL.Data.DB
 
             Product product3ep = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "1",
+                SecondaryCategoryId = "1",
                 ProductCode = "104",
                 Name = "Saffron Eye Brow Pencil–Blonde",
                 Price = 2.25 ,
@@ -358,7 +366,7 @@ namespace Infra.SQL.Data.DB
 
             Product product4ep = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "1",
+                SecondaryCategoryId = "1",
                 ProductCode = "102",
                 Name = "Saffron Eye Brow Pencil – Brown",
                 Price = 1.99,
@@ -374,7 +382,7 @@ namespace Infra.SQL.Data.DB
 
             Product product5ep = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "1",
+                SecondaryCategoryId = "1",
                 ProductCode = "113",
                 Name = "Saffron Eye Liner Pencil – Golden Chrome",
                 Price = 1.99,
@@ -389,7 +397,7 @@ namespace Infra.SQL.Data.DB
 
             Product product6ep = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "1",
+                SecondaryCategoryId = "1",
                 ProductCode = "207",
                 Name = "Saffron Glitter Makeup Pencil Black",
                 Price = 2.25 ,
@@ -406,7 +414,7 @@ namespace Infra.SQL.Data.DB
 
             Product product7ep = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "1",
+                SecondaryCategoryId = "1",
                 ProductCode = "208",
                 Name = "Saffron Glitter Makeup Pencil Blue",
                 Price = 2.25,
@@ -424,7 +432,7 @@ namespace Infra.SQL.Data.DB
 
             Product product8ep = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "1",
+                SecondaryCategoryId = "1",
                 ProductCode = "209",
                 Name = "Saffron Glitter Makeup Pencil Silver",
                 Price = 2.25,
@@ -443,7 +451,7 @@ namespace Infra.SQL.Data.DB
 
             Product product9ep = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "1",
+                SecondaryCategoryId = "1",
                 ProductCode = "210",
                 Name = "Saffron Glitter Makeup Pencil Gold",
                 Price = 2.25,
@@ -462,7 +470,7 @@ namespace Infra.SQL.Data.DB
 
             Product product10ep = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "1",
+                SecondaryCategoryId = "1",
                 ProductCode = "211",
                 Name = "Saffron Glitter Makeup Pencil Green",
                 Price = 2.25,
@@ -481,9 +489,9 @@ namespace Infra.SQL.Data.DB
 
             //Lipstick
 
-            Product product1ls = ctx.Products.Add(new Product()
+            Product productLs1 = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "10",
+                SecondaryCategoryId = "10",
                 ProductCode = " 10 #0134",// is the product code correct, # is it needed???
                 Name = "Saffron Lipstick Berry",
                 Price = 1.99,
@@ -499,9 +507,9 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
-            Product product2ls = ctx.Products.Add(new Product()
+            Product productLs2 = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "10",
+                SecondaryCategoryId = "10",
                 ProductCode = "19", // is the product code correct, # is it needed???
                 Name = "Saffron Lipstick Black Coffee",
                 Price = 1.99,
@@ -517,9 +525,9 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
-            Product product3ls = ctx.Products.Add(new Product()
+            Product productLs3 = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "10",
+                SecondaryCategoryId = "10",
                 ProductCode = "3", // is the product code correct, # is it needed???
                 Name = "Saffron Lipstick Brick",
                 Price = 1.99,
@@ -535,9 +543,9 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
-            Product product4ls = ctx.Products.Add(new Product()
+            Product productLs4 = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "10",
+                SecondaryCategoryId = "10",
                 ProductCode = "48", // is the product code correct, # is it needed???
                 Name = "Saffron Lipstick Burgundy Beauty",
                 Price = 1.99,
@@ -553,9 +561,9 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
-            Product product5ls = ctx.Products.Add(new Product()
+            Product productLs5 = ctx.Products.Add(new Product()
             {
-                SecondaryClassifierId = "10",
+                SecondaryCategoryId = "10",
                 ProductCode = "31", // is the product code correct, # is it needed???
                 Name = "Saffron Lipstick Cabaret",
                 Price = 1.99,
@@ -571,6 +579,153 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
+            Product productLs6 = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = "10",
+                ProductCode = "9", // is the product code correct, # is it needed???
+                Name = "Saffron Lipstick Canberry",
+                Price = 1.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+                        "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+                        "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+                        "Colour Nos. 43 to 48 Catwalk Colours. " +
+                        "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+
+            }).Entity;
+
+            Product productLs7 = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = "10",
+                ProductCode = "43", // is the product code correct, # is it needed???
+                Name = "Saffron Lipstick Conker",
+                Price = 1.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+                        "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+                        "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+                        "Colour Nos. 43 to 48 Catwalk Colours. " +
+                        "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+
+            }).Entity;
+
+            Product productLs8 = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = "10",
+                ProductCode = "7", // is the product code correct, # is it needed???
+                Name = "Saffron Lipstick Current",
+                Price = 1.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+                       "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+                       "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+                       "Colour Nos. 43 to 48 Catwalk Colours. " +
+                       "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+
+            }).Entity;
+
+            Product productLs9 = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = "10",
+                ProductCode = "5", // is the product code correct, # is it needed???
+                Name = "Saffron Lipstick Diamond Red",
+                Price = 1.99,
+                BrandId = "7",
+                Availability = 69,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+                      "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+                      "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+                      "Colour Nos. 43 to 48 Catwalk Colours. " +
+                      "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+
+            }).Entity;
+
+            Product productLs10 = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = "10",
+                ProductCode = "46", // is the product code correct, # is it needed???
+                Name = "Saffron Lipstick Euphoric",
+                Price = 1.99,
+                BrandId = "7",
+                Availability = 71,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+                    "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+                    "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+                    "Colour Nos. 43 to 48 Catwalk Colours. " +
+                    "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+
+            }).Entity;
+            //Nails
+
+             Product product1Np = ctx.Products.Add(new Product()
+            {
+                 SecondaryCategoryId = "14",
+                ProductCode = "1013", // is the product code correct??
+                Name = "Saffron Nail Polish Base Coat 56",
+                Price = 2.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+				Currency = "£",
+                Description = "Saffron Base Coat formula strengthens nails with a smooth, hard finish that grips nail colours.",
+
+            }).Entity;
+
+            Product product2Np = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = "14",
+                ProductCode = "1013", //is the product code correct??
+                Name = "Saffron Nail Polish Beige French Manicure 59",
+                Price = 2.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron French Manicure Polish helps you to create the classic French manicure." +
+                              " Available in Pink, Beige and White simply seal with a top coat for a long lasting finish.",
+
+            }).Entity;
+
+            Product product3Np = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = "14",
+                ProductCode = "1013", //is the product code correct??
+                Name = "Saffron Nail Polish Bikini Blue 43",
+                Price = 2.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Nail Varnish: Trend setting shades with a top quality formula long lasting, chip resistant nail lacquer.",
+
+            }).Entity;
+
+            Product product4Np = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = "14",
+                ProductCode = "1013", //is the product code correct??
+                Name = "Saffron Nail Polish Blossom 15",
+                Price = 2.99,
+                BrandId = "7",
+                Availability = 72,
+                GenderId = "0",
+                Currency = "£",
+                Description = "Saffron Nail Varnish: Trend setting shades with a top quality formula long lasting, chip resistant nail lacquer.",
+
+            }).Entity;
 
 
         }

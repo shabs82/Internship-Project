@@ -13,9 +13,9 @@ namespace Infra.SQL.Data
     {
         public SafCosmeticsContext(DbContextOptions<SafCosmeticsContext> opt) : base(opt) { }
 
-       public DbSet<PrimaryClassifier> PrimaryClassifiers { get; set; }
+       public DbSet<PrimaryCategory> PrimaryCategories { get; set; }
 
-       public DbSet<SecondaryClassifier> SecondaryClassifiers { get; set; }
+       public DbSet<SecondaryCategory> SecondaryCategories { get; set; }
 
        public DbSet<Brand> Brands { get; set; }
 

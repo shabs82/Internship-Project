@@ -7,7 +7,7 @@ using SafCos.Core.Entities;
 
 namespace SafCos.Core.AppService.ServiceInterface
 {
-   public interface IPrimaryClassifierService
+   public interface IPrimaryCategoryService
     {
         PrimaryClassifier CreatePrimClass(PrimaryClassifier primaryClassifier);
         PrimaryClassifier ReadPrimClassById(string Id);

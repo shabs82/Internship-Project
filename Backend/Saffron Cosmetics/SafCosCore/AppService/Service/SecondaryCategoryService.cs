@@ -8,29 +8,29 @@ using System.Threading.Tasks;
 
 namespace SafCos.Core.AppService.Service
 {
-    public class SecondaryClassifierService : ISecondaryClassifierService
+    public class SecondaryCategoryService : ISecondaryCategoryService
     {
-        public SecondaryClassifier CreateSecClass(SecondaryClassifier secondaryClassifier)
+        public SecondaryCategory CreateSecClass(SecondaryCategory secondaryClassifier)
         {
             throw new NotImplementedException();
         }
 
-        public SecondaryClassifier DeleteSecClass(string id)
+        public SecondaryCategory DeleteSecClass(string id)
         {
             throw new NotImplementedException();
         }
 
-        public List<SecondaryClassifier> ReadAllSecClass()
+        public List<SecondaryCategory> ReadAllSecClass()
         {
             throw new NotImplementedException();
         }
 
-        public SecondaryClassifier ReadSecClass(string id)
+        public SecondaryCategory ReadSecClass(string id)
         {
             throw new NotImplementedException();
         }
 
-        public SecondaryClassifier UpdateSecClass(string id)
+        public SecondaryCategory UpdateSecClass(string id)
         {
             throw new NotImplementedException();
         }

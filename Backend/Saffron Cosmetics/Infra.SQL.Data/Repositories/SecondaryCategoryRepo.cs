@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Infra.SQL.Data.Repositories
 {
-    public class SecondaryClassifierRepo : ISecondaryClassifierRepo
+    public class SecondaryCategoryRepo : ISecondaryCategoryRepo
     {
         private readonly SafCosmeticsContext _ctx;
 
-        public SecondaryClassifierRepo(SafCosmeticsContext ctx)
+        public SecondaryCategoryRepo(SafCosmeticsContext ctx)
         {
             ctx = _ctx;
 
