@@ -19,7 +19,7 @@ namespace SafCos.Core.Entities
         public string BrandId { get; set; }
         public int Availability { get; set; }
         public string Description { get; set; }
-        public int SkuCode { get; set; }
+        public string SkuCode { get; set; }
         public string Currency { get; set; }
         public string GenderId { get; set; }
         public Gender Gender { get; set; }

@@ -317,13 +317,13 @@ namespace Infra.SQL.Data.DB
             Product product1ep = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "1",
-                ProductCode = "120 ",
+                ProductCode = "120",
                 Name = "Saffron 2in1 Black & White Pencil",
-                Variant = "",
+                Variant = "0",
                 Price = 2.25,
                 BrandId ="7",
                 Availability = 72,
-                SkuCode = ,
+                SkuCode = "5055339901110",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Black & White Eyeliner is a stunning duo eyeliner pencil that can be used to line, " +
@@ -337,9 +337,11 @@ namespace Infra.SQL.Data.DB
                 SecondaryCategoryId = "1",
                 ProductCode = " 101",
                 Name = " Saffron Eye Brow Pencil-Black",
+                Variant = "0",
                 Price = 1.99,
                 BrandId = "7",
                 Availability = 72,
+                SkuCode = "5055339900649",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
