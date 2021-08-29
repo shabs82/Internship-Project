@@ -71,12 +71,22 @@ namespace WebApplication1
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            using var scope = app.ApplicationServices.CreateScope();
+            var ctx = scope.ServiceProvider.GetRequiredService<SafCosmeticsContext>();
+            var dataInitializer = scope.ServiceProvider.GetRequiredService<IDBInitialiser>();
+
+            ctx.Database.EnsureDeleted();
+            ctx.Database.EnsureCreated();
+            dataInitializer.SeedDB(ctx);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApplication1 v1"));
             }
+
+            app.UseCors("AllowEverything");
 
             app.UseHttpsRedirection();
 
