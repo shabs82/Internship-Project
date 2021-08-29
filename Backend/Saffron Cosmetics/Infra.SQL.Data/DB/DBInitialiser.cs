@@ -510,11 +510,13 @@ namespace Infra.SQL.Data.DB
             Product productLs1 = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "10",
-                ProductCode = " 10 #0134",// is the product code correct, # is it needed???
+                ProductCode = "0134",
                 Name = "Saffron Lipstick Berry",
+                Variant = "10",
                 Price = 1.99,
                 BrandId = "7",
                 Availability = 72,
+                SkuCode = "5055339900151",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
@@ -528,11 +530,13 @@ namespace Infra.SQL.Data.DB
             Product productLs2 = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "10",
-                ProductCode = "19", // is the product code correct, # is it needed???
+                ProductCode = "0134", 
                 Name = "Saffron Lipstick Black Coffee",
+                Variant = "19",
                 Price = 1.99,
                 BrandId = "7",
                 Availability = 72,
+                SkuCode = "5055339900151",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
@@ -546,11 +550,13 @@ namespace Infra.SQL.Data.DB
             Product productLs3 = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "10",
-                ProductCode = "3", // is the product code correct, # is it needed???
+                ProductCode = "0134", 
                 Name = "Saffron Lipstick Brick",
+                Variant = "3",
                 Price = 1.99,
                 BrandId = "7",
                 Availability = 72,
+                SkuCode = "5055339900151",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
@@ -564,11 +570,13 @@ namespace Infra.SQL.Data.DB
             Product productLs4 = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "10",
-                ProductCode = "48", // is the product code correct, # is it needed???
+                ProductCode = "0134",
                 Name = "Saffron Lipstick Burgundy Beauty",
+                Variant ="48",
                 Price = 1.99,
                 BrandId = "7",
                 Availability = 72,
+                SkuCode = "5055339900151",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
@@ -582,11 +590,13 @@ namespace Infra.SQL.Data.DB
             Product productLs5 = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "10",
-                ProductCode = "31", // is the product code correct, # is it needed???
+                ProductCode = "0134", 
                 Name = "Saffron Lipstick Cabaret",
+                Variant= "31",
                 Price = 1.99,
                 BrandId = "7",
                 Availability = 72,
+                SkuCode = "5055339900151",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
@@ -600,11 +610,13 @@ namespace Infra.SQL.Data.DB
             Product productLs6 = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "10",
-                ProductCode = "9", // is the product code correct, # is it needed???
+                ProductCode = "0134", 
                 Name = "Saffron Lipstick Canberry",
+                Variant = "9",
                 Price = 1.99,
                 BrandId = "7",
                 Availability = 72,
+                SkuCode = "5055339900151",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
@@ -618,11 +630,13 @@ namespace Infra.SQL.Data.DB
             Product productLs7 = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "10",
-                ProductCode = "43", // is the product code correct, # is it needed???
+                ProductCode = "0134",
                 Name = "Saffron Lipstick Conker",
+                Variant = "43",
                 Price = 1.99,
                 BrandId = "7",
                 Availability = 72,
+                SkuCode = "5055339900151",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
@@ -636,11 +650,13 @@ namespace Infra.SQL.Data.DB
             Product productLs8 = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "10",
-                ProductCode = "7", // is the product code correct, # is it needed???
+                ProductCode = "0134", 
                 Name = "Saffron Lipstick Current",
+                Variant = "7",
                 Price = 1.99,
                 BrandId = "7",
                 Availability = 72,
+                SkuCode = "5055339900151",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
@@ -654,11 +670,13 @@ namespace Infra.SQL.Data.DB
             Product productLs9 = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "10",
-                ProductCode = "5", // is the product code correct, # is it needed???
+                ProductCode = "0134", 
                 Name = "Saffron Lipstick Diamond Red",
+                Variant = "5",
                 Price = 1.99,
                 BrandId = "7",
                 Availability = 69,
+                SkuCode = "5055339900151",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
@@ -672,11 +690,13 @@ namespace Infra.SQL.Data.DB
             Product productLs10 = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "10",
-                ProductCode = "46", // is the product code correct, # is it needed???
+                ProductCode = "0134", 
                 Name = "Saffron Lipstick Euphoric",
+                Variant = "46",
                 Price = 1.99,
                 BrandId = "7",
                 Availability = 71,
+                SkuCode = "5055339900151",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
@@ -691,11 +711,13 @@ namespace Infra.SQL.Data.DB
              Product product1Np = ctx.Products.Add(new Product()
             {
                  SecondaryCategoryId = "14",
-                ProductCode = "1013", // is the product code correct??
-                Name = "Saffron Nail Polish Base Coat 56",
+                ProductCode = "1013", 
+                Name = "Saffron Nail Polish Base Coat",
+                Variant = "56",
                 Price = 2.99,
                 BrandId = "7",
                 Availability = 72,
+                SkuCode = "5055339903237",
                 GenderId = "0",
 				Currency = "£",
                 Description = "Saffron Base Coat formula strengthens nails with a smooth, hard finish that grips nail colours.",
@@ -705,11 +727,13 @@ namespace Infra.SQL.Data.DB
             Product product2Np = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "14",
-                ProductCode = "1013", //is the product code correct??
-                Name = "Saffron Nail Polish Beige French Manicure 59",
+                ProductCode = "1013", 
+                Name = "Saffron Nail Polish Beige French Manicure",
+                Variant = "59",
                 Price = 2.99,
                 BrandId = "7",
                 Availability = 72,
+                SkuCode = "5055339903237",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron French Manicure Polish helps you to create the classic French manicure." +
@@ -720,11 +744,13 @@ namespace Infra.SQL.Data.DB
             Product product3Np = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "14",
-                ProductCode = "1013", //is the product code correct??
-                Name = "Saffron Nail Polish Bikini Blue 43",
+                ProductCode = "1013",
+                Name = "Saffron Nail Polish Bikini Blue",
+                Variant = "43",
                 Price = 2.99,
                 BrandId = "7",
                 Availability = 72,
+                SkuCode = "5055339903237",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Nail Varnish: Trend setting shades with a top quality formula long lasting, chip resistant nail lacquer.",
@@ -734,11 +760,13 @@ namespace Infra.SQL.Data.DB
             Product product4Np = ctx.Products.Add(new Product()
             {
                 SecondaryCategoryId = "14",
-                ProductCode = "1013", //is the product code correct??
-                Name = "Saffron Nail Polish Blossom 15",
+                ProductCode = "1013", 
+                Name = "Saffron Nail Polish Blossom",
+                Variant = "15",
                 Price = 2.99,
                 BrandId = "7",
                 Availability = 72,
+                SkuCode = "5055339903237",
                 GenderId = "0",
                 Currency = "£",
                 Description = "Saffron Nail Varnish: Trend setting shades with a top quality formula long lasting, chip resistant nail lacquer.",
