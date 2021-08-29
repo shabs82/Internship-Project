@@ -302,6 +302,7 @@ namespace Infra.SQL.Data.DB
                 ProductCode = "120",
                 Name = "Saffron 2in1 Black & White Pencil",
                 Price = 2.25,
+                GenderId = 2,
                 BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339901110",
