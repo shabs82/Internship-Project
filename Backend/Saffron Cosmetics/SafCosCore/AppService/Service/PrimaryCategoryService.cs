@@ -10,27 +10,27 @@ namespace SafCos.Core.AppService.Service
 {
     public class PrimaryCategoryService : IPrimaryCategoryService
     {
-        public PrimaryClassifier CreatePrimClass(PrimaryClassifier primaryClassifier)
+        public PrimaryCategory CreatePrimClass(PrimaryCategory primaryCategory)
         {
             throw new NotImplementedException();
         }
 
-        public PrimaryClassifier DeletePrimClass(string Id)
+        public PrimaryCategory DeletePrimClass(int Id)
         {
             throw new NotImplementedException();
         }
 
-        public List<PrimaryClassifier> ReadAllPrimClass()
+        public List<PrimaryCategory> ReadAllPrimClass()
         {
             throw new NotImplementedException();
         }
 
-        public PrimaryClassifier ReadPrimClassById(string Id)
+        public PrimaryCategory ReadPrimClassById(int Id)
         {
             throw new NotImplementedException();
         }
 
-        public PrimaryClassifier UpdatePrimClass(string Id)
+        public PrimaryCategory UpdatePrimClass(int Id)
         {
             throw new NotImplementedException();
         }

@@ -15,7 +15,7 @@ namespace SafCos.Core.AppService.Service
             throw new NotImplementedException();
         }
 
-        public SecondaryCategory DeleteSecClass(string id)
+        public SecondaryCategory DeleteSecClass(int id)
         {
             throw new NotImplementedException();
         }
@@ -25,12 +25,12 @@ namespace SafCos.Core.AppService.Service
             throw new NotImplementedException();
         }
 
-        public SecondaryCategory ReadSecClass(string id)
+        public SecondaryCategory ReadSecClass(int id)
         {
             throw new NotImplementedException();
         }
 
-        public SecondaryCategory UpdateSecClass(string id)
+        public SecondaryCategory UpdateSecClass(int id)
         {
             throw new NotImplementedException();
         }

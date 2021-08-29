@@ -13,7 +13,9 @@ namespace Infra.SQL.Data
     {
         public SafCosmeticsContext(DbContextOptions<SafCosmeticsContext> opt) : base(opt) { }
 
-       public DbSet<PrimaryCategory> PrimaryCategories { get; set; }
+        public DbSet<Product> Products { get; set; }
+
+        public DbSet<PrimaryCategory> PrimaryCategories { get; set; }
 
        public DbSet<SecondaryCategory> SecondaryCategories { get; set; }
 
@@ -21,17 +23,32 @@ namespace Infra.SQL.Data
 
        public DbSet<Gender> Genders { get; set; }
 
-       public DbSet<Product> Products { get; set; }
-
-        
-
-
-
-       public  void OnModelCreating(ModelBuilder modelBuilder)
+        public  void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //Create Secondary Primary relationship
+            #region SecondaryCategory relation with Primary
+            modelBuilder.Entity<SecondaryCategory>()
+            .HasOne(sc => sc.PrimaryCategory)
+            .WithOne(pc => pc.SecondaryCategory)
+            .HasForeignKey<SecondaryCategory>(ad => ad.PrimaryCategoryId);
+            #endregion
 
-          
+            #region Product relations
+            modelBuilder.Entity<Product>()
+            .HasOne(p => p.Gender)
+            .WithOne(g => g.Product)
+            .HasForeignKey<Product>(ad => ad.GenderId);
+
+            modelBuilder.Entity<Product>()
+            .HasOne(p => p.Brand)
+            .WithOne(b => b.Product)
+            .HasForeignKey<Product>(ad => ad.BrandId);
+
+            modelBuilder.Entity<Product>()
+            .HasOne(p => p.SecondaryCategory)
+            .WithOne(sc => sc.Product)
+            .HasForeignKey<Product>(ad => ad.SecondaryCategoryId);
+            #endregion
+
         }
     }
 }

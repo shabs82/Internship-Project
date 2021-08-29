@@ -8,14 +8,8 @@ namespace SafCos.Core.AppService.ServiceInterface
 {
    public interface IProductService
     {
-        Product CreateProduct(Product product);
-        Product GetProductById(string id);
         List<Product> ReadAllProducts();
-        Product UpdateProduct(string id);
-        Product DeleteProduct(string id);
-
-       
-
-
+        Product GetProductById(int id);
+        Product UpdateProduct(Product prodToUpdate);
     }
 }

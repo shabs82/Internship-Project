@@ -8,11 +8,13 @@ namespace SafCos.Core.Entities
 {
     public class SecondaryCategory
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
-        public string PrimaryCategory { get; set; }
-        public string PrimaryCategoryId { get; set; }
-       
-        
+        public PrimaryCategory PrimaryCategory { get; set; }
+        public int PrimaryCategoryId { get; set; }
+
+        public Product Product { get; set; }
+
+
     }
 }

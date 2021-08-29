@@ -7,14 +7,116 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "SafCos.Core/1.0.0": {
+        "dependencies": {
+          "SafCos.Core.Entities": "1.0.0",
+          "System.IdentityModel.Tokens.Jwt": "6.12.1"
+        },
         "runtime": {
           "SafCos.Core.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {},
+      "Microsoft.IdentityModel.JsonWebTokens/6.12.1": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "6.12.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
+            "assemblyVersion": "6.12.1.0",
+            "fileVersion": "6.12.1.20813"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/6.12.1": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
+            "assemblyVersion": "6.12.1.0",
+            "fileVersion": "6.12.1.20813"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/6.12.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "Microsoft.IdentityModel.Logging": "6.12.1",
+          "System.Security.Cryptography.Cng": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
+            "assemblyVersion": "6.12.1.0",
+            "fileVersion": "6.12.1.20813"
+          }
+        }
+      },
+      "System.IdentityModel.Tokens.Jwt/6.12.1": {
+        "dependencies": {
+          "Microsoft.IdentityModel.JsonWebTokens": "6.12.1",
+          "Microsoft.IdentityModel.Tokens": "6.12.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {
+            "assemblyVersion": "6.12.1.0",
+            "fileVersion": "6.12.1.20813"
+          }
+        }
+      },
+      "System.Security.Cryptography.Cng/4.5.0": {},
+      "SafCos.Core.Entities/1.0.0": {
+        "runtime": {
+          "SafCos.Core.Entities.dll": {}
         }
       }
     }
   },
   "libraries": {
     "SafCos.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.CSharp/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "path": "microsoft.csharp/4.5.0",
+      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.JsonWebTokens/6.12.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0rMYegsigcKccO3pmpFY3Q9RkElMIaZgqtvRXz2T1DCc9fjhWudJsliURY0kSMYIl4R+MPfED945HF+URimvLg==",
+      "path": "microsoft.identitymodel.jsonwebtokens/6.12.1",
+      "hashPath": "microsoft.identitymodel.jsonwebtokens.6.12.1.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Logging/6.12.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6ZQV/76CpdsSacIKw6qZypP1AlEJsORl7Hps763PN0I92DJpwFrl0zkUmQUUFMJsW3iLo570I1IHeJvdsNWgIA==",
+      "path": "microsoft.identitymodel.logging/6.12.1",
+      "hashPath": "microsoft.identitymodel.logging.6.12.1.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Tokens/6.12.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m2mSP82NFq2o6pOPrAnANc9hRJ+0koiy2RHdlr2FRSOF3C5c5IEVaO7IRFPKRCnvcSeEJF5kWUVoJmpEAutoFw==",
+      "path": "microsoft.identitymodel.tokens/6.12.1",
+      "hashPath": "microsoft.identitymodel.tokens.6.12.1.nupkg.sha512"
+    },
+    "System.IdentityModel.Tokens.Jwt/6.12.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2HgriovEBDX0XeV6G/N6eMkAy4LgrTtaGjVOjOc9tLXdKdkIpzrIT3/6o0MzBig3dIsmgXln+roFejJlcoTtdw==",
+      "path": "system.identitymodel.tokens.jwt/6.12.1",
+      "hashPath": "system.identitymodel.tokens.jwt.6.12.1.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Cng/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
+      "path": "system.security.cryptography.cng/4.5.0",
+      "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
+    },
+    "SafCos.Core.Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

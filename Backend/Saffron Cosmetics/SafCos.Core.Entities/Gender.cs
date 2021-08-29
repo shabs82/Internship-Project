@@ -8,8 +8,9 @@ namespace SafCos.Core.Entities
 {
     public class Gender
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Sex { get; set; }
 
+        public Product Product { get; set; }
     }
 }

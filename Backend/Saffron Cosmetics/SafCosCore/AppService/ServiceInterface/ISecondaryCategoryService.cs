@@ -9,10 +9,10 @@ namespace SafCos.Core.AppService.ServiceInterface
    public interface ISecondaryCategoryService
     {
         SecondaryCategory CreateSecClass(SecondaryCategory secondaryClassifier);
-        SecondaryCategory ReadSecClass(string id);
+        SecondaryCategory ReadSecClass(int id);
         List<SecondaryCategory> ReadAllSecClass();
-        SecondaryCategory UpdateSecClass(string id);
-        SecondaryCategory DeleteSecClass(string id);
+        SecondaryCategory UpdateSecClass(int id);
+        SecondaryCategory DeleteSecClass(int id);
 
 
     }

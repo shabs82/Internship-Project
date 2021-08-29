@@ -3,3 +3,14 @@ C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saff
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.AssemblyInfoInputs.cache
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.AssemblyInfo.cs
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.csproj.CoreCompileInputs.cache
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.AssemblyInfoInputs.cache
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.AssemblyInfo.cs
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.csproj.CoreCompileInputs.cache
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\bin\Debug\net5.0\SafCos.Core.Entities.deps.json
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\bin\Debug\net5.0\SafCos.Core.Entities.dll
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\bin\Debug\net5.0\ref\SafCos.Core.Entities.dll
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\bin\Debug\net5.0\SafCos.Core.Entities.pdb
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.dll
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\ref\SafCos.Core.Entities.dll
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.pdb

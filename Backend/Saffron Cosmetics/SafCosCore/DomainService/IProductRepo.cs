@@ -7,7 +7,10 @@ using SafCos.Core.Entities;
 
 namespace SafCos.Core.DomainService
 {
-   public interface IProductRepo
+    public interface IProductRepo
     {
+        List<Product> ReadAllProducts();
+        Product GetProductById(int id);
+        Product UpdateProduct(Product prodToUpdate);
     }
 }

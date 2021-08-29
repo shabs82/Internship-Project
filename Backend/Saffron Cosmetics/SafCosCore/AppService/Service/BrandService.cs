@@ -14,7 +14,7 @@ namespace SafCos.Core.AppService.Service
             throw new NotImplementedException();
         }
 
-        public Brand DeleteBrand(string id)
+        public Brand DeleteBrand(int id)
         {
             throw new NotImplementedException();
         }
@@ -24,12 +24,12 @@ namespace SafCos.Core.AppService.Service
             throw new NotImplementedException();
         }
 
-        public Brand GetBrandById(string id)
+        public Brand GetBrandById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Brand UpdateBrand(string id)
+        public Brand UpdateBrand(int id)
         {
             throw new NotImplementedException();
         }

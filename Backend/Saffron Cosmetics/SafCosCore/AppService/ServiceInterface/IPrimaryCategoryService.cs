@@ -9,11 +9,11 @@ namespace SafCos.Core.AppService.ServiceInterface
 {
    public interface IPrimaryCategoryService
     {
-        PrimaryClassifier CreatePrimClass(PrimaryClassifier primaryClassifier);
-        PrimaryClassifier ReadPrimClassById(string Id);
-        List<PrimaryClassifier> ReadAllPrimClass();
-        PrimaryClassifier UpdatePrimClass(string Id);
-        PrimaryClassifier DeletePrimClass(string Id);
+        PrimaryCategory CreatePrimClass(PrimaryCategory primaryCategory);
+        PrimaryCategory ReadPrimClassById(int Id);
+        List<PrimaryCategory> ReadAllPrimClass();
+        PrimaryCategory UpdatePrimClass(int Id);
+        PrimaryCategory DeletePrimClass(int Id);
 
 
 

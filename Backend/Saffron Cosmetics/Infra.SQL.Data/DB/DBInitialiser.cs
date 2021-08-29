@@ -12,9 +12,7 @@ namespace Infra.SQL.Data.DB
         public void SeedDB(SafCosmeticsContext ctx)
         {
 
-
-            // Create Primary classifier
-
+            #region Primary Category
             PrimaryCategory primClass1 = ctx.PrimaryCategories.Add(new PrimaryCategory()
             {
                 Name = "Eyes"
@@ -35,7 +33,6 @@ namespace Infra.SQL.Data.DB
                 Name = "Face"
             }).Entity;
 
-
             PrimaryCategory primClass5 = ctx.PrimaryCategories.Add(new PrimaryCategory()
             {
                 Name = "Makeup/Accessories"
@@ -50,190 +47,186 @@ namespace Infra.SQL.Data.DB
             {
                 Name = "Fragrance"
             }).Entity;
+            #endregion
 
-
-            //Create secondary classifier
-
+            #region Secondary Category
             SecondaryCategory secClass1 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "EyePencil",
-                PrimaryCategoryId = "1"
+                PrimaryCategoryId = 1
 
             }).Entity;
 
             SecondaryCategory secClass2 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Mascara",
-                PrimaryCategoryId = "1"
+                PrimaryCategoryId = 1
 
             }).Entity;
 
             SecondaryCategory secClass3 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Eyebrows",
-                PrimaryCategoryId = "1"
+                PrimaryCategoryId = 1
 
             }).Entity;
 
             SecondaryCategory secClass4 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "EyeLenses",
-                PrimaryCategoryId = "1"
+                PrimaryCategoryId = 1
 
             }).Entity;
 
             SecondaryCategory secClass5 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "EyeLiner",
-                PrimaryCategoryId = "1"
+                PrimaryCategoryId = 1
 
             }).Entity;
 
             SecondaryCategory secClass6 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "EyeShadow",
-                PrimaryCategoryId = "1"
+                PrimaryCategoryId = 1
 
             }).Entity;
 
             SecondaryCategory secClass7 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Kajal & EyeShade",
-                PrimaryCategoryId = "1"
+                PrimaryCategoryId = 1
 
             }).Entity;
 
             SecondaryCategory secClass8 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "EyeLashes",
-                PrimaryCategoryId = "1"
+                PrimaryCategoryId = 1
 
             }).Entity;
 
             SecondaryCategory secClass9 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "EyePencil",
-                PrimaryCategoryId = "1"
+                PrimaryCategoryId = 1
 
             }).Entity;
 
             SecondaryCategory secClass10 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "LipStick",
-                PrimaryCategoryId = "2"
+                PrimaryCategoryId = 2
 
             }).Entity;//loads of variant , needs filter
 
             SecondaryCategory secClass11 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "LipGloss",
-                PrimaryCategoryId = "2"
+                PrimaryCategoryId = 2
 
             }).Entity;
 
             SecondaryCategory secClass12 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "LipLiner",
-                PrimaryCategoryId = "2"
+                PrimaryCategoryId = 2
 
             }).Entity;
 
             SecondaryCategory secClass13 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "LipPencil",
-                PrimaryCategoryId = "2"
+                PrimaryCategoryId = 2
 
             }).Entity;
 
             SecondaryCategory secClass14 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "NailPolish",
-                PrimaryCategoryId = "3"
+                PrimaryCategoryId = 3
 
             }).Entity; // loads of polishes , will need filter
 
             SecondaryCategory secClass15 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "NailAccessories",
-                PrimaryCategoryId = "3"
+                PrimaryCategoryId = 3
 
             }).Entity;
 
             SecondaryCategory secClass16 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "CompactPowder",
-                PrimaryCategoryId = "4"
+                PrimaryCategoryId = 4
 
             }).Entity;
 
             SecondaryCategory secClass17 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Foundation",
-                PrimaryCategoryId = "4"
+                PrimaryCategoryId = 4
 
             }).Entity;
 
             SecondaryCategory secClass18 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Blushes",
-                PrimaryCategoryId = "4"
+                PrimaryCategoryId = 4
 
             }).Entity;
 
             SecondaryCategory secClass19 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Concealer",
-                PrimaryCategoryId = "4"
+                PrimaryCategoryId = 4
 
             }).Entity; // contour and pencil needs filtering.
 
             SecondaryCategory secClass20 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Primer",
-                PrimaryCategoryId = "4"
+                PrimaryCategoryId = 4
 
             }).Entity;
 
             SecondaryCategory secClass21 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Highlighters / Bronzing",
-                PrimaryCategoryId = "4"
+                PrimaryCategoryId = 1
 
             }).Entity;
 
             SecondaryCategory secClass22 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Applicators",
-                PrimaryCategoryId = "5"
+                PrimaryCategoryId = 5
 
             }).Entity;
 
             SecondaryCategory secClass23 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Brushes",
-                PrimaryCategoryId = "5"
+                PrimaryCategoryId = 5
 
             }).Entity;
 
             SecondaryCategory secClass24 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "VanityCase",
-                PrimaryCategoryId = "5"
+                PrimaryCategoryId = 5
 
             }).Entity;
 
             SecondaryCategory secClass25 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "",
-                PrimaryCategoryId = "6"
+                PrimaryCategoryId = 6
 
             }).Entity;
+            #endregion
 
-
-
-
-            //create Brand
-
+            #region Brands
             Brand brand1 = ctx.Brands.Add(new Brand()
             {
                 BrandName = "L'oreal"
@@ -281,10 +274,9 @@ namespace Infra.SQL.Data.DB
                 BrandName = "Fragrance World"
 
             }).Entity;
+            #endregion
 
-
-            //Create Gender
-
+            #region Genders
             Gender gender1 = ctx.Genders.Add(new Gender()
             {
                Sex = "Female"
@@ -305,27 +297,21 @@ namespace Infra.SQL.Data.DB
 
             Gender gender4 = ctx.Genders.Add(new Gender()
             {
-                Sex = "0"
+                Sex = "No Genre"
 
             }).Entity;
+            #endregion 
 
-
-
-            //Create Product
-            // Eye Pencil
-
+            #region Products 
             Product product1ep = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "1",
+                SecondaryCategoryId = 1,
                 ProductCode = "120",
                 Name = "Saffron 2in1 Black & White Pencil",
-                Variant = "0",
                 Price = 2.25,
-                BrandId ="7",
+                BrandId =7,
                 Availability = 72,
                 SkuCode = "5055339901110",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Black & White Eyeliner is a stunning duo eyeliner pencil that can be used to line, " +
                               "define and create stunning effects with this great value eye liner pencil duo. " +
                               "A must have addition to every girls makeup bag!!!",
@@ -334,16 +320,13 @@ namespace Infra.SQL.Data.DB
 
             Product product2ep = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "1",
+                SecondaryCategoryId = 1,
                 ProductCode = " 101",
                 Name = " Saffron Eye Brow Pencil-Black",
-                Variant = "0",
                 Price = 1.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339900649",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
                               "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
                               "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. " +
@@ -352,16 +335,13 @@ namespace Infra.SQL.Data.DB
 
             Product product3ep = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "1",
+                SecondaryCategoryId = 1,
                 ProductCode = "104",
                 Name = "Saffron Eye Brow Pencil–Blonde",
-                Variant = "0",
                 Price = 2.25 ,
-                BrandId = "7",
+                BrandId = 7,
                 Availability =72 ,
                 SkuCode = "5055339900892",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
                               "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
                               "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
@@ -370,16 +350,13 @@ namespace Infra.SQL.Data.DB
 
             Product product4ep = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "1",
+                SecondaryCategoryId = 1,
                 ProductCode = "102",
                 Name = "Saffron Eye Brow Pencil – Brown",
-                Variant = "0",
                 Price = 1.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339900656",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
                               "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
                               "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
@@ -388,16 +365,13 @@ namespace Infra.SQL.Data.DB
 
             Product product5ep = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "1",
+                SecondaryCategoryId = 1,
                 ProductCode = "113",
                 Name = "Saffron Eye Liner Pencil – Golden Chrome",
-                Variant = "0",
                 Price = 1.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 63,
                 SkuCode = "#5055339901042",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Kohl pencil with smooth texture glides on easily for precise lines or Smokey looks. " +
                               "Rich in pigments for amazing eye intensity.",
 
@@ -405,16 +379,13 @@ namespace Infra.SQL.Data.DB
 
             Product product6ep = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "1",
+                SecondaryCategoryId = 1,
                 ProductCode = "207",
                 Name = "Saffron Glitter Makeup Pencil Black",
-                Variant = "0",
                 Price = 2.25 ,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 24,
-                SkuCode = "5055339903794" ,
-                GenderId = "0",
-                Currency = "£",
+                SkuCode = "5055339903794",
                 Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
                              " They are very easy to blend and can be used as eyeshadows. " +
                              " Glitter Liner Pencil for dazzling looks with an intense colour finish.  " +
@@ -424,16 +395,13 @@ namespace Infra.SQL.Data.DB
 
             Product product7ep = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "1",
+                SecondaryCategoryId = 1,
                 ProductCode = "208",
                 Name = "Saffron Glitter Makeup Pencil Blue",
-                Variant = "0",
                 Price = 2.25,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 24,
                 SkuCode = "5055339903800",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply. " +
                 "They are very easy to blend and can be used as eyeshadows.  " +
                 "Glitter Liner Pencil for dazzling looks with an intense colour finish.  " +
@@ -444,16 +412,13 @@ namespace Infra.SQL.Data.DB
 
             Product product8ep = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "1",
+                SecondaryCategoryId = 1,
                 ProductCode = "209",
                 Name = "Saffron Glitter Makeup Pencil Silver",
-                Variant = "0",
                 Price = 2.25,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 24,
                 SkuCode = "5055339903817",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
                               " They are very easy to blend and can be used as eyeshadows. " +
                               "Glitter Liner Pencil for dazzling looks with an intense colour finish." +
@@ -465,16 +430,13 @@ namespace Infra.SQL.Data.DB
 
             Product product9ep = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "1",
+                SecondaryCategoryId = 1,
                 ProductCode = "210",
                 Name = "Saffron Glitter Makeup Pencil Gold",
-                Variant = "0",
                 Price = 2.25,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 24,
                 SkuCode = "5055339903824",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
                               " They are very easy to blend and can be used as eyeshadows. " +
                               "Glitter Liner Pencil for dazzling looks with an intense colour finish." +
@@ -486,16 +448,13 @@ namespace Infra.SQL.Data.DB
 
             Product product10ep = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "1",
+                SecondaryCategoryId = 1,
                 ProductCode = "211",
                 Name = "Saffron Glitter Makeup Pencil Green",
-                Variant = "0",
                 Price = 2.25,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 24,
                 SkuCode = "5055339903831",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
                              " They are very easy to blend and can be used as eyeshadows. " +
                              "Glitter Liner Pencil for dazzling looks with an intense colour finish." +
@@ -509,16 +468,14 @@ namespace Infra.SQL.Data.DB
 
             Product productLs1 = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "10",
+                SecondaryCategoryId = 10,
                 ProductCode = "0134",
                 Name = "Saffron Lipstick Berry",
                 Variant = "10",
                 Price = 1.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339900151",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
                               "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
                               "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
@@ -529,16 +486,14 @@ namespace Infra.SQL.Data.DB
 
             Product productLs2 = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "10",
+                SecondaryCategoryId = 10,
                 ProductCode = "0134", 
                 Name = "Saffron Lipstick Black Coffee",
                 Variant = "19",
                 Price = 1.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339900151",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
                              "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
                              "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
@@ -549,16 +504,14 @@ namespace Infra.SQL.Data.DB
 
             Product productLs3 = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "10",
+                SecondaryCategoryId = 10,
                 ProductCode = "0134", 
                 Name = "Saffron Lipstick Brick",
                 Variant = "3",
                 Price = 1.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339900151",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
                            "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
                            "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
@@ -569,16 +522,14 @@ namespace Infra.SQL.Data.DB
 
             Product productLs4 = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "10",
+                SecondaryCategoryId = 10,
                 ProductCode = "0134",
                 Name = "Saffron Lipstick Burgundy Beauty",
                 Variant ="48",
                 Price = 1.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339900151",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
                           "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
                           "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
@@ -589,16 +540,14 @@ namespace Infra.SQL.Data.DB
 
             Product productLs5 = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "10",
+                SecondaryCategoryId = 10,
                 ProductCode = "0134", 
                 Name = "Saffron Lipstick Cabaret",
                 Variant= "31",
                 Price = 1.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339900151",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
                          "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
                          "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
@@ -609,16 +558,14 @@ namespace Infra.SQL.Data.DB
 
             Product productLs6 = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "10",
+                SecondaryCategoryId = 10,
                 ProductCode = "0134", 
                 Name = "Saffron Lipstick Canberry",
                 Variant = "9",
                 Price = 1.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339900151",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
                         "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
                         "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
@@ -629,16 +576,14 @@ namespace Infra.SQL.Data.DB
 
             Product productLs7 = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "10",
+                SecondaryCategoryId = 10,
                 ProductCode = "0134",
                 Name = "Saffron Lipstick Conker",
                 Variant = "43",
                 Price = 1.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339900151",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
                         "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
                         "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
@@ -649,16 +594,14 @@ namespace Infra.SQL.Data.DB
 
             Product productLs8 = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "10",
+                SecondaryCategoryId = 10,
                 ProductCode = "0134", 
                 Name = "Saffron Lipstick Current",
                 Variant = "7",
                 Price = 1.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339900151",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
                        "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
                        "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
@@ -669,16 +612,14 @@ namespace Infra.SQL.Data.DB
 
             Product productLs9 = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "10",
+                SecondaryCategoryId = 10,
                 ProductCode = "0134", 
                 Name = "Saffron Lipstick Diamond Red",
                 Variant = "5",
                 Price = 1.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 69,
                 SkuCode = "5055339900151",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
                       "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
                       "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
@@ -689,16 +630,14 @@ namespace Infra.SQL.Data.DB
 
             Product productLs10 = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "10",
+                SecondaryCategoryId = 10,
                 ProductCode = "0134", 
                 Name = "Saffron Lipstick Euphoric",
                 Variant = "46",
                 Price = 1.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 71,
                 SkuCode = "5055339900151",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
                     "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
                     "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
@@ -710,32 +649,28 @@ namespace Infra.SQL.Data.DB
 
              Product product1Np = ctx.Products.Add(new Product()
             {
-                 SecondaryCategoryId = "14",
+                 SecondaryCategoryId = 14,
                 ProductCode = "1013", 
                 Name = "Saffron Nail Polish Base Coat",
                 Variant = "56",
                 Price = 2.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339903237",
-                GenderId = "0",
-				Currency = "£",
                 Description = "Saffron Base Coat formula strengthens nails with a smooth, hard finish that grips nail colours.",
 
             }).Entity;
 
             Product product2Np = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "14",
+                SecondaryCategoryId = 14,
                 ProductCode = "1013", 
                 Name = "Saffron Nail Polish Beige French Manicure",
                 Variant = "59",
                 Price = 2.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339903237",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron French Manicure Polish helps you to create the classic French manicure." +
                               " Available in Pink, Beige and White simply seal with a top coat for a long lasting finish.",
 
@@ -743,36 +678,32 @@ namespace Infra.SQL.Data.DB
 
             Product product3Np = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "14",
+                SecondaryCategoryId = 14,
                 ProductCode = "1013",
                 Name = "Saffron Nail Polish Bikini Blue",
                 Variant = "43",
                 Price = 2.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339903237",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Nail Varnish: Trend setting shades with a top quality formula long lasting, chip resistant nail lacquer.",
 
             }).Entity;
 
             Product product4Np = ctx.Products.Add(new Product()
             {
-                SecondaryCategoryId = "14",
+                SecondaryCategoryId = 14,
                 ProductCode = "1013", 
                 Name = "Saffron Nail Polish Blossom",
                 Variant = "15",
                 Price = 2.99,
-                BrandId = "7",
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339903237",
-                GenderId = "0",
-                Currency = "£",
                 Description = "Saffron Nail Varnish: Trend setting shades with a top quality formula long lasting, chip resistant nail lacquer.",
 
             }).Entity;
-
+            #endregion
 
         }
     }
