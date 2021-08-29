@@ -14,3 +14,4 @@ C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Sa
 C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.dll
 C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\ref\SafCos.Core.Entities.dll
 C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.pdb
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.csprojAssemblyReference.cache

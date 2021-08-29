@@ -11,6 +11,6 @@ namespace SafCos.Core.Entities
         public int Id { get; set; }   
         public string Name { get; set; }
 
-        public SecondaryCategory SecondaryCategory { get; set; }
+        public ICollection<SecondaryCategory> SecondaryCategories { get; set; }
     }
 }

@@ -217,13 +217,6 @@ namespace Infra.SQL.Data.DB
                 PrimaryCategoryId = 5
 
             }).Entity;
-
-            SecondaryCategory secClass25 = ctx.SecondaryCategories.Add(new SecondaryCategory()
-            {
-                Name = "",
-                PrimaryCategoryId = 6
-
-            }).Entity;
             #endregion
 
             #region Brands
@@ -279,7 +272,7 @@ namespace Infra.SQL.Data.DB
             #region Genders
             Gender gender1 = ctx.Genders.Add(new Gender()
             {
-               Sex = "Female"
+                Sex = "Female"
 
             }).Entity;
 
@@ -309,7 +302,7 @@ namespace Infra.SQL.Data.DB
                 ProductCode = "120",
                 Name = "Saffron 2in1 Black & White Pencil",
                 Price = 2.25,
-                BrandId =7,
+                BrandId = 7,
                 Availability = 72,
                 SkuCode = "5055339901110",
                 Description = "Saffron Black & White Eyeliner is a stunning duo eyeliner pencil that can be used to line, " +
@@ -318,392 +311,394 @@ namespace Infra.SQL.Data.DB
             }).Entity;
 
 
-            Product product2ep = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 1,
-                ProductCode = " 101",
-                Name = " Saffron Eye Brow Pencil-Black",
-                Price = 1.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339900649",
-                Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
-                              "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
-                              "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. " +
-                              "It's easy to use, easy to sharpen.",
-            }).Entity;
+            //Product product2ep = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 1,
+            //    ProductCode = " 101",
+            //    Name = " Saffron Eye Brow Pencil-Black",
+            //    Price = 1.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339900649",
+            //    Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
+            //                  "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
+            //                  "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. " +
+            //                  "It's easy to use, easy to sharpen.",
+            //}).Entity;
 
-            Product product3ep = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 1,
-                ProductCode = "104",
-                Name = "Saffron Eye Brow Pencil–Blonde",
-                Price = 2.25 ,
-                BrandId = 7,
-                Availability =72 ,
-                SkuCode = "5055339900892",
-                Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
-                              "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
-                              "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
+            //Product product3ep = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 1,
+            //    ProductCode = "104",
+            //    Name = "Saffron Eye Brow Pencil–Blonde",
+            //    Price = 2.25,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339900892",
+            //    Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
+            //                  "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
+            //                  "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
 
-            }).Entity;
+            //}).Entity;
 
-            Product product4ep = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 1,
-                ProductCode = "102",
-                Name = "Saffron Eye Brow Pencil – Brown",
-                Price = 1.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339900656",
-                Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
-                              "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
-                              "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
+            //Product product4ep = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 1,
+            //    ProductCode = "102",
+            //    Name = "Saffron Eye Brow Pencil – Brown",
+            //    Price = 1.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339900656",
+            //    Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
+            //                  "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
+            //                  "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
 
-            }).Entity;
+            //}).Entity;
 
-            Product product5ep = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 1,
-                ProductCode = "113",
-                Name = "Saffron Eye Liner Pencil – Golden Chrome",
-                Price = 1.99,
-                BrandId = 7,
-                Availability = 63,
-                SkuCode = "#5055339901042",
-                Description = "Saffron Kohl pencil with smooth texture glides on easily for precise lines or Smokey looks. " +
-                              "Rich in pigments for amazing eye intensity.",
+            //Product product5ep = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 1,
+            //    ProductCode = "113",
+            //    Name = "Saffron Eye Liner Pencil – Golden Chrome",
+            //    Price = 1.99,
+            //    BrandId = 7,
+            //    Availability = 63,
+            //    SkuCode = "#5055339901042",
+            //    Description = "Saffron Kohl pencil with smooth texture glides on easily for precise lines or Smokey looks. " +
+            //                  "Rich in pigments for amazing eye intensity.",
 
-            }).Entity;
+            //}).Entity;
 
-            Product product6ep = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 1,
-                ProductCode = "207",
-                Name = "Saffron Glitter Makeup Pencil Black",
-                Price = 2.25 ,
-                BrandId = 7,
-                Availability = 24,
-                SkuCode = "5055339903794",
-                Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
-                             " They are very easy to blend and can be used as eyeshadows. " +
-                             " Glitter Liner Pencil for dazzling looks with an intense colour finish.  " +
-                             "Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. With Free Sharpener",
+            //Product product6ep = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 1,
+            //    ProductCode = "207",
+            //    Name = "Saffron Glitter Makeup Pencil Black",
+            //    Price = 2.25,
+            //    BrandId = 7,
+            //    Availability = 24,
+            //    SkuCode = "5055339903794",
+            //    Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
+            //                 " They are very easy to blend and can be used as eyeshadows. " +
+            //                 " Glitter Liner Pencil for dazzling looks with an intense colour finish.  " +
+            //                 "Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. With Free Sharpener",
 
-            }).Entity;
+            //}).Entity;
 
-            Product product7ep = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 1,
-                ProductCode = "208",
-                Name = "Saffron Glitter Makeup Pencil Blue",
-                Price = 2.25,
-                BrandId = 7,
-                Availability = 24,
-                SkuCode = "5055339903800",
-                Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply. " +
-                "They are very easy to blend and can be used as eyeshadows.  " +
-                "Glitter Liner Pencil for dazzling looks with an intense colour finish.  " +
-                "Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, " +
-                "Purple, Red.With Free Sharpener",
+            //Product product7ep = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 1,
+            //    ProductCode = "208",
+            //    Name = "Saffron Glitter Makeup Pencil Blue",
+            //    Price = 2.25,
+            //    BrandId = 7,
+            //    Availability = 24,
+            //    SkuCode = "5055339903800",
+            //    Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply. " +
+            //    "They are very easy to blend and can be used as eyeshadows.  " +
+            //    "Glitter Liner Pencil for dazzling looks with an intense colour finish.  " +
+            //    "Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, " +
+            //    "Purple, Red.With Free Sharpener",
 
-            }).Entity;
+            //}).Entity;
 
-            Product product8ep = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 1,
-                ProductCode = "209",
-                Name = "Saffron Glitter Makeup Pencil Silver",
-                Price = 2.25,
-                BrandId = 7,
-                Availability = 24,
-                SkuCode = "5055339903817",
-                Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
-                              " They are very easy to blend and can be used as eyeshadows. " +
-                              "Glitter Liner Pencil for dazzling looks with an intense colour finish." +
-                              " Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. " +
-                              "With Free Sharpener",
+            //Product product8ep = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 1,
+            //    ProductCode = "209",
+            //    Name = "Saffron Glitter Makeup Pencil Silver",
+            //    Price = 2.25,
+            //    BrandId = 7,
+            //    Availability = 24,
+            //    SkuCode = "5055339903817",
+            //    Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
+            //                  " They are very easy to blend and can be used as eyeshadows. " +
+            //                  "Glitter Liner Pencil for dazzling looks with an intense colour finish." +
+            //                  " Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. " +
+            //                  "With Free Sharpener",
 
-            }).Entity;
-
-
-            Product product9ep = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 1,
-                ProductCode = "210",
-                Name = "Saffron Glitter Makeup Pencil Gold",
-                Price = 2.25,
-                BrandId = 7,
-                Availability = 24,
-                SkuCode = "5055339903824",
-                Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
-                              " They are very easy to blend and can be used as eyeshadows. " +
-                              "Glitter Liner Pencil for dazzling looks with an intense colour finish." +
-                              " Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. " +
-                              "With Free Sharpener",
-                
-
-            }).Entity;
-
-            Product product10ep = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 1,
-                ProductCode = "211",
-                Name = "Saffron Glitter Makeup Pencil Green",
-                Price = 2.25,
-                BrandId = 7,
-                Availability = 24,
-                SkuCode = "5055339903831",
-                Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
-                             " They are very easy to blend and can be used as eyeshadows. " +
-                             "Glitter Liner Pencil for dazzling looks with an intense colour finish." +
-                             " Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. " +
-                             "With Free Sharpener",
+            //}).Entity;
 
 
-            }).Entity;
+            //Product product9ep = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 1,
+            //    ProductCode = "210",
+            //    Name = "Saffron Glitter Makeup Pencil Gold",
+            //    Price = 2.25,
+            //    BrandId = 7,
+            //    Availability = 24,
+            //    SkuCode = "5055339903824",
+            //    Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
+            //                  " They are very easy to blend and can be used as eyeshadows. " +
+            //                  "Glitter Liner Pencil for dazzling looks with an intense colour finish." +
+            //                  " Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. " +
+            //                  "With Free Sharpener",
 
-            //Lipstick
 
-            Product productLs1 = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 10,
-                ProductCode = "0134",
-                Name = "Saffron Lipstick Berry",
-                Variant = "10",
-                Price = 1.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339900151",
-                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
-                              "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
-                              "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
-                              "Colour Nos. 43 to 48 Catwalk Colours. " +
-                              "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+            //}).Entity;
 
-            }).Entity;
+            //Product product10ep = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 1,
+            //    ProductCode = "211",
+            //    Name = "Saffron Glitter Makeup Pencil Green",
+            //    Price = 2.25,
+            //    BrandId = 7,
+            //    Availability = 24,
+            //    SkuCode = "5055339903831",
+            //    Description = "Saffron Glitter Liner Pencil is soft and glides on as you apply." +
+            //                 " They are very easy to blend and can be used as eyeshadows. " +
+            //                 "Glitter Liner Pencil for dazzling looks with an intense colour finish." +
+            //                 " Available in 7 Glitter Colours: Black, Blue, Silver Gold, Green, Purple, Red. " +
+            //                 "With Free Sharpener",
 
-            Product productLs2 = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 10,
-                ProductCode = "0134", 
-                Name = "Saffron Lipstick Black Coffee",
-                Variant = "19",
-                Price = 1.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339900151",
-                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
-                             "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
-                             "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
-                             "Colour Nos. 43 to 48 Catwalk Colours. " +
-                             "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
 
-            }).Entity;
+            //}).Entity;
 
-            Product productLs3 = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 10,
-                ProductCode = "0134", 
-                Name = "Saffron Lipstick Brick",
-                Variant = "3",
-                Price = 1.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339900151",
-                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
-                           "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
-                           "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
-                           "Colour Nos. 43 to 48 Catwalk Colours. " +
-                           "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+            ////Lipstick
 
-            }).Entity;
+            //Product productLs1 = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 10,
+            //    ProductCode = "0134",
+            //    Name = "Saffron Lipstick Berry",
+            //    Variant = "10",
+            //    Price = 1.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339900151",
+            //    Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+            //                  "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+            //                  "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+            //                  "Colour Nos. 43 to 48 Catwalk Colours. " +
+            //                  "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
 
-            Product productLs4 = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 10,
-                ProductCode = "0134",
-                Name = "Saffron Lipstick Burgundy Beauty",
-                Variant ="48",
-                Price = 1.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339900151",
-                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
-                          "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
-                          "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
-                          "Colour Nos. 43 to 48 Catwalk Colours. " +
-                          "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+            //}).Entity;
 
-            }).Entity;
+            //Product productLs2 = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 10,
+            //    ProductCode = "0134",
+            //    Name = "Saffron Lipstick Black Coffee",
+            //    Variant = "19",
+            //    Price = 1.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339900151",
+            //    Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+            //                 "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+            //                 "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+            //                 "Colour Nos. 43 to 48 Catwalk Colours. " +
+            //                 "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
 
-            Product productLs5 = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 10,
-                ProductCode = "0134", 
-                Name = "Saffron Lipstick Cabaret",
-                Variant= "31",
-                Price = 1.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339900151",
-                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
-                         "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
-                         "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
-                         "Colour Nos. 43 to 48 Catwalk Colours. " +
-                         "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+            //}).Entity;
 
-            }).Entity;
+            //Product productLs3 = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 10,
+            //    ProductCode = "0134",
+            //    Name = "Saffron Lipstick Brick",
+            //    Variant = "3",
+            //    Price = 1.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339900151",
+            //    Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+            //               "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+            //               "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+            //               "Colour Nos. 43 to 48 Catwalk Colours. " +
+            //               "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
 
-            Product productLs6 = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 10,
-                ProductCode = "0134", 
-                Name = "Saffron Lipstick Canberry",
-                Variant = "9",
-                Price = 1.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339900151",
-                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
-                        "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
-                        "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
-                        "Colour Nos. 43 to 48 Catwalk Colours. " +
-                        "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+            //}).Entity;
 
-            }).Entity;
+            //Product productLs4 = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 10,
+            //    ProductCode = "0134",
+            //    Name = "Saffron Lipstick Burgundy Beauty",
+            //    Variant = "48",
+            //    Price = 1.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339900151",
+            //    Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+            //              "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+            //              "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+            //              "Colour Nos. 43 to 48 Catwalk Colours. " +
+            //              "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
 
-            Product productLs7 = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 10,
-                ProductCode = "0134",
-                Name = "Saffron Lipstick Conker",
-                Variant = "43",
-                Price = 1.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339900151",
-                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
-                        "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
-                        "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
-                        "Colour Nos. 43 to 48 Catwalk Colours. " +
-                        "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+            //}).Entity;
 
-            }).Entity;
+            //Product productLs5 = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 10,
+            //    ProductCode = "0134",
+            //    Name = "Saffron Lipstick Cabaret",
+            //    Variant = "31",
+            //    Price = 1.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339900151",
+            //    Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+            //             "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+            //             "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+            //             "Colour Nos. 43 to 48 Catwalk Colours. " +
+            //             "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
 
-            Product productLs8 = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 10,
-                ProductCode = "0134", 
-                Name = "Saffron Lipstick Current",
-                Variant = "7",
-                Price = 1.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339900151",
-                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
-                       "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
-                       "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
-                       "Colour Nos. 43 to 48 Catwalk Colours. " +
-                       "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+            //}).Entity;
 
-            }).Entity;
+            //Product productLs6 = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 10,
+            //    ProductCode = "0134",
+            //    Name = "Saffron Lipstick Canberry",
+            //    Variant = "9",
+            //    Price = 1.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339900151",
+            //    Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+            //            "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+            //            "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+            //            "Colour Nos. 43 to 48 Catwalk Colours. " +
+            //            "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
 
-            Product productLs9 = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 10,
-                ProductCode = "0134", 
-                Name = "Saffron Lipstick Diamond Red",
-                Variant = "5",
-                Price = 1.99,
-                BrandId = 7,
-                Availability = 69,
-                SkuCode = "5055339900151",
-                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
-                      "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
-                      "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
-                      "Colour Nos. 43 to 48 Catwalk Colours. " +
-                      "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+            //}).Entity;
 
-            }).Entity;
+            //Product productLs7 = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 10,
+            //    ProductCode = "0134",
+            //    Name = "Saffron Lipstick Conker",
+            //    Variant = "43",
+            //    Price = 1.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339900151",
+            //    Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+            //            "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+            //            "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+            //            "Colour Nos. 43 to 48 Catwalk Colours. " +
+            //            "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
 
-            Product productLs10 = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 10,
-                ProductCode = "0134", 
-                Name = "Saffron Lipstick Euphoric",
-                Variant = "46",
-                Price = 1.99,
-                BrandId = 7,
-                Availability = 71,
-                SkuCode = "5055339900151",
-                Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
-                    "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
-                    "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
-                    "Colour Nos. 43 to 48 Catwalk Colours. " +
-                    "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
+            //}).Entity;
 
-            }).Entity;
-            //Nails
+            //Product productLs8 = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 10,
+            //    ProductCode = "0134",
+            //    Name = "Saffron Lipstick Current",
+            //    Variant = "7",
+            //    Price = 1.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339900151",
+            //    Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+            //           "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+            //           "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+            //           "Colour Nos. 43 to 48 Catwalk Colours. " +
+            //           "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
 
-             Product product1Np = ctx.Products.Add(new Product()
-            {
-                 SecondaryCategoryId = 14,
-                ProductCode = "1013", 
-                Name = "Saffron Nail Polish Base Coat",
-                Variant = "56",
-                Price = 2.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339903237",
-                Description = "Saffron Base Coat formula strengthens nails with a smooth, hard finish that grips nail colours.",
+            //}).Entity;
 
-            }).Entity;
+            //Product productLs9 = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 10,
+            //    ProductCode = "0134",
+            //    Name = "Saffron Lipstick Diamond Red",
+            //    Variant = "5",
+            //    Price = 1.99,
+            //    BrandId = 7,
+            //    Availability = 69,
+            //    SkuCode = "5055339900151",
+            //    Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+            //          "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+            //          "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+            //          "Colour Nos. 43 to 48 Catwalk Colours. " +
+            //          "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
 
-            Product product2Np = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 14,
-                ProductCode = "1013", 
-                Name = "Saffron Nail Polish Beige French Manicure",
-                Variant = "59",
-                Price = 2.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339903237",
-                Description = "Saffron French Manicure Polish helps you to create the classic French manicure." +
-                              " Available in Pink, Beige and White simply seal with a top coat for a long lasting finish.",
+            //}).Entity;
 
-            }).Entity;
+            //Product productLs10 = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 10,
+            //    ProductCode = "0134",
+            //    Name = "Saffron Lipstick Euphoric",
+            //    Variant = "46",
+            //    Price = 1.99,
+            //    BrandId = 7,
+            //    Availability = 71,
+            //    SkuCode = "5055339900151",
+            //    Description = "Saffron Lipstick innovative formula that delivers bold, luscious colours." +
+            //        "Saffron lipstick has 30 Shades: Colour Nos. 1 to 6 Vivid Reds, Colour Nos. 7 to 12 Intense Colours." +
+            //        "Colour Nos. 13 to 18 Fantasy Pinks. Colour Nos. 19 to 24 Cream Chocolate and Browns." +
+            //        "Colour Nos. 43 to 48 Catwalk Colours. " +
+            //        "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
 
-            Product product3Np = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 14,
-                ProductCode = "1013",
-                Name = "Saffron Nail Polish Bikini Blue",
-                Variant = "43",
-                Price = 2.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339903237",
-                Description = "Saffron Nail Varnish: Trend setting shades with a top quality formula long lasting, chip resistant nail lacquer.",
+            //}).Entity;
+            ////Nails
 
-            }).Entity;
+            //Product product1Np = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 14,
+            //    ProductCode = "1013",
+            //    Name = "Saffron Nail Polish Base Coat",
+            //    Variant = "56",
+            //    Price = 2.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339903237",
+            //    Description = "Saffron Base Coat formula strengthens nails with a smooth, hard finish that grips nail colours.",
 
-            Product product4Np = ctx.Products.Add(new Product()
-            {
-                SecondaryCategoryId = 14,
-                ProductCode = "1013", 
-                Name = "Saffron Nail Polish Blossom",
-                Variant = "15",
-                Price = 2.99,
-                BrandId = 7,
-                Availability = 72,
-                SkuCode = "5055339903237",
-                Description = "Saffron Nail Varnish: Trend setting shades with a top quality formula long lasting, chip resistant nail lacquer.",
+            //}).Entity;
 
-            }).Entity;
+            //Product product2Np = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 14,
+            //    ProductCode = "1013",
+            //    Name = "Saffron Nail Polish Beige French Manicure",
+            //    Variant = "59",
+            //    Price = 2.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339903237",
+            //    Description = "Saffron French Manicure Polish helps you to create the classic French manicure." +
+            //                  " Available in Pink, Beige and White simply seal with a top coat for a long lasting finish.",
+
+            //}).Entity;
+
+            //Product product3Np = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 14,
+            //    ProductCode = "1013",
+            //    Name = "Saffron Nail Polish Bikini Blue",
+            //    Variant = "43",
+            //    Price = 2.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339903237",
+            //    Description = "Saffron Nail Varnish: Trend setting shades with a top quality formula long lasting, chip resistant nail lacquer.",
+
+            //}).Entity;
+
+            //Product product4Np = ctx.Products.Add(new Product()
+            //{
+            //    SecondaryCategoryId = 14,
+            //    ProductCode = "1013",
+            //    Name = "Saffron Nail Polish Blossom",
+            //    Variant = "15",
+            //    Price = 2.99,
+            //    BrandId = 7,
+            //    Availability = 72,
+            //    SkuCode = "5055339903237",
+            //    Description = "Saffron Nail Varnish: Trend setting shades with a top quality formula long lasting, chip resistant nail lacquer.",
+
+            //}).Entity;
             #endregion
+
+            ctx.SaveChanges();
 
         }
     }

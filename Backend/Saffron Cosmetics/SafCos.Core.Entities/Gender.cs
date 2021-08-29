@@ -11,6 +11,6 @@ namespace SafCos.Core.Entities
         public int Id { get; set; }
         public string Sex { get; set; }
 
-        public Product Product { get; set; }
+        public ICollection<Product> Products { get; set; }
     }
 }

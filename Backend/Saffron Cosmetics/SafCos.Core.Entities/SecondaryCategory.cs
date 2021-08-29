@@ -13,8 +13,6 @@ namespace SafCos.Core.Entities
         public PrimaryCategory PrimaryCategory { get; set; }
         public int PrimaryCategoryId { get; set; }
 
-        public Product Product { get; set; }
-
-
+        public ICollection<Product> Products { get; set; }
     }
 }
