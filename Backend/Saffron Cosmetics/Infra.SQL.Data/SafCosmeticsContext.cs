@@ -23,7 +23,7 @@ namespace Infra.SQL.Data
 
        public DbSet<Product> Products { get; set; }
 
-        public  void OnModelCreating(ModelBuilder modelBuilder)
+        public void OnModelCreating(ModelBuilder modelBuilder)
         {
             #region SecondaryCategory relation with Primary
             modelBuilder.Entity<SecondaryCategory>()

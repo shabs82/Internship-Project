@@ -20,7 +20,7 @@ namespace Infra.SQL.Data.Repositories
 
         public Product GetProductById(int id)
         {
-            return _ctx.Products.FirstOrDefault(author => author.Id == id);
+            return _ctx.Products.FirstOrDefault(prod => prod.Id == id);
         }
 
         public List<Product> ReadAllProducts()

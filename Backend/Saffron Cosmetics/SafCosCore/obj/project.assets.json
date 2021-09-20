@@ -2,6 +2,44 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "FluentValidation/10.3.3": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {}
+        }
+      },
+      "FluentValidation.AspNetCore/10.3.3": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "10.3.3",
+          "FluentValidation.DependencyInjectionExtensions": "10.3.3"
+        },
+        "compile": {
+          "lib/net5.0/FluentValidation.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/FluentValidation.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FluentValidation.DependencyInjectionExtensions/10.3.3": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "10.3.3",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -9,6 +47,15 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
       "Microsoft.IdentityModel.JsonWebTokens/6.12.1": {
@@ -87,6 +134,56 @@
     }
   },
   "libraries": {
+    "FluentValidation/10.3.3": {
+      "sha512": "sgRC+7q4mnmDHE9ehk2cvb+FDTy/gtw5iBoKFY3FVp1ZwFsLS0kIcdSpNlCO3XyyNIzZI2ca8I/YiFG9pM6x0Q==",
+      "type": "package",
+      "path": "fluentvalidation/10.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.10.3.3.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/10.3.3": {
+      "sha512": "DEh0ibCjH2kL5sk9yHcYMFrARUZ+/7iisW900odFUh3FV2zS5A/7hjNjnHSv2Imgq4gIQmpajamMm1uFDrBBWA==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/10.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/net5.0/FluentValidation.AspNetCore.dll",
+        "lib/net5.0/FluentValidation.AspNetCore.xml",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/10.3.3": {
+      "sha512": "kol9KlAn2pijRa0vLCzAPcp8Ql8yZdIRrO80eMVLswXQ0v6ai+ihOdqF/qPJCMXNWBnTcTGYjp1tZtizPWO+Cg==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/10.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.10.3.3.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
@@ -153,6 +250,19 @@
         "ref/xamarinwatchos10/_._",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+      "sha512": "8/CtASu80UIoyG+r8FstrmZW5GLtXxzoYpjj3jV0FKZCL5CiFgSH3pAmqut/dC68mu7N1bU6v0UtKKL3gCUQGQ==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
     "Microsoft.IdentityModel.JsonWebTokens/6.12.1": {
@@ -302,24 +412,29 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "FluentValidation.AspNetCore >= 10.3.3",
       "SafCos.Core.Entities >= 1.0.0",
       "System.IdentityModel.Tokens.Jwt >= 6.12.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dpank\\.nuget\\packages\\": {}
+    "C:\\Users\\kulsoom-Abbas\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
+      "projectUniqueName": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
       "projectName": "SafCos.Core",
-      "projectPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
-      "packagesPath": "C:\\Users\\dpank\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\obj\\",
+      "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
+      "packagesPath": "C:\\Users\\kulsoom-Abbas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\dpank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kulsoom-Abbas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -333,8 +448,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj": {
-              "projectPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj"
+            "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj": {
+              "projectPath": "C:\\Users\\kulsoom-Abbas\\source\\Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj"
             }
           }
         }
@@ -349,6 +464,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "FluentValidation.AspNetCore": {
+            "target": "Package",
+            "version": "[10.3.3, )"
+          },
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",
             "version": "[6.12.1, )"
@@ -369,7 +488,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
