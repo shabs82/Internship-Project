@@ -23,6 +23,8 @@ namespace Infra.SQL.Data
 
        public DbSet<Product> Products { get; set; }
 
+        public DbSet<User> Users { get; set; }
+
         public void OnModelCreating(ModelBuilder modelBuilder)
         {
             #region SecondaryCategory relation with Primary

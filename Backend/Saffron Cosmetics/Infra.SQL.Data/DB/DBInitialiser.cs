@@ -3,14 +3,49 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using SafCos.Core.Entities;
-
+using SafCos.Core.Helper;
 
 namespace Infra.SQL.Data.DB
 {
     public class DBInitialiser : IDBInitialiser
     {
+        private readonly IAuthenticationHelper _authenticationHelper;
+
+        public DBInitialiser(IAuthenticationHelper authenticationHelper)
+        {
+            _authenticationHelper = authenticationHelper;
+        }
+        
         public void SeedDB(SafCosmeticsContext ctx)
         {
+
+            #region User
+            string password = "1234";
+            byte[] passwordHashJohn, passwordSaltJohn, passwordHashAnna, passwordSaltAnna;
+            _authenticationHelper.CreatePasswordHash(password, out passwordHashJohn, out passwordSaltJohn);
+            _authenticationHelper.CreatePasswordHash(password, out passwordHashAnna, out passwordSaltAnna);
+
+            User user1 = ctx.Users.Add(new User()
+            {
+                Username = "User",
+                PasswordHash = passwordHashJohn,
+                PasswordSalt = passwordSaltJohn,
+                IsAdmin = false
+
+            }).Entity;
+
+
+            User user2 = ctx.Users.Add(new User()
+            {
+                Username = "Admin",
+                PasswordHash = passwordHashAnna,
+                PasswordSalt = passwordSaltAnna,
+                IsAdmin = true
+
+            }).Entity;
+
+
+            #endregion
 
             #region Primary Category
             PrimaryCategory primClass1 = ctx.PrimaryCategories.Add(new PrimaryCategory()
@@ -316,35 +351,37 @@ namespace Infra.SQL.Data.DB
             }).Entity;
 
 
-            //Product product2ep = ctx.Products.Add(new Product()
-            //{
-            //    SecondaryCategoryId = 1,
-            //    ProductCode = " 101",
-            //    Name = " Saffron Eye Brow Pencil-Black",
-            //    Price = 1.99,
-            //    BrandId = 7,
-            //    Availability = 72,
-            //    SkuCode = "5055339900649",
-            //    Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
-            //                  "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
-            //                  "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. " +
-            //                  "It's easy to use, easy to sharpen.",
-            //}).Entity;
+            Product product2ep = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = secClass1.Id,
+                ProductCode = " 101",
+                Name = " Saffron Eye Brow Pencil-Black",
+                Price = 1.99,
+                GenderId = gender2.Id,
+                BrandId = brand7.Id,
+                Availability = 72,
+                SkuCode = "5055339900649",
+                Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
+                              "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
+                              "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. " +
+                              "It's easy to use, easy to sharpen.",
+            }).Entity;
 
-            //Product product3ep = ctx.Products.Add(new Product()
-            //{
-            //    SecondaryCategoryId = 1,
-            //    ProductCode = "104",
-            //    Name = "Saffron Eye Brow Pencil–Blonde",
-            //    Price = 2.25,
-            //    BrandId = 7,
-            //    Availability = 72,
-            //    SkuCode = "5055339900892",
-            //    Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
-            //                  "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
-            //                  "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
+            Product product3ep = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = secClass1.Id,
+                ProductCode = "104",
+                Name = "Saffron Eye Brow Pencil–Blonde",
+                Price = 2.25,
+                GenderId = gender2.Id,
+                BrandId = brand7.Id,
+                Availability = 72,
+                SkuCode = "5055339900892",
+                Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
+                              "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
+                              "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
 
-            //}).Entity;
+            }).Entity;
 
             //Product product4ep = ctx.Products.Add(new Product()
             //{
@@ -700,7 +737,7 @@ namespace Infra.SQL.Data.DB
             //    SkuCode = "5055339903237",
             //    Description = "Saffron Nail Varnish: Trend setting shades with a top quality formula long lasting, chip resistant nail lacquer.",
 
-            //}).Entity;
+            // }).Entity;
             #endregion
 
             ctx.SaveChanges();
