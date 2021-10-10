@@ -18,6 +18,16 @@ namespace Infra.SQL.Data.Repositories
             _ctx = safCosmeticsContext;
         }
 
+        public Product CreateProduct(Product product)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Product DeleteProduct(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Product GetProductById(int id)
         {
             return _ctx.Products.FirstOrDefault(prod => prod.Id == id);

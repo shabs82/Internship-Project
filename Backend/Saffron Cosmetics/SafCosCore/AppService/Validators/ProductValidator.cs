@@ -10,7 +10,7 @@ namespace SafCos.Core.AppService.Validators
 {
     public class ProductValidator : AbstractValidator<Product>
     {
-        ProductValidator()
+        public ProductValidator()
         {
             RuleFor(p => p.Name).NotEmpty().WithMessage("Name cannot be empty");
             RuleFor(p => p.Id).NotNull();
@@ -20,6 +20,9 @@ namespace SafCos.Core.AppService.Validators
             RuleFor(p => p.Description).NotEmpty().WithMessage("Describe a product");
             RuleFor(p => p.Price).NotNull();
             RuleFor(p => p.SkuCode).NotNull().WithMessage("sku code is the barcode");
+            RuleFor(p => p.Availability).NotEmpty().WithErrorCode("not found");
         }
+
+
     }
 }

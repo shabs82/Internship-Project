@@ -12,5 +12,7 @@ namespace SafCos.Core.DomainService
         List<Product> ReadAllProducts();
         Product GetProductById(int id);
         Product UpdateProduct(Product prodToUpdate);
+        Product CreateProduct(Product product);
+        Product DeleteProduct(int id);
     }
 }

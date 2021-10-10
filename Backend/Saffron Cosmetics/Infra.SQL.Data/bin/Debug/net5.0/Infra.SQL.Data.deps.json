@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Infra.SQL.Data/1.0.0": {
         "dependencies": {
+          "FluentValidation.AspNetCore": "10.3.3",
           "Microsoft.EntityFrameworkCore": "5.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.9",
