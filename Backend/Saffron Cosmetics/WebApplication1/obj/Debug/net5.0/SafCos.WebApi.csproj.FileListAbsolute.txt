@@ -187,3 +187,6 @@ C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saff
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\WebApplication1\bin\Debug\net5.0\FluentValidation.dll
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\WebApplication1\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\WebApplication1\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\WebApplication1\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\WebApplication1\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\WebApplication1\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll

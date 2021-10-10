@@ -49,6 +49,9 @@ namespace Infra.SQL.Data.DB
             }).Entity;
             #endregion
 
+            ctx.SaveChanges();
+
+
             #region Secondary Category
             SecondaryCategory secClass1 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
@@ -219,6 +222,7 @@ namespace Infra.SQL.Data.DB
             }).Entity;
             #endregion
 
+
             #region Brands
             Brand brand1 = ctx.Brands.Add(new Brand()
             {
@@ -269,6 +273,7 @@ namespace Infra.SQL.Data.DB
             }).Entity;
             #endregion
 
+
             #region Genders
 
             Gender gender1 = ctx.Genders.Add(new Gender()
@@ -316,35 +321,35 @@ namespace Infra.SQL.Data.DB
             }).Entity;
 
 
-            //Product product2ep = ctx.Products.Add(new Product()
-            //{
-            //    SecondaryCategoryId = 1,
-            //    ProductCode = " 101",
-            //    Name = " Saffron Eye Brow Pencil-Black",
-            //    Price = 1.99,
-            //    BrandId = 7,
-            //    Availability = 72,
-            //    SkuCode = "5055339900649",
-            //    Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
-            //                  "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
-            //                  "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. " +
-            //                  "It's easy to use, easy to sharpen.",
-            //}).Entity;
+            Product product2ep = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = secClass1.Id,
+                ProductCode = " 101",
+                Name = " Saffron Eye Brow Pencil-Black",
+                Price = 1.99,
+                BrandId = brand2.Id,
+                Availability = 72,
+                SkuCode = "5055339900649",
+                Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
+                              "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
+                              "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. " +
+                              "It's easy to use, easy to sharpen.",
+            }).Entity;
 
-            //Product product3ep = ctx.Products.Add(new Product()
-            //{
-            //    SecondaryCategoryId = 1,
-            //    ProductCode = "104",
-            //    Name = "Saffron Eye Brow Pencil–Blonde",
-            //    Price = 2.25,
-            //    BrandId = 7,
-            //    Availability = 72,
-            //    SkuCode = "5055339900892",
-            //    Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
-            //                  "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
-            //                  "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
+            Product product3ep = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = secClass1.Id,
+                ProductCode = "104",
+                Name = "Saffron Eye Brow Pencil–Blonde",
+                Price = 2.25,
+                BrandId = brand2.Id,
+                Availability = 72,
+                SkuCode = "5055339900892",
+                Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
+                              "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
+                              "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
 
-            //}).Entity;
+            }).Entity;
 
             //Product product4ep = ctx.Products.Add(new Product()
             //{

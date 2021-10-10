@@ -29,24 +29,28 @@ namespace Infra.SQL.Data
             modelBuilder.Entity<SecondaryCategory>()
             .HasOne(sc => sc.PrimaryCategory)
             .WithMany(pc => pc.SecondaryCategories)
-            .HasForeignKey(ad => ad.PrimaryCategoryId);
+            .HasForeignKey(ad => ad.PrimaryCategoryId)
+            .OnDelete(DeleteBehavior.Cascade);
             #endregion
 
             #region Product relations
             modelBuilder.Entity<Product>()
             .HasOne(p => p.Gender)
             .WithMany(g => g.Products)
-            .HasForeignKey(ad => ad.GenderId);
+            .HasForeignKey(ad => ad.GenderId)
+            .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Product>()
             .HasOne(p => p.Brand)
             .WithMany(b => b.Products)
-            .HasForeignKey(ad => ad.BrandId);
+            .HasForeignKey(ad => ad.BrandId)
+            .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Product>()
             .HasOne(p => p.SecondaryCategory)
             .WithMany(sc => sc.Products)
-            .HasForeignKey(ad => ad.SecondaryCategoryId);
+            .HasForeignKey(ad => ad.SecondaryCategoryId)
+            .OnDelete(DeleteBehavior.Cascade);
             #endregion
 
         }
