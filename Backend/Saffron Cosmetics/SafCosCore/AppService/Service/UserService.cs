@@ -23,17 +23,17 @@ namespace SafCos.Core.AppService.Service
         }
         public User CreateUser(User createdUser)
         {
-            throw new NotImplementedException();
+            return _userRepo.CreateUser(createdUser);
         }
 
         public User DeleteUser(int id)
         {
-            throw new NotImplementedException();
+            return _userRepo.DeleteUser(id);
         }
 
         public User FindUserById(int id)
         {
-            throw new NotImplementedException();
+            return _userRepo.ReadById(id);
         }
 
         public IEnumerable<User> GetAllUsers()
@@ -43,7 +43,7 @@ namespace SafCos.Core.AppService.Service
 
         public User UpdateUser(User userUpdate)
         {
-            throw new NotImplementedException();
+            return _userRepo.UpdateUser(userUpdate);
         }
 
         public User ValidateUser(LoginInputModel loginInputModel)

@@ -2,13 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SafCos.Core.DomainService;
 using SafCos.Core.Entities;
-
+using SafCos.Core.Helper;
 
 namespace Infra.SQL.Data.DB
 {
+   
+
     public class DBInitialiser : IDBInitialiser
     {
+        private readonly IAuthenticationHelper _authenticationHelper;
+        private readonly IUserRepo _userRepo;
+
+        public DBInitialiser(IAuthenticationHelper authentication, IUserRepo userRepo)
+        {
+            _authenticationHelper = authentication;
+            _userRepo = userRepo;
+        }
+
         public void SeedDB(SafCosmeticsContext ctx)
         {
 
@@ -710,6 +722,30 @@ namespace Infra.SQL.Data.DB
 
             ctx.SaveChanges();
 
+            #region Users
+            string password = "1234";
+            byte[] passwordHashJohn, passwordSaltJohn, passwordHashAnna, passwordSaltAnna;
+            _authenticationHelper.CreatePasswordHash(password, out passwordHashJohn, out passwordSaltJohn);
+            _authenticationHelper.CreatePasswordHash(password, out passwordHashAnna, out passwordSaltAnna);
+
+            var Admin = new User()
+            {
+                Username = "Admin",
+                PasswordHash = passwordHashJohn,
+                PasswordSalt = passwordSaltJohn,
+                IsAdmin = true
+            };
+            _userRepo.CreateUser(Admin);
+
+            var User = new User()
+            {
+                Username = "User",
+                PasswordHash = passwordHashAnna,
+                PasswordSalt = passwordSaltAnna,
+                IsAdmin = false
+            };
+            _userRepo.CreateUser(User);
+            #endregion
 
         }
     }

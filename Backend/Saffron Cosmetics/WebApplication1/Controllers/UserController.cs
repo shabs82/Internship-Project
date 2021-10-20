@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 using SafCos.Core.AppService.ServiceInterface;
 using SafCos.Core.Entities;
 using System;
@@ -39,6 +40,26 @@ namespace SafCos.WebApi.Controllers
         [HttpPost]
         public void Post([FromBody] string value)
         {
+        }
+
+        [HttpPost]
+        public IActionResult Login([FromBody] JObject data)
+        {
+            try
+            {
+                //Tuple is used because it's easier to pair with JSON Data (JObject data), allowing us to retrieve both username and password inputs.
+                var validatedUser = _userService.ValidateUser(new Tuple<string, string>(data["username"].ToString(), data["password"].ToString()));
+
+                return Ok(new
+                {
+                    username = data["username"].ToString(),
+                    token = validatedUser
+                });
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
         // PUT api/<UserController>/5
