@@ -50,5 +50,10 @@ namespace SafCos.Core.AppService.Service
         {
             throw new NotImplementedException();
         }
+
+        public string ValidateUser(Tuple<string, string> tuple)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

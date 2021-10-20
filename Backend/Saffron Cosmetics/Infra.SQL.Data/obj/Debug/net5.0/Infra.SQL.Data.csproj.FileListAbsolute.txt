@@ -32,3 +32,20 @@ C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saff
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.dll
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\ref\Infra.SQL.Data.dll
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.pdb
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\Infra.SQL.Data.deps.json
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\Infra.SQL.Data.dll
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\ref\Infra.SQL.Data.dll
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\Infra.SQL.Data.pdb
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\SafCos.Core.dll
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\SafCos.Core.Entities.dll
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\SafCos.Core.Entities.pdb
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\bin\Debug\net5.0\SafCos.Core.pdb
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.csprojAssemblyReference.cache
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.AssemblyInfoInputs.cache
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.AssemblyInfo.cs
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.csproj.CoreCompileInputs.cache
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.csproj.CopyComplete
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.dll
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\ref\Infra.SQL.Data.dll
+C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\Infra.SQL.Data\obj\Debug\net5.0\Infra.SQL.Data.pdb

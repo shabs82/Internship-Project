@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Linq;
 using SafCos.Core.AppService.ServiceInterface;
 using SafCos.Core.Entities;
+using SafCos.Core.Helper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,10 +17,12 @@ namespace SafCos.WebApi.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
+        private IAuthenticationHelper _authHelper;
 
-        public UserController(IUserService userService)
+        public UserController(IUserService userService, IAuthenticationHelper authenticationHelper)
         {
             _userService = userService;
+            _authHelper = authenticationHelper;
         }
         // GET: api/<UserController>
         [HttpGet]
@@ -42,24 +45,45 @@ namespace SafCos.WebApi.Controllers
         {
         }
 
-        [HttpPost]
-        public IActionResult Login([FromBody] JObject data)
-        {
-            try
-            {
-                //Tuple is used because it's easier to pair with JSON Data (JObject data), allowing us to retrieve both username and password inputs.
-                var validatedUser = _userService.ValidateUser(new Tuple<string, string>(data["username"].ToString(), data["password"].ToString()));
+        //[HttpPost]
+        //public IActionResult Login([FromBody] JObject data)
+        //{
+        //    try
+        //    {
+        //        //Tuple is used because it's easier to pair with JSON Data (JObject data), allowing us to retrieve both username and password inputs.
+        //        var validatedUser = _userService.ValidateUser(new Tuple<string, string>(data["username"].ToString(), data["password"].ToString()));
 
-                return Ok(new
-                {
-                    username = data["username"].ToString(),
-                    token = validatedUser
-                });
-            }
-            catch (Exception e)
+        //        return Ok(new
+        //        {
+        //            username = data["username"].ToString(),
+        //            token = validatedUser
+        //        });
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        return BadRequest(e.Message);
+        //    }
+        //}
+
+        [HttpPost]
+        public IActionResult Login([FromBody] LoginInputModel model)
+        {
+            var user = _userService.GetAllUsers().FirstOrDefault(u => u.Username == model.Username);
+
+            //Cheking if user exists
+            if (user == null)
+                return Unauthorized();
+
+            //Chek if pass is correct
+            if (!_authHelper.VerifyPasswordHash(model.Password, user.PasswordHash, user.PasswordSalt))
+                return Unauthorized();
+
+            //Authentication successfull
+            return Ok(new
             {
-                return BadRequest(e.Message);
-            }
+                username = user.Username,
+                token = _authHelper.GenerateToken(user)
+            });
         }
 
         // PUT api/<UserController>/5
