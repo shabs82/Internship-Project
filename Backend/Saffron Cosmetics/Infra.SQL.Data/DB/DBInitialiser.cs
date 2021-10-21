@@ -747,6 +747,8 @@ namespace Infra.SQL.Data.DB
             _userRepo.CreateUser(User);
             #endregion
 
+            ctx.SaveChanges();
+
         }
     }
 }
