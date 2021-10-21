@@ -65,6 +65,7 @@ namespace SafCos.WebApi.Controllers
         //    }
         //}
 
+        // POST api/token
         [HttpPost]
         public IActionResult Login([FromBody] LoginInputModel model)
         {
