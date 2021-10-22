@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "WsfXXEAwrxHmLHki6FydT1hUKmj7rg8yGV27SESdjBmbeS/qdBjQG+w/24yelJx/l9Q3KrsyldQJRpAv5hePHw==",
+  "dgSpecHash": "iTI/XVPQ7dgrv8BsUPsezYxHqWlIuu6lj1JtxNTBo4irHZdfKkprlcRj8dA69c1lzAlJD+ULcdIahBDkQV15tQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
+  "projectFilePath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\tiene\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
-    "C:\\Users\\tiene\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
-    "C:\\Users\\tiene\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.3\\fluentvalidation.dependencyinjectionextensions.10.3.3.nupkg.sha512",
-    "C:\\Users\\tiene\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
-    "C:\\Users\\tiene\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
-    "C:\\Users\\tiene\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.12.1\\microsoft.identitymodel.jsonwebtokens.6.12.1.nupkg.sha512",
-    "C:\\Users\\tiene\\.nuget\\packages\\microsoft.identitymodel.logging\\6.12.1\\microsoft.identitymodel.logging.6.12.1.nupkg.sha512",
-    "C:\\Users\\tiene\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.12.1\\microsoft.identitymodel.tokens.6.12.1.nupkg.sha512",
-    "C:\\Users\\tiene\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.12.1\\system.identitymodel.tokens.jwt.6.12.1.nupkg.sha512",
-    "C:\\Users\\tiene\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+    "C:\\Users\\dpank\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
+    "C:\\Users\\dpank\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
+    "C:\\Users\\dpank\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.3\\fluentvalidation.dependencyinjectionextensions.10.3.3.nupkg.sha512",
+    "C:\\Users\\dpank\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\dpank\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\dpank\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.12.1\\microsoft.identitymodel.jsonwebtokens.6.12.1.nupkg.sha512",
+    "C:\\Users\\dpank\\.nuget\\packages\\microsoft.identitymodel.logging\\6.12.1\\microsoft.identitymodel.logging.6.12.1.nupkg.sha512",
+    "C:\\Users\\dpank\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.12.1\\microsoft.identitymodel.tokens.6.12.1.nupkg.sha512",
+    "C:\\Users\\dpank\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.12.1\\system.identitymodel.tokens.jwt.6.12.1.nupkg.sha512",
+    "C:\\Users\\dpank\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

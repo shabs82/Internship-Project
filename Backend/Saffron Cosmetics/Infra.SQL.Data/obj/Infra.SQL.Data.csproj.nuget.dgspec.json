@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj": {}
+    "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj": {
+    "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj",
+        "projectUniqueName": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj",
         "projectName": "Infra.SQL.Data",
-        "projectPath": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj",
-        "packagesPath": "C:\\Users\\tiene\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\obj\\",
+        "projectPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\Infra.SQL.Data.csproj",
+        "packagesPath": "C:\\Users\\dpank\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\Infra.SQL.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tiene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dpank\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj": {
-                "projectPath": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj"
+              "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj": {
+                "projectPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj"
               },
-              "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj": {
-                "projectPath": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj"
+              "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj": {
+                "projectPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj"
               }
             }
           }
@@ -91,28 +91,25 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj": {
+    "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj",
         "projectName": "SafCos.Core.Entities",
-        "projectPath": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj",
-        "packagesPath": "C:\\Users\\tiene\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\obj\\",
+        "projectPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj",
+        "packagesPath": "C:\\Users\\dpank\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tiene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dpank\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -152,21 +149,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj": {
+    "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
+        "projectUniqueName": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
         "projectName": "SafCos.Core",
-        "projectPath": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
-        "packagesPath": "C:\\Users\\tiene\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\obj\\",
+        "projectPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\SafCos.Core.csproj",
+        "packagesPath": "C:\\Users\\dpank\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCosCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tiene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dpank\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -180,8 +177,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj": {
-                "projectPath": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj"
+              "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj": {
+                "projectPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.Core.Entities\\SafCos.Core.Entities.csproj"
               }
             }
           }
@@ -216,14 +213,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

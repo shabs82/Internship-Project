@@ -17,13 +17,12 @@ namespace SafCos.WebApi.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
-        private IAuthenticationHelper _authHelper;
 
-        public UserController(IUserService userService, IAuthenticationHelper authenticationHelper)
+        public UserController(IUserService userService)
         {
             _userService = userService;
-            _authHelper = authenticationHelper;
         }
+
         // GET: api/<UserController>
         [HttpGet]
         public ActionResult<IEnumerable<User>> Get()
@@ -34,69 +33,71 @@ namespace SafCos.WebApi.Controllers
 
         // GET api/<UserController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult<User> Get(int id)
         {
-            return "value";
+            try
+            {
+                if (_userService.GetAllUsers() != null)
+                {
+                    return Ok(_userService.FindUserById(id));
+                }
+                return NotFound();
+            }
+            catch (System.Exception)
+            {
+                return BadRequest();
+            }
         }
 
         // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult<User> Post([FromBody] User user)
         {
-        }
-
-        //[HttpPost]
-        //public IActionResult Login([FromBody] JObject data)
-        //{
-        //    try
-        //    {
-        //        //Tuple is used because it's easier to pair with JSON Data (JObject data), allowing us to retrieve both username and password inputs.
-        //        var validatedUser = _userService.ValidateUser(new Tuple<string, string>(data["username"].ToString(), data["password"].ToString()));
-
-        //        return Ok(new
-        //        {
-        //            username = data["username"].ToString(),
-        //            token = validatedUser
-        //        });
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return BadRequest(e.Message);
-        //    }
-        //}
-
-        // POST api/user/token
-        [HttpPost]
-        public IActionResult Login([FromBody] LoginInputModel model)
-        {
-            var user = _userService.GetAllUsers().FirstOrDefault(u => u.Username == model.Username);
-
-            //Cheking if user exists
-            if (user == null)
-                return Unauthorized();
-
-            //Checks if pass is correct
-            if (!_authHelper.VerifyPasswordHash(model.Password, user.PasswordHash, user.PasswordSalt))
-                return Unauthorized();
-
-            //Authentication successfull
-            return Ok(new
+            try
             {
-                username = user.Username,
-                token = _authHelper.GenerateToken(user)
-            });
+                return Ok(_userService.CreateUser(user));
+            }
+            catch (System.Exception)
+            {
+                return BadRequest();
+            }
         }
 
         // PUT api/<UserController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public ActionResult<User> Put(int id, [FromBody] User user)
         {
+            try
+            {
+                if (id < 1 || user.UserId != id)
+                {
+                    return BadRequest("Please enter correct id. Id must be bigger than 0");
+                }
+                return Ok(_userService.UpdateUser(user));
+            }
+            catch (System.Exception)
+            {
+                return BadRequest();
+            }
         }
 
         // DELETE api/<UserController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult<User> Delete(int id)
         {
+            try
+            {
+                if (id < 1)
+                {
+                    return BadRequest("Please enter correct id. Id must be bigger than 0");
+                }
+                _userService.DeleteUser(id);
+                return Ok("User with id:" + id + " successfully deleted");
+            }
+            catch (System.Exception)
+            {
+                return BadRequest();
+            }
         }
     }
 }

@@ -287,3 +287,4 @@ C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backen
 C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\WebApplication1\obj\Debug\net5.0\ref\SafCos.WebApi.dll
 C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\WebApplication1\obj\Debug\net5.0\SafCos.WebApi.pdb
 C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\WebApplication1\obj\Debug\net5.0\SafCos.WebApi.genruntimeconfig.cache
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\WebApplication1\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

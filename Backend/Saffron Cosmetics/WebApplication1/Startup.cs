@@ -48,7 +48,7 @@ namespace WebApplication1
             var loggerFactory = LoggerFactory.Create(builder => { builder.AddConsole(); });
             if (Environment.IsDevelopment())
             {
-                #region DB Settings
+            #region DB Settings
                 services.AddDbContext<SafCosmeticsContext>(
                     opt =>
                     {
