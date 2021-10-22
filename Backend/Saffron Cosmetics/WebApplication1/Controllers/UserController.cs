@@ -65,7 +65,7 @@ namespace SafCos.WebApi.Controllers
         //    }
         //}
 
-        // POST api/token
+        // POST api/user/token
         [HttpPost]
         public IActionResult Login([FromBody] LoginInputModel model)
         {
@@ -75,7 +75,7 @@ namespace SafCos.WebApi.Controllers
             if (user == null)
                 return Unauthorized();
 
-            //Chek if pass is correct
+            //Checks if pass is correct
             if (!_authHelper.VerifyPasswordHash(model.Password, user.PasswordHash, user.PasswordSalt))
                 return Unauthorized();
 

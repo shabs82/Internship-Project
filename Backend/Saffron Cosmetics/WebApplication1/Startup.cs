@@ -117,13 +117,11 @@ namespace WebApplication1
 
             #endregion
             #region CORS
-            services.AddCors(options =>
-               options.AddDefaultPolicy(
-                 builder =>
-                 {
-                     builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
-                 })
-            );
+           
+            services.AddCors(options => options.AddPolicy("AllowEverything", builder => builder.AllowAnyOrigin()
+                                                                                               .AllowAnyMethod()
+                                                                                               .AllowAnyHeader()));
+            
             #endregion
             #region Swagger
             services.AddSwaggerGen(c =>
