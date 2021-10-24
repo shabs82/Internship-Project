@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\SafCos.UnitTest.csproj": {}
+    "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\SafCos.UnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\SafCos.UnitTest.csproj": {
+    "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\SafCos.UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\SafCos.UnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\SafCos.UnitTest.csproj",
         "projectName": "SafCos.UnitTest",
-        "projectPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\SafCos.UnitTest.csproj",
-        "packagesPath": "C:\\Users\\dpank\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dpank\\Documents\\GitHub\\INTERNSHIP\\Backend\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\obj\\",
+        "projectPath": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\SafCos.UnitTest.csproj",
+        "packagesPath": "C:\\Users\\tiene\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tiene\\Desktop\\5.Semester - Internship Project\\Internship-Project\\Backend\\Saffron Cosmetics\\SafCos.UnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dpank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tiene\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
