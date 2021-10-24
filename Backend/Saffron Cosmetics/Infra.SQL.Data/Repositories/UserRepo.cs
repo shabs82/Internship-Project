@@ -1,4 +1,5 @@
-﻿using SafCos.Core.AppService.Validators;
+﻿using Microsoft.EntityFrameworkCore;
+using SafCos.Core.AppService.Validators;
 using SafCos.Core.DomainService;
 using SafCos.Core.Entities;
 using System;
@@ -21,12 +22,16 @@ namespace Infra.SQL.Data.Repositories
         }
         public User CreateUser(User user)
         {
-            throw new NotImplementedException();
+            _safCosmeticsCtx.Attach(user).State = EntityState.Added;
+            _safCosmeticsCtx.SaveChanges();
+            return user;
         }
 
         public User DeleteUser(int id)
         {
-            throw new NotImplementedException();
+            var user = _safCosmeticsCtx.Remove(new User() { UserId = id });
+            _safCosmeticsCtx.SaveChanges();
+            return user.Entity;
         }
 
         public IEnumerable<User> ReadAllUsers()
@@ -36,12 +41,14 @@ namespace Infra.SQL.Data.Repositories
 
         public User ReadById(int id)
         {
-            throw new NotImplementedException();
+            return _safCosmeticsCtx.Users.FirstOrDefault(user => user.UserId == id);
         }
 
         public User UpdateUser(User userUpdate)
         {
-            throw new NotImplementedException();
+            _safCosmeticsCtx.Attach(userUpdate).State = EntityState.Modified;
+            _safCosmeticsCtx.SaveChanges();
+            return userUpdate;
         }
     }
 }
