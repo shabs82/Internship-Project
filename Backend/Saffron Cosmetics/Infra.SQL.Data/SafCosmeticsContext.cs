@@ -25,6 +25,7 @@ namespace Infra.SQL.Data
 
         public DbSet<User> Users { get; set; }
 
+        
         public void OnModelCreating(ModelBuilder modelBuilder)
         {
             #region SecondaryCategory relation with Primary

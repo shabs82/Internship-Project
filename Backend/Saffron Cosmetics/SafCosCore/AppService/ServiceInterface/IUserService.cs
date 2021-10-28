@@ -9,7 +9,7 @@ namespace SafCos.Core.AppService.ServiceInterface
 {
    public interface IUserService
     {
-        User CreateUser(User createdUser);
+        User CreateUser(LoginInputModel createdUser);
 
         User FindUserById(int id);
         IEnumerable<User> GetAllUsers();

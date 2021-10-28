@@ -2,6 +2,7 @@
 using SafCos.Core.AppService.Validators;
 using SafCos.Core.DomainService;
 using SafCos.Core.Entities;
+using SafCos.Core.Helper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,16 +15,29 @@ namespace SafCos.Core.AppService.Service
     {
         private readonly IUserRepo _userRepo ;
         private readonly UserValidator _userValidator;
+        private readonly IAuthenticationHelper _authenticationHelper;
 
-        public UserService(IUserRepo userRepo , UserValidator userValidator)
+        public UserService(IUserRepo userRepo , UserValidator userValidator, IAuthenticationHelper authentication)
         {
             _userRepo = userRepo;
             _userValidator = userValidator;
+            _authenticationHelper = authentication;
 
         }
-        public User CreateUser(User createdUser)
+
+        User IUserService.CreateUser(LoginInputModel createdUser)
         {
-            return _userRepo.CreateUser(createdUser);
+            byte[] passwordNewUserHash, passwordNewUserSalt;
+            _authenticationHelper.CreatePasswordHash(createdUser.Password, out passwordNewUserHash, out passwordNewUserSalt);
+            // hash password
+            var User = new User()
+            {
+                Username = createdUser.Username,
+                PasswordHash = passwordNewUserHash,
+                PasswordSalt = passwordNewUserSalt,
+                IsAdmin = false
+            };
+            return _userRepo.CreateUser(User);
         }
 
         public User DeleteUser(int id)
@@ -55,5 +69,7 @@ namespace SafCos.Core.AppService.Service
         {
             throw new NotImplementedException();
         }
+
+        
     }
 }

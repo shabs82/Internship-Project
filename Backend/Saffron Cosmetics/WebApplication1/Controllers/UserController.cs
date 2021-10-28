@@ -3,9 +3,11 @@ using Newtonsoft.Json.Linq;
 using SafCos.Core.AppService.ServiceInterface;
 using SafCos.Core.Entities;
 using SafCos.Core.Helper;
+using SafCos.WebApi.DTOs.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -51,16 +53,26 @@ namespace SafCos.WebApi.Controllers
 
         // POST api/<UserController>
         [HttpPost]
-        public ActionResult<User> Post([FromBody] User user)
+        public ActionResult<User> Post([FromBody] DTOs.Users.UserDTO userDto)
         {
-            try
+            var newUser = new LoginInputModel()
             {
-                return Ok(_userService.CreateUser(user));
-            }
-            catch (System.Exception e)
-            {
-                return BadRequest();
-            }
+                Username = userDto.Email,
+                Password = userDto.Password
+            };
+            var newuser = _userService.CreateUser(newUser);
+            
+
+            return Ok();
+
+            //try
+            //{
+            //    return Ok(_userService.CreateUser(user));
+            //}
+            //catch (System.Exception e)
+            //{
+            //    return BadRequest();
+            //}
         }
 
         // PUT api/<UserController>/5
