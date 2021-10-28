@@ -57,7 +57,7 @@ namespace SafCos.WebApi.Controllers
             {
                 return Ok(_userService.CreateUser(user));
             }
-            catch (System.Exception)
+            catch (System.Exception e)
             {
                 return BadRequest();
             }
