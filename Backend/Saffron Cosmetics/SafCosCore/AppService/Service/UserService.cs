@@ -35,8 +35,9 @@ namespace SafCos.Core.AppService.Service
                 Username = createdUser.Username,
                 PasswordHash = passwordNewUserHash,
                 PasswordSalt = passwordNewUserSalt,
-                IsAdmin = false
+                IsAdmin = false,
             };
+            _authenticationHelper.GenerateToken(User);
             return _userRepo.CreateUser(User);
         }
 
