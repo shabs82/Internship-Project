@@ -8,12 +8,14 @@ namespace SafCos.Core.AppService.ServiceInterface
 {
    public interface ISecondaryCategoryService
     {
+        IEnumerable<Product> GetProductsBySecondaryCategoryId(int id);
+
+
+
         SecondaryCategory CreateSecClass(SecondaryCategory secondaryClassifier);
-        SecondaryCategory ReadSecClass(int id);
         List<SecondaryCategory> ReadAllSecClass();
         SecondaryCategory UpdateSecClass(int id);
         SecondaryCategory DeleteSecClass(int id);
-
-
+        
     }
 }

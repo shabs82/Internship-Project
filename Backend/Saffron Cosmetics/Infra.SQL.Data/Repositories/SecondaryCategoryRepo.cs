@@ -1,4 +1,6 @@
-﻿using SafCos.Core.DomainService;
+﻿using Microsoft.EntityFrameworkCore;
+using SafCos.Core.DomainService;
+using SafCos.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +15,12 @@ namespace Infra.SQL.Data.Repositories
 
         public SecondaryCategoryRepo(SafCosmeticsContext ctx)
         {
-            ctx = _ctx;
+            _ctx = ctx;
+        }
 
+        public IEnumerable<Product> GetProductsBySecondaryCategoryId(int id)
+        {
+            return _ctx.Products.Where(p => p.SecondaryCategoryId == id).Include(p => p.Gender).Include(p => p.Brand).Include(p => p.SecondaryCategory);
         }
     }
 }
