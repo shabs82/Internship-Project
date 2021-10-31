@@ -1,4 +1,5 @@
 ﻿using SafCos.Core.AppService.ServiceInterface;
+using SafCos.Core.DomainService;
 using SafCos.Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,21 @@ namespace SafCos.Core.AppService.Service
 {
     public class SecondaryCategoryService : ISecondaryCategoryService
     {
+        private readonly ISecondaryCategoryRepo _secondaryCategoryRepo;
+
+        public SecondaryCategoryService(ISecondaryCategoryRepo secondaryCategoryRepository)
+        {
+            _secondaryCategoryRepo = secondaryCategoryRepository ?? throw new NullReferenceException("Repository cannot be null");
+        }
+        public IEnumerable<Product> GetProductsBySecondaryCategoryId(int id)
+        {
+            return _secondaryCategoryRepo.GetProductsBySecondaryCategoryId(id);
+        }
+
+
+
+
+
         public SecondaryCategory CreateSecClass(SecondaryCategory secondaryClassifier)
         {
             throw new NotImplementedException();
@@ -21,11 +37,6 @@ namespace SafCos.Core.AppService.Service
         }
 
         public List<SecondaryCategory> ReadAllSecClass()
-        {
-            throw new NotImplementedException();
-        }
-
-        public SecondaryCategory ReadSecClass(int id)
         {
             throw new NotImplementedException();
         }

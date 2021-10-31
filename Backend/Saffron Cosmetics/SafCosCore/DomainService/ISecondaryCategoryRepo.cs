@@ -6,7 +6,8 @@ using SafCos.Core.Entities;
 
 namespace SafCos.Core.DomainService
 {
-   public interface ISecondaryCategoryRepo
+    public interface ISecondaryCategoryRepo
     {
+        IEnumerable<Product> GetProductsBySecondaryCategoryId(int id);
     }
 }
