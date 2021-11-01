@@ -199,3 +199,39 @@ Version.h
 Version.cpp
 
 Backend/Saffron Cosmetics/.vs/Saffron Cosmetics/v16/.suo
+Backend/Saffron Cosmetics/Infra.SQL.Data/obj/Debug/net5.0/Infra.SQL.Data.assets.cache
+Backend/Saffron Cosmetics/Infra.SQL.Data/obj/Debug/net5.0/Infra.SQL.Data.csprojAssemblyReference.cache
+Backend/Saffron Cosmetics/Infra.SQL.Data/obj/Debug/net5.0/Infra.SQL.Data.GeneratedMSBuildEditorConfig.editorconfig
+Backend/Saffron Cosmetics/Infra.SQL.Data/obj/Infra.SQL.Data.csproj.nuget.dgspec.json
+Backend/Saffron Cosmetics/Infra.SQL.Data/obj/Infra.SQL.Data.csproj.nuget.g.props
+Backend/Saffron Cosmetics/Infra.SQL.Data/obj/Infra.SQL.Data.csproj.nuget.g.targets
+Backend/Saffron Cosmetics/Infra.SQL.Data/obj/project.assets.json
+Backend/Saffron Cosmetics/Infra.SQL.Data/obj/project.nuget.cache
+Backend/Saffron Cosmetics/SafCos.Core.Entities/obj/Debug/net5.0/SafCos.Core.Entities.assets.cache
+Backend/Saffron Cosmetics/SafCos.Core.Entities/obj/Debug/net5.0/SafCos.Core.Entities.csprojAssemblyReference.cache
+Backend/Saffron Cosmetics/SafCos.Core.Entities/obj/Debug/net5.0/SafCos.Core.Entities.GeneratedMSBuildEditorConfig.editorconfig
+Backend/Saffron Cosmetics/SafCos.Core.Entities/obj/project.assets.json
+Backend/Saffron Cosmetics/SafCos.Core.Entities/obj/project.nuget.cache
+Backend/Saffron Cosmetics/SafCos.Core.Entities/obj/SafCos.Core.Entities.csproj.nuget.dgspec.json
+Backend/Saffron Cosmetics/SafCos.Core.Entities/obj/SafCos.Core.Entities.csproj.nuget.g.props
+Backend/Saffron Cosmetics/SafCos.UnitTest/obj/Debug/net5.0/SafCos.UnitTest.assets.cache
+Backend/Saffron Cosmetics/SafCos.UnitTest/obj/Debug/net5.0/SafCos.UnitTest.csprojAssemblyReference.cache
+Backend/Saffron Cosmetics/SafCos.UnitTest/obj/Debug/net5.0/SafCos.UnitTest.GeneratedMSBuildEditorConfig.editorconfig
+Backend/Saffron Cosmetics/SafCos.UnitTest/obj/project.assets.json
+Backend/Saffron Cosmetics/SafCos.UnitTest/obj/project.nuget.cache
+Backend/Saffron Cosmetics/SafCos.UnitTest/obj/SafCos.UnitTest.csproj.nuget.dgspec.json
+Backend/Saffron Cosmetics/SafCos.UnitTest/obj/SafCos.UnitTest.csproj.nuget.g.props
+Backend/Saffron Cosmetics/SafCosCore/obj/Debug/net5.0/SafCos.Core.assets.cache
+Backend/Saffron Cosmetics/SafCosCore/obj/Debug/net5.0/SafCos.Core.csprojAssemblyReference.cache
+Backend/Saffron Cosmetics/SafCosCore/obj/Debug/net5.0/SafCos.Core.GeneratedMSBuildEditorConfig.editorconfig
+Backend/Saffron Cosmetics/SafCosCore/obj/project.assets.json
+Backend/Saffron Cosmetics/SafCosCore/obj/project.nuget.cache
+Backend/Saffron Cosmetics/SafCosCore/obj/SafCos.Core.csproj.nuget.dgspec.json
+Backend/Saffron Cosmetics/SafCosCore/obj/SafCos.Core.csproj.nuget.g.props
+Backend/Saffron Cosmetics/WebApplication1/obj/Debug/net5.0/SafCos.WebApi.assets.cache
+Backend/Saffron Cosmetics/WebApplication1/obj/Debug/net5.0/SafCos.WebApi.csprojAssemblyReference.cache
+Backend/Saffron Cosmetics/WebApplication1/obj/Debug/net5.0/SafCos.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+Backend/Saffron Cosmetics/WebApplication1/obj/project.assets.json
+Backend/Saffron Cosmetics/WebApplication1/obj/project.nuget.cache
+Backend/Saffron Cosmetics/WebApplication1/obj/SafCos.WebApi.csproj.nuget.dgspec.json
+Backend/Saffron Cosmetics/WebApplication1/obj/SafCos.WebApi.csproj.nuget.g.props
