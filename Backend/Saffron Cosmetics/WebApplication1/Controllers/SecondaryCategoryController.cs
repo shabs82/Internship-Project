@@ -10,6 +10,7 @@ using SafCos.Core.Entities;
 
 namespace SafCos.WebApi.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class SecondaryCategoryController : ControllerBase
