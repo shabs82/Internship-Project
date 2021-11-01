@@ -1,3 +1,5 @@
+
+*.cache
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
 
 # Created by https://www.gitignore.io/api/linux,visualstudiocode,node,webstorm
@@ -195,3 +197,4 @@ TestResult.xml
 Version.cs
 Version.h
 Version.cpp
+
