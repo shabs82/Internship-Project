@@ -11,7 +11,6 @@ C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Sa
 C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCosCore\bin\Debug\net5.0\SafCos.Core.pdb
 C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCosCore\bin\Debug\net5.0\SafCos.Core.Entities.dll
 C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCosCore\bin\Debug\net5.0\SafCos.Core.Entities.pdb
-C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCosCore\obj\Debug\net5.0\SafCos.Core.csprojAssemblyReference.cache
 C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCosCore\obj\Debug\net5.0\SafCos.Core.csproj.CopyComplete
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCosCore\bin\Debug\net5.0\SafCos.Core.deps.json
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCosCore\bin\Debug\net5.0\SafCos.Core.dll
@@ -43,3 +42,4 @@ C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backen
 C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCosCore\obj\Debug\net5.0\SafCos.Core.dll
 C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCosCore\obj\Debug\net5.0\ref\SafCos.Core.dll
 C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCosCore\obj\Debug\net5.0\SafCos.Core.pdb
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCosCore\obj\Debug\net5.0\SafCos.Core.csproj.AssemblyReference.cache

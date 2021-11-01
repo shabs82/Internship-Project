@@ -9,7 +9,6 @@ C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Sa
 C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.dll
 C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\ref\SafCos.Core.Entities.dll
 C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.pdb
-C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.csprojAssemblyReference.cache
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\bin\Debug\net5.0\SafCos.Core.Entities.deps.json
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\bin\Debug\net5.0\SafCos.Core.Entities.dll
 C:\Users\kulsoom-Abbas\source\Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\bin\Debug\net5.0\ref\SafCos.Core.Entities.dll
@@ -34,3 +33,4 @@ C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backen
 C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.dll
 C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\ref\SafCos.Core.Entities.dll
 C:\Users\tiene\Desktop\5.Semester - Internship Project\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.pdb
+C:\Users\dpank\Documents\GitHub\INTERNSHIP\Backend\Internship-Project\Backend\Saffron Cosmetics\SafCos.Core.Entities\obj\Debug\net5.0\SafCos.Core.Entities.csproj.AssemblyReference.cache
