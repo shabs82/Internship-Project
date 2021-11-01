@@ -21,7 +21,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.SQL.Data", "Infra.SQL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafCos.UnitTest", "SafCos.UnitTest\SafCos.UnitTest.csproj", "{93E6DCA5-DC71-4994-8206-57B342E7C32E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafCos.WebApi", "WebApplication1\SafCos.WebApi.csproj", "{74563B21-ACC2-4E3C-B1A8-DFABCA4A79C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafCos.WebApi", "WebApplication1\SafCos.WebApi.csproj", "{74563B21-ACC2-4E3C-B1A8-DFABCA4A79C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CBB1FE24-9BA9-4026-8926-637F09AEAFED}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
