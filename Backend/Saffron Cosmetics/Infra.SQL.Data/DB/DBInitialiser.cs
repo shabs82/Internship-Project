@@ -363,34 +363,34 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
-            //Product product4ep = ctx.Products.Add(new Product()
-            //{
-            //    SecondaryCategoryId = secClass1.Id,
-            //    ProductCode = "102",
-            //    Name = "Saffron Eye Brow Pencil – Brown",
-            //    Price = 1.99,
-            //    BrandId = brand2.Id,
-            //    Availability = 72,
-            //    SkuCode = "5055339900656",
-            //    Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
-            //                  "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
-            //                  "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
+            Product product4ep = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = secClass1.Id,
+                ProductCode = "102",
+                Name = "Saffron Eye Brow Pencil – Brown",
+                Price = 1.99,
+                BrandId = brand2.Id,
+                Availability = 72,
+                SkuCode = "5055339900656",
+                Description = "Bring out the shape of your face with the Saffron Eyebrow Pencil. " +
+                              "This eyebrow pencil gives a well defined and groomed shape to your eyebrows which help enhance your look. " +
+                              "Get perfectly accentuated eyebrows with Saffron eyebrow pencil. It's easy to use, easy to sharpen.",
 
-            //}).Entity;
+            }).Entity;
 
-            //Product product5ep = ctx.Products.Add(new Product()
-            //{
-            //    SecondaryCategoryId = 1,
-            //    ProductCode = "113",
-            //    Name = "Saffron Eye Liner Pencil – Golden Chrome",
-            //    Price = 1.99,
-            //    BrandId = 7,
-            //    Availability = 63,
-            //    SkuCode = "#5055339901042",
-            //    Description = "Saffron Kohl pencil with smooth texture glides on easily for precise lines or Smokey looks. " +
-            //                  "Rich in pigments for amazing eye intensity.",
+            Product product5ep = ctx.Products.Add(new Product()
+            {
+                SecondaryCategoryId = secClass1.Id,
+                ProductCode = "113",
+                Name = "Saffron Eye Liner Pencil – Golden Chrome",
+                Price = 1.99,
+                BrandId = brand2.Id,
+                Availability = 63,
+                SkuCode = "#5055339901042",
+                Description = "Saffron Kohl pencil with smooth texture glides on easily for precise lines or Smokey looks. " +
+                              "Rich in pigments for amazing eye intensity.",
 
-            //}).Entity;
+            }).Entity;
 
             //Product product6ep = ctx.Products.Add(new Product()
             //{
