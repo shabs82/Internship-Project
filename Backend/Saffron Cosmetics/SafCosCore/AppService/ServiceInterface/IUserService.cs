@@ -21,6 +21,6 @@ namespace SafCos.Core.AppService.ServiceInterface
 
         
         User ValidateUser(LoginInputModel loginInputModel);
-        String ValidateUser(Tuple<string, string> tuple);
+        //String ValidateUser(Tuple<string, string> tuple);
     }
 }
