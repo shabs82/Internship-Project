@@ -16,13 +16,14 @@ namespace SafCos.Core.AppService.Service
         private readonly IUserRepo _userRepo ;
         private readonly UserValidator _userValidator;
         private readonly IAuthenticationHelper _authenticationHelper;
+        private readonly IValidator<LoginInputModel> _loginValidator;
 
-        public UserService(IUserRepo userRepo , UserValidator userValidator, IAuthenticationHelper authentication)
+        public UserService(IUserRepo userRepo , UserValidator userValidator, IAuthenticationHelper authentication, IValidator<LoginInputModel> loginValidator)
         {
             _userRepo = userRepo;
             _userValidator = userValidator;
             _authenticationHelper = authentication;
-
+            _loginValidator = loginValidator;
         }
 
         User IUserService.CreateUser(LoginInputModel createdUser)
@@ -60,10 +61,22 @@ namespace SafCos.Core.AppService.Service
         {
             return _userRepo.UpdateUser(userUpdate);
         }
-
-        public User ValidateUser(LoginInputModel loginInputModel)
+        public User FindUserByUsername(string username) 
         {
-            throw new NotImplementedException();
+            var user = _userRepo.ReadByUsername(username);
+
+            if (user == null) throw new ArgumentException("This username does not exist");
+            return user;
+        }
+
+        public string ValidateUser(LoginInputModel loginInputModel)
+        {
+            _loginValidator.DefaultValidation(loginInputModel);
+            var user = FindUserByUsername(loginInputModel.Username);
+
+            if (!_authenticationHelper.VerifyPasswordHash(loginInputModel.Password, user.PasswordHash, user.PasswordSalt))
+                throw new ArgumentException("This is not a valid password");
+            return _authenticationHelper.GenerateToken(user);
         }
 
      

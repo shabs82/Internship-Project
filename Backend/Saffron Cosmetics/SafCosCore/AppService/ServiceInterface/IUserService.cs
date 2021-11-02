@@ -9,6 +9,7 @@ namespace SafCos.Core.AppService.ServiceInterface
 {
    public interface IUserService
     {
+
         User CreateUser(LoginInputModel createdUser);
 
         User FindUserById(int id);
@@ -19,8 +20,10 @@ namespace SafCos.Core.AppService.ServiceInterface
        
         User DeleteUser(int id);
 
-        
-        User ValidateUser(LoginInputModel loginInputModel);
+        User FindUserByUsername(string username);
+
+        string ValidateUser(LoginInputModel loginInputModel);
+
         
     }
 }
