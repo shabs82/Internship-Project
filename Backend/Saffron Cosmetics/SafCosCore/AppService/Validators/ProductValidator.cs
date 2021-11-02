@@ -18,9 +18,9 @@ namespace SafCos.Core.AppService.Validators
             RuleFor(p => p.SecondaryCategoryId).NotEmpty().WithMessage("check relationship with primary category");
             RuleFor(p => p.BrandId).NotNull().WithMessage("Invalid Brand");
             RuleFor(p => p.Description).NotEmpty().WithMessage("Describe a product");
-            RuleFor(p => p.Price).NotNull();
+            RuleFor(p => p.Price).NotNull().WithMessage("enter a valid amount");
             RuleFor(p => p.SkuCode).NotNull().WithMessage("sku code is the barcode");
-            RuleFor(p => p.Availability).NotEmpty().WithErrorCode("not found");
+            RuleFor(p => p.Availability).NotEmpty().WithErrorCode("not in stock");
         }
 
 
