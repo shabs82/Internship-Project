@@ -22,7 +22,7 @@ namespace SafCos.Core.AppService.ServiceInterface
 
         User FindUserByUsername(string username);
 
-        string ValidateUser(LoginInputModel loginInputModel);
+        //string ValidateUser(LoginInputModel loginInputModel);
 
         
     }

@@ -102,6 +102,7 @@ namespace WebApplication1
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepo, UserRepo>();
             services.AddScoped<UserValidator>();
+            
 
 
             services.AddTransient<IDBInitialiser, DBInitialiser>();
