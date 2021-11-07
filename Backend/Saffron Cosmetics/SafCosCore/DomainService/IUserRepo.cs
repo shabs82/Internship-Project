@@ -20,5 +20,6 @@ namespace SafCos.Core.DomainService
 
         // Delete User
         User DeleteUser(int id);
+        User ReadByUsername(string username);
     }
 }

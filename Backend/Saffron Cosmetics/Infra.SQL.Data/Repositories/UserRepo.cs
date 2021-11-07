@@ -44,6 +44,11 @@ namespace Infra.SQL.Data.Repositories
             return _safCosmeticsCtx.Users.FirstOrDefault(user => user.UserId == id);
         }
 
+        public User ReadByUsername(string username)
+        {
+            return _safCosmeticsCtx.Users.ToList().FirstOrDefault(user => user.Username == username);
+        }
+
         public User UpdateUser(User userUpdate)
         {
             _safCosmeticsCtx.Attach(userUpdate).State = EntityState.Modified;
