@@ -40,6 +40,7 @@ namespace SafCos.Core.AppService.Service
             {
                 throw new NullReferenceException("Invalid ID");
             }
+
             return _productRepo.GetProductById(id);
         }
         public Product UpdateProduct(Product prodToUpdate)
