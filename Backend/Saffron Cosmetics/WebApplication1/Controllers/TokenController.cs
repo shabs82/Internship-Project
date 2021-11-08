@@ -38,6 +38,7 @@ namespace SafCos.WebApi.Controllers
             //Authentication successfull
             return Ok(new
             {
+                id = user.UserId,
                 username = user.Username,
                 token = _authHelper.GenerateToken(user)
             });
