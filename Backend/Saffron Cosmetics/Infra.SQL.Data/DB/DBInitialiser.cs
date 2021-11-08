@@ -121,12 +121,6 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
-            SecondaryCategory secClass9 = ctx.SecondaryCategories.Add(new SecondaryCategory()
-            {
-                Name = "EyePencil",
-                PrimaryCategoryId = 1
-
-            }).Entity;
 
             SecondaryCategory secClass10 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
@@ -208,7 +202,7 @@ namespace Infra.SQL.Data.DB
             SecondaryCategory secClass21 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
                 Name = "Highlighters / Bronzing",
-                PrimaryCategoryId = 1
+                PrimaryCategoryId = 4
 
             }).Entity;
 
