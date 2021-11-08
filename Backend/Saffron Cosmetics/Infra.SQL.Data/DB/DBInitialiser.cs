@@ -319,6 +319,7 @@ namespace Infra.SQL.Data.DB
 
             Product product1ep = ctx.Products.Add(new Product()
             {
+                Id = 1,
                 SecondaryCategoryId = secClass1.Id,
                 ProductCode = "120",
                 Name = "Saffron 2in1 Black & White Pencil",
@@ -335,6 +336,7 @@ namespace Infra.SQL.Data.DB
 
             Product product2ep = ctx.Products.Add(new Product()
             {
+                Id = 2,
                 SecondaryCategoryId = secClass1.Id,
                 ProductCode = " 101",
                 Name = " Saffron Eye Brow Pencil-Black",
@@ -351,6 +353,7 @@ namespace Infra.SQL.Data.DB
 
             Product product3ep = ctx.Products.Add(new Product()
             {
+                Id = 3 ,
                 SecondaryCategoryId = secClass1.Id,
                 ProductCode = "104",
                 Name = "Saffron Eye Brow Pencil–Blonde",
@@ -367,6 +370,7 @@ namespace Infra.SQL.Data.DB
 
             Product product4ep = ctx.Products.Add(new Product()
             {
+                Id = 4,
                 SecondaryCategoryId = secClass1.Id,
                 ProductCode = "102",
                 Name = "Saffron Eye Brow Pencil – Brown",
@@ -383,6 +387,7 @@ namespace Infra.SQL.Data.DB
 
             Product product5ep = ctx.Products.Add(new Product()
             {
+                Id = 5,
                 SecondaryCategoryId = secClass1.Id,
                 ProductCode = "113",
                 Name = "Saffron Eye Liner Pencil – Golden Chrome",
@@ -398,6 +403,7 @@ namespace Infra.SQL.Data.DB
 
             Product product6ep = ctx.Products.Add(new Product()
             {
+                Id = 6,
                 SecondaryCategoryId = secClass1.Id,
                 ProductCode = "207",
                 Name = "Saffron Glitter Makeup Pencil Black",
@@ -415,6 +421,7 @@ namespace Infra.SQL.Data.DB
 
             Product product7ep = ctx.Products.Add(new Product()
             {
+                Id = 7,
                 SecondaryCategoryId = secClass1.Id,
                 ProductCode = "208",
                 Name = "Saffron Glitter Makeup Pencil Blue",
@@ -433,6 +440,7 @@ namespace Infra.SQL.Data.DB
 
             Product product8ep = ctx.Products.Add(new Product()
             {
+                Id = 8,
                 SecondaryCategoryId = secClass1.Id,
                 ProductCode = "209",
                 Name = "Saffron Glitter Makeup Pencil Silver",
@@ -452,6 +460,7 @@ namespace Infra.SQL.Data.DB
 
             Product product9ep = ctx.Products.Add(new Product()
             {
+                Id = 9,
                 SecondaryCategoryId = secClass1.Id,
                 ProductCode = "210",
                 Name = "Saffron Glitter Makeup Pencil Gold",
@@ -471,6 +480,7 @@ namespace Infra.SQL.Data.DB
 
             Product product10ep = ctx.Products.Add(new Product()
             {
+                Id = 10,
                 SecondaryCategoryId = secClass1.Id,
                 ProductCode = "211",
                 Name = "Saffron Glitter Makeup Pencil Green",
@@ -492,6 +502,7 @@ namespace Infra.SQL.Data.DB
 
             Product productMs1 = ctx.Products.Add(new Product()
             {
+                Id = 11,
                 SecondaryCategoryId = secClass2.Id,
                 ProductCode = "5620",
                 Name = "Saffron Brow Mascara Black",
@@ -511,6 +522,7 @@ namespace Infra.SQL.Data.DB
 
             Product productMs2 = ctx.Products.Add(new Product()
             {
+                Id = 12,
                 SecondaryCategoryId = secClass2.Id,
                 ProductCode = "5620",
                 Name = "Saffron Brow Mascara Brown",
@@ -530,6 +542,7 @@ namespace Infra.SQL.Data.DB
 
             Product productMs3 = ctx.Products.Add(new Product()
             {
+                Id = 13,
                 SecondaryCategoryId = secClass2.Id,
                 ProductCode = "5620",
                 Name = "Saffron Brow Mascara Blonde",
@@ -549,6 +562,7 @@ namespace Infra.SQL.Data.DB
 
             Product productMs4 = ctx.Products.Add(new Product()
             {
+                Id = 14,
                 SecondaryCategoryId = secClass2.Id,
                 ProductCode = "5554",
                 Name = "Saffron Long Lash Mascara Black",
@@ -567,6 +581,7 @@ namespace Infra.SQL.Data.DB
 
             Product productMs5 = ctx.Products.Add(new Product()
             {
+                Id = 15,
                 SecondaryCategoryId = secClass2.Id,
                 ProductCode = "590",
                 Name = "Saffron Mascara Black",
@@ -585,6 +600,7 @@ namespace Infra.SQL.Data.DB
 
             Product productMs6 = ctx.Products.Add(new Product()
             {
+                Id = 16,
                 SecondaryCategoryId = secClass2.Id,
                 ProductCode = "399",
                 Name = " Saffron Zombie Nights Double Intensity Mascara Black",
@@ -609,8 +625,9 @@ namespace Infra.SQL.Data.DB
 
             Product productLs1 = ctx.Products.Add(new Product()
             {
+                Id = 17,
                 SecondaryCategoryId = secClass10.Id,
-                ProductCode = "0134",
+                ProductCode = "134",
                 Name = "Saffron Lipstick Berry",
                 Variant = "10",
                 Price = 1.99,
@@ -628,8 +645,9 @@ namespace Infra.SQL.Data.DB
 
             Product productLs2 = ctx.Products.Add(new Product()
             {
+                Id = 18,
                 SecondaryCategoryId = secClass10.Id,
-                ProductCode = "0134",
+                ProductCode = "134",
                 Name = "Saffron Lipstick Black Coffee",
                 Variant = "19",
                 Price = 1.99,
@@ -647,6 +665,7 @@ namespace Infra.SQL.Data.DB
 
             Product productLs3 = ctx.Products.Add(new Product()
             {
+                Id = 19,
                 SecondaryCategoryId = secClass10.Id,
                 ProductCode = "0134",
                 Name = "Saffron Lipstick Brick",
@@ -666,6 +685,7 @@ namespace Infra.SQL.Data.DB
 
             Product productLs4 = ctx.Products.Add(new Product()
             {
+                Id = 20,
                 SecondaryCategoryId = secClass10.Id,
                 ProductCode = "0134",
                 Name = "Saffron Lipstick Burgundy Beauty",
@@ -685,6 +705,7 @@ namespace Infra.SQL.Data.DB
 
             Product productLs5 = ctx.Products.Add(new Product()
             {
+                Id = 21,
                 SecondaryCategoryId = secClass10.Id,
                 ProductCode = "0134",
                 Name = "Saffron Lipstick Cabaret",
@@ -704,6 +725,7 @@ namespace Infra.SQL.Data.DB
 
             Product productLs6 = ctx.Products.Add(new Product()
             {
+                Id = 22,
                 SecondaryCategoryId = secClass10.Id,
                 ProductCode = "0134",
                 Name = "Saffron Lipstick Canberry",
@@ -723,6 +745,7 @@ namespace Infra.SQL.Data.DB
 
             Product productLs7 = ctx.Products.Add(new Product()
             {
+                Id = 23,
                 SecondaryCategoryId = secClass10.Id,
                 ProductCode = "0134",
                 Name = "Saffron Lipstick Conker",
@@ -742,6 +765,7 @@ namespace Infra.SQL.Data.DB
 
             Product productLs8 = ctx.Products.Add(new Product()
             {
+                Id = 24,
                 SecondaryCategoryId = secClass10.Id,
                 ProductCode = "0134",
                 Name = "Saffron Lipstick Current",
@@ -761,6 +785,7 @@ namespace Infra.SQL.Data.DB
 
             Product productLs9 = ctx.Products.Add(new Product()
             {
+                Id = 25,
                 SecondaryCategoryId = secClass1.Id,
                 ProductCode = "0134",
                 Name = "Saffron Lipstick Diamond Red",
@@ -780,6 +805,7 @@ namespace Infra.SQL.Data.DB
 
             Product productLs10 = ctx.Products.Add(new Product()
             {
+                Id = 26,
                 SecondaryCategoryId = secClass10.Id,
                 ProductCode = "0134",
                 Name = "Saffron Lipstick Euphoric",
@@ -800,6 +826,7 @@ namespace Infra.SQL.Data.DB
 
             Product product1Np = ctx.Products.Add(new Product()
             {
+                Id = 27,
                 SecondaryCategoryId = secClass14.Id,
                 ProductCode = "1013",
                 Name = "Saffron Nail Polish Base Coat",
@@ -815,6 +842,7 @@ namespace Infra.SQL.Data.DB
 
             Product product2Np = ctx.Products.Add(new Product()
             {
+                Id = 28,
                 SecondaryCategoryId = secClass14.Id,
                 ProductCode = "1013",
                 Name = "Saffron Nail Polish Beige French Manicure",
@@ -831,6 +859,7 @@ namespace Infra.SQL.Data.DB
 
             Product product3Np = ctx.Products.Add(new Product()
             {
+                Id = 29,
                 SecondaryCategoryId = secClass14.Id,
                 ProductCode = "1013",
                 Name = "Saffron Nail Polish Bikini Blue",
@@ -846,6 +875,7 @@ namespace Infra.SQL.Data.DB
 
             Product product4Np = ctx.Products.Add(new Product()
             {
+                Id = 30,
                 SecondaryCategoryId = secClass14.Id,
                 ProductCode = "1013",
                 Name = "Saffron Nail Polish Blossom",
