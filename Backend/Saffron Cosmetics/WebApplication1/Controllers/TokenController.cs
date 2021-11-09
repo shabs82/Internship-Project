@@ -25,7 +25,7 @@ namespace SafCos.WebApi.Controllers
         [HttpPost]
         public IActionResult Login([FromBody] LoginInputModel model)
         {
-            var user = _userService.GetAllUsers().FirstOrDefault(u => u.Username == model.Username);
+            var user = _userService.GetAllUsers().FirstOrDefault(u => u.Email == model.Username);
 
             //Cheking if user exists
             if (user == null)
@@ -38,8 +38,8 @@ namespace SafCos.WebApi.Controllers
             //Authentication successfull
             return Ok(new
             {
-                id = user.UserId,
-                username = user.Username,
+                id = user.Id,
+                username = user.Email,
                 token = _authHelper.GenerateToken(user)
             });
         }

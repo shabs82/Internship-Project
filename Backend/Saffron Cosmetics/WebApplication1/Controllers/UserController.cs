@@ -57,7 +57,7 @@ namespace SafCos.WebApi.Controllers
         {
             //var newUser = new LoginInputModel()
             //{
-            //    Username = userDto.Email,
+            //    Email = userDto.Email,
             //    Password = userDto.Password
             //};
 
@@ -93,7 +93,7 @@ namespace SafCos.WebApi.Controllers
         {
             try
             {
-                if (id < 1 || user.UserId != id)
+                if (id < 1 || user.Id != id)
                 {
                     return BadRequest("Please enter correct id. Id must be bigger than 0");
                 }

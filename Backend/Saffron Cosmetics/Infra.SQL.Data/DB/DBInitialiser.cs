@@ -730,7 +730,7 @@ namespace Infra.SQL.Data.DB
 
             var Admin = new User()
             {
-                Username = "Admin",
+                Email = "Admin",
                 PasswordHash = passwordHashJohn,
                 PasswordSalt = passwordSaltJohn,
                 IsAdmin = true,
@@ -743,7 +743,7 @@ namespace Infra.SQL.Data.DB
 
             var User = new User()
             {
-                Username = "User",
+                Email = "User",
                 PasswordHash = passwordHashAnna,
                 PasswordSalt = passwordSaltAnna,
                 IsAdmin = false,
