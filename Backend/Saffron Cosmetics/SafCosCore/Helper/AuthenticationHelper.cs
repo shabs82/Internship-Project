@@ -47,7 +47,7 @@ namespace SafCos.Core.Helper
         {
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, user.Username)
+                new Claim(ClaimTypes.Name, user.Email)
             };
             if (user.IsAdmin)
             {

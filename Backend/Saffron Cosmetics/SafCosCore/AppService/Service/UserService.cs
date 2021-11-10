@@ -33,7 +33,7 @@ namespace SafCos.Core.AppService.Service
             // hash password
             var User = new User()
             {
-                Username = createdUser.Username,
+                Email = createdUser.Username,
                 PasswordHash = passwordNewUserHash,
                 PasswordSalt = passwordNewUserSalt,
                 IsAdmin = false,
@@ -72,7 +72,7 @@ namespace SafCos.Core.AppService.Service
         //public string ValidateUser(LoginInputModel loginInputModel)
         //{
         //    _loginValidator.DefaultValidation(loginInputModel);
-        //    var user = FindUserByUsername(loginInputModel.Username);
+        //    var user = FindUserByUsername(loginInputModel.Email);
 
         //    if (!_authenticationHelper.VerifyPasswordHash(loginInputModel.Password, user.PasswordHash, user.PasswordSalt))
         //        throw new Exception("This is not a valid password");

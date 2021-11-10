@@ -232,6 +232,35 @@ namespace Infra.SQL.Data.DB
                 PrimaryCategoryId = 5
 
             }).Entity;
+
+            SecondaryCategory secClass25 = ctx.SecondaryCategories.Add(new SecondaryCategory()
+            {
+                Name = "MensPerfume",
+                PrimaryCategoryId = 7
+
+            }).Entity;
+
+            SecondaryCategory secClass26 = ctx.SecondaryCategories.Add(new SecondaryCategory()
+            {
+                Name = "WomensFragrance",
+                PrimaryCategoryId = 7
+
+            }).Entity;
+
+            SecondaryCategory secClass27 = ctx.SecondaryCategories.Add(new SecondaryCategory()
+            {
+                Name = "UnisexFragrance",
+                PrimaryCategoryId = 7
+
+            }).Entity;
+
+            SecondaryCategory secClass28 = ctx.SecondaryCategories.Add(new SecondaryCategory()
+            {
+                Name = "GiftSets",
+                PrimaryCategoryId = 6
+
+            }).Entity;
+
             #endregion
 
 
@@ -1094,6 +1123,28 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
+            //Fragrance
+
+            Product productFrg1 = ctx.Products.Add(new Product()
+            {
+                Id = 41,
+                SecondaryCategoryId = secClass16.Id,
+                ProductCode = "1501",
+                Name = "Saffron Compact Powder Beige",
+                Variant = "A4",
+                Price = 3.49,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 48,
+                SkuCode = "5055339902711",
+                Description = "Saffron Pressed Powder provides stunning coverage without compromising all day comfort wear. " +
+                          "Lightweight formula applies sheer and can be used as a setting powder, " +
+                          "or can be layered to double up as a full coverage foundation. " +
+                          "7.5 x 1.4cms; Net.: 12g",
+
+            }).Entity;
+
+
 
             #endregion
 
@@ -1107,7 +1158,7 @@ namespace Infra.SQL.Data.DB
 
             var Admin = new User()
             {
-                Username = "Admin",
+                Email = "Admin",
                 PasswordHash = passwordHashJohn,
                 PasswordSalt = passwordSaltJohn,
                 IsAdmin = true
@@ -1116,7 +1167,7 @@ namespace Infra.SQL.Data.DB
 
             var User = new User()
             {
-                Username = "User",
+                Email = "User",
                 PasswordHash = passwordHashAnna,
                 PasswordSalt = passwordSaltAnna,
                 IsAdmin = false

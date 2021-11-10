@@ -29,7 +29,7 @@ namespace Infra.SQL.Data.Repositories
 
         public User DeleteUser(int id)
         {
-            var user = _safCosmeticsCtx.Remove(new User() { UserId = id });
+            var user = _safCosmeticsCtx.Remove(new User() { Id = id });
             _safCosmeticsCtx.SaveChanges();
             return user.Entity;
         }
@@ -41,12 +41,12 @@ namespace Infra.SQL.Data.Repositories
 
         public User ReadById(int id)
         {
-            return _safCosmeticsCtx.Users.FirstOrDefault(user => user.UserId == id);
+            return _safCosmeticsCtx.Users.FirstOrDefault(user => user.Id == id);
         }
 
         public User ReadByUsername(string username)
         {
-            return _safCosmeticsCtx.Users.ToList().FirstOrDefault(user => user.Username == username);
+            return _safCosmeticsCtx.Users.ToList().FirstOrDefault(user => user.Email == username);
         }
 
         public User UpdateUser(User userUpdate)
