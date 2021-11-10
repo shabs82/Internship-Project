@@ -69,18 +69,5 @@ namespace SafCos.Core.AppService.Service
             return user;
         }
 
-        //public string ValidateUser(LoginInputModel loginInputModel)
-        //{
-        //    _loginValidator.DefaultValidation(loginInputModel);
-        //    var user = FindUserByUsername(loginInputModel.Email);
-
-        //    if (!_authenticationHelper.VerifyPasswordHash(loginInputModel.Password, user.PasswordHash, user.PasswordSalt))
-        //        throw new Exception("This is not a valid password");
-        //    return _authenticationHelper.GenerateToken(user);
-        //}
-
-     
-
-        
     }
 }

@@ -1161,7 +1161,12 @@ namespace Infra.SQL.Data.DB
                 Email = "Admin",
                 PasswordHash = passwordHashJohn,
                 PasswordSalt = passwordSaltJohn,
-                IsAdmin = true
+                IsAdmin = true,
+                FirstName = "Adam",
+                LastName = "Admin",
+                Address = "4469 Reeves Street",
+                PostCode = "54913",
+                PhoneNumber = "12345678"
             };
             _userRepo.CreateUser(Admin);
 
@@ -1170,7 +1175,12 @@ namespace Infra.SQL.Data.DB
                 Email = "User",
                 PasswordHash = passwordHashAnna,
                 PasswordSalt = passwordSaltAnna,
-                IsAdmin = false
+                IsAdmin = false,
+                FirstName = "Urusla",
+                LastName = "User",
+                Address = "1823 Patton Lane",
+                PostCode = "92697",
+                PhoneNumber = "87654321"
             };
             _userRepo.CreateUser(User);
             #endregion
