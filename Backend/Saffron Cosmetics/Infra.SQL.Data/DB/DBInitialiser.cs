@@ -618,6 +618,133 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
+            // Eyebrows
+
+            Product prodEb1 = ctx.Products.Add(new Product()
+            {
+                Id = 27,
+                SecondaryCategoryId = secClass3.Id,
+                ProductCode = "1",
+                Name = "Saffron Eye Brow Definer Black",
+                Variant = "",
+                Price = 3.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339902551",
+                Description = "Saffron Eye Brow Definer a mechanical pencil with a unique triangular shaped tip that combines powder and wax in to create naturally defined brows." +
+                              "Formula which helps you to create the look of naturally fuller, defined brows in one easy step. " +
+                              "Natural looking shades to create beautiful brows. " +
+                              "The double ended component has a brush to groom brows into place for that professional finish." +
+                              " Net.:0.28g; 15 x 2.5 x 1.5 cm",
+
+
+            }).Entity;
+
+            Product prodEb2 = ctx.Products.Add(new Product()
+            {
+                Id = 28,
+                SecondaryCategoryId = secClass3.Id,
+                ProductCode = "2",
+                Name = "Saffron Eye Brow Definer Espresso",
+                Variant = "",
+                Price = 3.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339902551",
+                Description = "Saffron Eye Brow Definer a mechanical pencil with a unique triangular shaped tip that combines powder and wax in to create naturally defined brows." +
+                             "Formula which helps you to create the look of naturally fuller, defined brows in one easy step. " +
+                             "Natural looking shades to create beautiful brows. " +
+                             "The double ended component has a brush to groom brows into place for that professional finish." +
+                             " Net.:0.28g; 15 x 2.5 x 1.5 cm",
+
+
+            }).Entity;
+
+            Product prodEb3 = ctx.Products.Add(new Product()
+            {
+                Id = 29,
+                SecondaryCategoryId = secClass3.Id,
+                ProductCode = "3",
+                Name = "Saffron Eye Brow Definer Chocolate Brown",
+                Variant = "",
+                Price = 3.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339902551",
+                Description = "Saffron Eye Brow Definer a mechanical pencil with a unique triangular shaped tip that combines powder and wax in to create naturally defined brows." +
+                            "Formula which helps you to create the look of naturally fuller, defined brows in one easy step. " +
+                            "Natural looking shades to create beautiful brows. " +
+                            "The double ended component has a brush to groom brows into place for that professional finish." +
+                            " Net.:0.28g; 15 x 2.5 x 1.5 cm",
+
+
+            }).Entity;
+
+            Product prodEb4 = ctx.Products.Add(new Product()
+            {
+                Id = 30,
+                SecondaryCategoryId = secClass3.Id,
+                ProductCode = "4",
+                Name = "Saffron Eye Brow Definer Brown",
+                Variant = "",
+                Price = 3.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339902551",
+                Description = "Saffron Eye Brow Definer a mechanical pencil with a unique triangular shaped tip that combines powder and wax in to create naturally defined brows." +
+                         "Formula which helps you to create the look of naturally fuller, defined brows in one easy step. " +
+                         "Natural looking shades to create beautiful brows. " +
+                         "The double ended component has a brush to groom brows into place for that professional finish." +
+                         " Net.:0.28g; 15 x 2.5 x 1.5 cm",
+
+
+            }).Entity;
+
+            Product prodEb5 = ctx.Products.Add(new Product()
+            {
+                Id = 31,
+                SecondaryCategoryId = secClass3.Id,
+                ProductCode = "1012",
+                Name = "Saffron Eye Brow Powder with Stencils Grey/Brown & Black Brown",
+                Variant = "1",
+                Price = 2.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339901660",
+                Description = "Saffron Eyebrow Palette is out of this world essential compact of the perfect brows. " +
+                              "It includes 2 shades of hue creating and ensuring the most natural colour that matches with " +
+                              "your own, and wax to seal the colour and hold brows in place. " +
+                              "The clean and perfectly defined brows are no longer a dream with the stencils provided. " +
+                              "Colour: 01 Grey Brown/Black Brown, " +
+                              "18 x 12.5 x 1.5 cm; Net.:8g.",
+
+            }).Entity;
+
+            Product prodEb6 = ctx.Products.Add(new Product()
+            {
+                Id = 32,
+                SecondaryCategoryId = secClass3.Id,
+                ProductCode = "1012",
+                Name = "Saffron Eye Brow Powder with Stencils Espresso/Sepia Brown",
+                Variant = "2",
+                Price = 2.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339901660",
+                Description = "Saffron Eyebrow Palette is out of this world essential compact of the perfect brows. " +
+                             "It includes 2 shades of hue creating and ensuring the most natural colour that matches with " +
+                             "your own, and wax to seal the colour and hold brows in place. " +
+                             "The clean and perfectly defined brows are no longer a dream with the stencils provided. " +
+                             "Colour: 02 Espresso/Sepia Brown, " +
+                             "18 x 12.5 x 1.5 cm; Net.:8g.",
+
+            }).Entity;
 
 
 
@@ -826,7 +953,7 @@ namespace Infra.SQL.Data.DB
 
             Product product1Np = ctx.Products.Add(new Product()
             {
-                Id = 27,
+                Id = 33,
                 SecondaryCategoryId = secClass14.Id,
                 ProductCode = "1013",
                 Name = "Saffron Nail Polish Base Coat",
@@ -842,7 +969,7 @@ namespace Infra.SQL.Data.DB
 
             Product product2Np = ctx.Products.Add(new Product()
             {
-                Id = 28,
+                Id = 34,
                 SecondaryCategoryId = secClass14.Id,
                 ProductCode = "1013",
                 Name = "Saffron Nail Polish Beige French Manicure",
@@ -859,7 +986,7 @@ namespace Infra.SQL.Data.DB
 
             Product product3Np = ctx.Products.Add(new Product()
             {
-                Id = 29,
+                Id = 35,
                 SecondaryCategoryId = secClass14.Id,
                 ProductCode = "1013",
                 Name = "Saffron Nail Polish Bikini Blue",
@@ -875,7 +1002,7 @@ namespace Infra.SQL.Data.DB
 
             Product product4Np = ctx.Products.Add(new Product()
             {
-                Id = 30,
+                Id = 36,
                 SecondaryCategoryId = secClass14.Id,
                 ProductCode = "1013",
                 Name = "Saffron Nail Polish Blossom",
@@ -888,6 +1015,86 @@ namespace Infra.SQL.Data.DB
                 Description = "Saffron Nail Varnish: Trend setting shades with a top quality formula long lasting, chip resistant nail lacquer.",
 
             }).Entity;
+
+            //Face
+
+            Product productCp1 = ctx.Products.Add(new Product()
+            {
+                Id = 37,
+                SecondaryCategoryId = secClass16.Id,
+                ProductCode = "1501",
+                Name = "Saffron Compact Powder Ivory",
+                Variant = "A1",
+                Price = 3.49,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 46,
+                SkuCode = "5055339902681",
+                Description = "Saffron Pressed Powder provides stunning coverage without compromising all day comfort wear. " +
+                              "Lightweight formula applies sheer and can be used as a setting powder, " +
+                              "or can be layered to double up as a full coverage foundation. " +
+                              "7.5 x 1.4cms; Net.: 12g",
+
+            }).Entity;
+
+            Product productCp2 = ctx.Products.Add(new Product()
+            {
+                Id = 38,
+                SecondaryCategoryId = secClass16.Id,
+                ProductCode = "1501",
+                Name = "Saffron Compact Powder Soft Honey",
+                Variant = "A2",
+                Price = 3.49,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 48,
+                SkuCode = "5055339902698",
+                Description = "Saffron Pressed Powder provides stunning coverage without compromising all day comfort wear. " +
+                            "Lightweight formula applies sheer and can be used as a setting powder, " +
+                            "or can be layered to double up as a full coverage foundation. " +
+                            "7.5 x 1.4cms; Net.: 12g",
+
+            }).Entity;
+
+            Product productCp3 = ctx.Products.Add(new Product()
+            {
+                Id = 39,
+                SecondaryCategoryId = secClass16.Id,
+                ProductCode = "1501",
+                Name = "Saffron Compact Powder Fair",
+                Variant = "A3",
+                Price = 3.49,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 48,
+                SkuCode = "5055339902704",
+                Description = "Saffron Pressed Powder provides stunning coverage without compromising all day comfort wear. " +
+                            "Lightweight formula applies sheer and can be used as a setting powder, " +
+                            "or can be layered to double up as a full coverage foundation. " +
+                            "7.5 x 1.4cms; Net.: 12g",
+
+            }).Entity;
+
+            Product productCp4 = ctx.Products.Add(new Product()
+            {
+                Id = 40,
+                SecondaryCategoryId = secClass16.Id,
+                ProductCode = "1501",
+                Name = "Saffron Compact Powder Beige",
+                Variant = "A4",
+                Price = 3.49,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 48,
+                SkuCode = "5055339902711",
+                Description = "Saffron Pressed Powder provides stunning coverage without compromising all day comfort wear. " +
+                           "Lightweight formula applies sheer and can be used as a setting powder, " +
+                           "or can be layered to double up as a full coverage foundation. " +
+                           "7.5 x 1.4cms; Net.: 12g",
+
+            }).Entity;
+
+
             #endregion
 
             ctx.SaveChanges();
