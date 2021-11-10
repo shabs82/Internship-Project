@@ -55,11 +55,23 @@ namespace SafCos.WebApi.Controllers
         [HttpPost]
         public ActionResult<User> Post([FromBody] DTOs.Users.UserDTO userDto)
         {
+            //var newUser = new LoginInputModel()
+            //{
+            //    Email = userDto.Email,
+            //    Password = userDto.Password
+            //};
+
             var newUser = new LoginInputModel()
             {
                 Username = userDto.Email,
-                Password = userDto.Password
+                Password = userDto.Password,
+                Address = userDto.Address,
+                FirstName = userDto.FirstName,
+                LastName = userDto.LastName,
+                PostCode = userDto.PostCode,
+                PhoneNumber = userDto.PhoneNumber
             };
+
             var newuser = _userService.CreateUser(newUser);
             
 
@@ -81,7 +93,7 @@ namespace SafCos.WebApi.Controllers
         {
             try
             {
-                if (id < 1 || user.UserId != id)
+                if (id < 1 || user.Id != id)
                 {
                     return BadRequest("Please enter correct id. Id must be bigger than 0");
                 }
