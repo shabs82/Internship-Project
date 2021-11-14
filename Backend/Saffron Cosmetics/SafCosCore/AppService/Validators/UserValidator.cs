@@ -16,7 +16,7 @@ namespace SafCos.Core.AppService.Validators
             RuleFor(p => p.Email).MinimumLength(5).WithMessage("name cannot be less than 5 characters");
             RuleFor(p => p.Email).NotNull().WithMessage("username cannot be empty");
             RuleFor(p => p.Email).Null().WithMessage("username already taken");
-            RuleFor(p => p.Email).Matches("(**?:[^​˜!#$]*[˜​!#$]**)").WithMessage("special characters not allowed in username");
+            //RuleFor(p => p.Email).Matches("(**?:[^​˜!#$]*[˜​!#$]**)").WithMessage("special characters not allowed in username");
             
             
         }

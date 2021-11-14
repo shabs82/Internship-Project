@@ -40,7 +40,12 @@ namespace SafCos.WebApi.Controllers
             {
                 id = user.Id,
                 username = user.Email,
-                token = _authHelper.GenerateToken(user)
+                token = _authHelper.GenerateToken(user),
+                firstName = user.FirstName,
+                lastName = user.LastName,
+                phoneNumber = user.PhoneNumber,
+                address = user.Address,
+                postCode = user.PostCode
             });
         }
     }
