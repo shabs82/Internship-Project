@@ -34,6 +34,11 @@ namespace SafCos.Core.AppService.Service
             var User = new User()
             {
                 Email = createdUser.Username,
+                FirstName = createdUser.FirstName,
+                LastName = createdUser.LastName,
+                Address = createdUser.Address,
+                PostCode = createdUser.PostCode,
+                PhoneNumber = createdUser.PhoneNumber,
                 PasswordHash = passwordNewUserHash,
                 PasswordSalt = passwordNewUserSalt,
                 IsAdmin = false,
