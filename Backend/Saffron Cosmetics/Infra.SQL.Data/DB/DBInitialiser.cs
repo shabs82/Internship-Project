@@ -67,6 +67,7 @@ namespace Infra.SQL.Data.DB
             #region Secondary Category
             SecondaryCategory secClass1 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 1,
                 Name = "EyePencil",
                 PrimaryCategoryId = 1
 
@@ -74,6 +75,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass2 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 2,
                 Name = "Mascara",
                 PrimaryCategoryId = 1
 
@@ -81,6 +83,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass3 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 3,
                 Name = "Eyebrows",
                 PrimaryCategoryId = 1
 
@@ -88,6 +91,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass4 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 4,
                 Name = "EyeLenses",
                 PrimaryCategoryId = 1
 
@@ -95,6 +99,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass5 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 5,
                 Name = "EyeLiner",
                 PrimaryCategoryId = 1
 
@@ -102,6 +107,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass6 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 6,
                 Name = "EyeShadow",
                 PrimaryCategoryId = 1
 
@@ -109,6 +115,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass7 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 7,
                 Name = "Kajal & EyeShade",
                 PrimaryCategoryId = 1
 
@@ -116,6 +123,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass8 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 8,
                 Name = "EyeLashes",
                 PrimaryCategoryId = 1
 
@@ -123,6 +131,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass9 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 9,
                 Name = "EyePencil",
                 PrimaryCategoryId = 1
 
@@ -130,6 +139,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass10 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 10,
                 Name = "LipStick",
                 PrimaryCategoryId = 2
 
@@ -137,6 +147,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass11 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 11,
                 Name = "LipGloss",
                 PrimaryCategoryId = 2
 
@@ -144,6 +155,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass12 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 12,
                 Name = "LipLiner",
                 PrimaryCategoryId = 2
 
@@ -151,6 +163,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass13 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 13,
                 Name = "LipPencil",
                 PrimaryCategoryId = 2
 
@@ -158,6 +171,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass14 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 14,
                 Name = "NailPolish",
                 PrimaryCategoryId = 3
 
@@ -165,6 +179,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass15 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 15,
                 Name = "NailAccessories",
                 PrimaryCategoryId = 3
 
@@ -172,6 +187,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass16 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 16,
                 Name = "CompactPowder",
                 PrimaryCategoryId = 4
 
@@ -179,6 +195,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass17 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 17,
                 Name = "Foundation",
                 PrimaryCategoryId = 4
 
@@ -186,6 +203,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass18 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 18,
                 Name = "Blushes",
                 PrimaryCategoryId = 4
 
@@ -193,6 +211,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass19 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 19,
                 Name = "Concealer",
                 PrimaryCategoryId = 4
 
@@ -200,6 +219,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass20 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 20,
                 Name = "Primer",
                 PrimaryCategoryId = 4
 
@@ -207,6 +227,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass21 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 21,
                 Name = "Highlighters / Bronzing",
                 PrimaryCategoryId = 1
 
@@ -214,6 +235,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass22 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 22,
                 Name = "Applicators",
                 PrimaryCategoryId = 5
 
@@ -221,6 +243,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass23 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 23,
                 Name = "Brushes",
                 PrimaryCategoryId = 5
 
@@ -228,6 +251,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass24 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 24,
                 Name = "VanityCase",
                 PrimaryCategoryId = 5
 
@@ -235,6 +259,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass25 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 25,
                 Name = "MensPerfume",
                 PrimaryCategoryId = 7
 
@@ -242,6 +267,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass26 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 26,
                 Name = "WomensFragrance",
                 PrimaryCategoryId = 7
 
@@ -249,6 +275,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass27 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 27,
                 Name = "UnisexFragrance",
                 PrimaryCategoryId = 7
 
@@ -256,6 +283,7 @@ namespace Infra.SQL.Data.DB
 
             SecondaryCategory secClass28 = ctx.SecondaryCategories.Add(new SecondaryCategory()
             {
+                Id = 28,
                 Name = "GiftSets",
                 PrimaryCategoryId = 6
 
