@@ -52,7 +52,10 @@ namespace Infra.SQL.Data.Repositories
 
             if (!string.IsNullOrEmpty(name))
             {
-                query = query.Where(p => p.Name.Contains(name));
+                var queryDown = query.Where(p => p.Name.Contains(name));
+                var capitalName = char.ToUpper(name[0]) + name.Substring(1);
+                var queryUp = query.Where(p => p.Name.Contains(capitalName));
+                query = queryDown.Concat(queryUp);
             }
             return await query.ToListAsync();
         }
