@@ -46,6 +46,17 @@ namespace Infra.SQL.Data.Repositories
             return _ctx.Products.ToList();
         }
 
+        public async Task<IEnumerable<Product>> Search(string name)
+        {
+            IQueryable<Product> query = _ctx.Products;
+
+            if (!string.IsNullOrEmpty(name))
+            {
+                query = query.Where(p => p.Name.Contains(name));
+            }
+            return await query.ToListAsync();
+        }
+
         public Product UpdateProduct(Product prodToUpdate)
         {
             _ctx.Products.Attach(prodToUpdate).State = EntityState.Modified;

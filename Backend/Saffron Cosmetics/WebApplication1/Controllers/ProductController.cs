@@ -21,6 +21,25 @@ namespace SafCos.WebApi.Controllers
             _productService = productService;
         }
 
+        [HttpGet("{search}/filteredProducts")]
+        public async Task<ActionResult<IEnumerable<Product>>> Search(string name)
+        {
+            try
+            {
+                var result = await _productService.Search(name);
+
+                if (result.Any())
+                {
+                    return Ok(result);
+                }
+                return NotFound("no products") ;
+            }
+            catch (System.Exception)
+            {
+                return BadRequest();
+            }
+        }
+
         [HttpGet]
         public ActionResult<IEnumerable<Product>> Get()
         {

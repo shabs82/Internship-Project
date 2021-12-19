@@ -68,5 +68,10 @@ namespace SafCos.Core.AppService.Service
                 throw new NullReferenceException();
             return _productRepo.GetProductById(id);
         }
+
+        public Task<IEnumerable<Product>> Search(string name)
+        {
+            return _productRepo.Search(name);
+        }
     }
 }
