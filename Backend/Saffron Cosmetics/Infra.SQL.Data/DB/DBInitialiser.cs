@@ -287,48 +287,56 @@ namespace Infra.SQL.Data.DB
             #region Brands
             Brand brand1 = ctx.Brands.Add(new Brand()
             {
+                Id = 1,
                 BrandName = "L'oreal"
 
             }).Entity;
 
             Brand brand2 = ctx.Brands.Add(new Brand()
             {
+                Id = 2,
                 BrandName = "Revlon"
 
             }).Entity;
 
             Brand brand3 = ctx.Brands.Add(new Brand()
             {
+                Id = 3,
                 BrandName = "Wet n Wild"
 
             }).Entity;
 
             Brand brand4 = ctx.Brands.Add(new Brand()
             {
+                Id = 4,
                 BrandName = "Collection2000"
 
             }).Entity;
 
             Brand brand5 = ctx.Brands.Add(new Brand()
             {
+                Id = 5,
                 BrandName = "ConstanceCarroll"
 
             }).Entity;
 
             Brand brand6 = ctx.Brands.Add(new Brand()
             {
+                Id = 6,
                 BrandName = "Bourjois"
 
             }).Entity;
 
             Brand brand7 = ctx.Brands.Add(new Brand()
             {
+                Id = 7,
                 BrandName = "SaffronLondon"
 
             }).Entity;
 
             Brand brand8 = ctx.Brands.Add(new Brand()
             {
+                Id = 8,
                 BrandName = "Fragrance World"
 
             }).Entity;
@@ -339,25 +347,29 @@ namespace Infra.SQL.Data.DB
 
             Gender gender1 = ctx.Genders.Add(new Gender()
             {
+                Id = 1,
                 Sex = "Female"
 
             }).Entity;
 
             Gender gender2 = ctx.Genders.Add(new Gender()
             {
+                Id = 2,
                 Sex = "Male"
 
             }).Entity;
 
             Gender gender3 = ctx.Genders.Add(new Gender()
             {
+                Id = 3,
                 Sex = "Unisex"
 
             }).Entity;
 
             Gender gender4 = ctx.Genders.Add(new Gender()
             {
-                Sex = "No Genre"
+                Id = 4,
+                Sex = "No Gender"
 
             }).Entity;
             #endregion 
@@ -546,6 +558,151 @@ namespace Infra.SQL.Data.DB
 
 
             }).Entity;
+
+            //eye shadow
+
+            Product productEsh1 = ctx.Products.Add(new Product()
+            {
+                Id = 51,
+                SecondaryCategoryId = secClass6.Id,
+                ProductCode = "9285",
+                Name = "Black/White Eyeshadow A",
+                Price = 2.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339907624",
+                Description = "SAFFRON - Matte Black & White Duo EyeShadow provides natural hint of colours. " +
+                              " The eyeshadows in this palette have a beautiful texture and are extremely soft - they blend like a dream. " +
+                              "The pigmentation is amazing. The colours look extremely vibrant even without using any eyeshadow base. " +
+                              " The colours can be used individually or the white colour can be used for doing the inner corner or highlighting" +
+                              " the brow bone in combination with other colours, and the black colour can be used in combination with browns for doing" +
+                              " a brown-black Smokey eyes.  " +
+                              "Dual ended applicator included to blend, smudge and define your looks with mirror included for anywhere use. " +
+                              " 7.3 x 4.7 x 1.0 cms;  Net.:4g.",
+
+
+            }).Entity;
+
+            Product productEsh2 = ctx.Products.Add(new Product()
+            {
+                Id = 52,
+                SecondaryCategoryId = secClass6.Id,
+                ProductCode = "9285",
+                Name = "Black/White Eyeshadow B",
+                Price = 2.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907631",
+                Description = "SAFFRON - Matte Black & White Duo EyeShadow provides natural hint of colours. " +
+                             " The eyeshadows in this palette have a beautiful texture and are extremely soft - they blend like a dream. " +
+                             "The pigmentation is amazing. The colours look extremely vibrant even without using any eyeshadow base. " +
+                             " The colours can be used individually or the white colour can be used for doing the inner corner or highlighting" +
+                             " the brow bone in combination with other colours, and the black colour can be used in combination with browns for doing" +
+                             " a brown-black Smokey eyes.  " +
+                             "Dual ended applicator included to blend, smudge and define your looks with mirror included for anywhere use. " +
+                             " 7.3 x 4.7 x 1.0 cms;  Net.:4g.",
+
+
+            }).Entity;
+
+
+            Product productEsh3 = ctx.Products.Add(new Product()
+            {
+                Id = 53,
+                SecondaryCategoryId = secClass6.Id,
+                ProductCode = "8978",
+                Name = "Matte & Metallic Eyeshadow 01",
+                Price = 3.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907563",
+                Description = "MAKE EVERY DAY SPECIAL: with Saffron Matte & Metallic dazzling collection of highly " +
+                              "pigmented shadows that offer the perfect mix of today’s most coveted colours. " +
+                              "12 Beautiful, Blend able shades in both mega Matte and super shimmer Metallic finishes are everything you " +
+                              "need to Highlight, Blend and Define Eyes. " +
+                              "Fiery oranges, bright jewel tones, warm browns and Smokey blacks deliver a smooth flawless finish.  " +
+                              "CREATE INFINITE LOOKS: Get the perfect blend that suits your style using the 12 hues that you can mix and match" +
+                              " to create a variety of looks that fits different occasions. " +
+                              " Net.:15g",
+
+
+            }).Entity;
+
+            Product productEsh4 = ctx.Products.Add(new Product()
+            {
+                Id = 54,
+                SecondaryCategoryId = secClass6.Id,
+                ProductCode = "8978",
+                Name = "Matte & Metallic Eyeshadow 02",
+                Price = 3.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907570",
+                Description = "MAKE EVERY DAY SPECIAL: with Saffron Matte & Metallic dazzling collection of highly " +
+                             "pigmented shadows that offer the perfect mix of today’s most coveted colours. " +
+                             "12 Beautiful, Blend able shades in both mega Matte and super shimmer Metallic finishes are everything you " +
+                             "need to Highlight, Blend and Define Eyes. " +
+                             "Fiery oranges, bright jewel tones, warm browns and Smokey blacks deliver a smooth flawless finish.  " +
+                             "CREATE INFINITE LOOKS: Get the perfect blend that suits your style using the 12 hues that you can mix and match" +
+                             " to create a variety of looks that fits different occasions. " +
+                             " Net.:15g",
+
+
+            }).Entity;
+
+            Product productEsh5 = ctx.Products.Add(new Product()
+            {
+                Id = 55,
+                SecondaryCategoryId = secClass6.Id,
+                ProductCode = "8978",
+                Name = "Matte & Metallic Eyeshadow 03",
+                Price = 3.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907587",
+                Description = "MAKE EVERY DAY SPECIAL: with Saffron Matte & Metallic dazzling collection of highly " +
+                            "pigmented shadows that offer the perfect mix of today’s most coveted colours. " +
+                            "12 Beautiful, Blend able shades in both mega Matte and super shimmer Metallic finishes are everything you " +
+                            "need to Highlight, Blend and Define Eyes. " +
+                            "Fiery oranges, bright jewel tones, warm browns and Smokey blacks deliver a smooth flawless finish.  " +
+                            "CREATE INFINITE LOOKS: Get the perfect blend that suits your style using the 12 hues that you can mix and match" +
+                            " to create a variety of looks that fits different occasions. " +
+                            " Net.:15g",
+
+
+            }).Entity;
+
+            //Kajal
+
+            Product productKj1 = ctx.Products.Add(new Product()
+            {
+                Id = 56,
+                SecondaryCategoryId = secClass7.Id,
+                ProductCode = "1500",
+                Name = "Saffron Kajal EyeShader 01 Pearl",
+                Price = 3.49,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907587",
+                Description = "MAKE EVERY DAY SPECIAL: with Saffron Matte & Metallic dazzling collection of highly " +
+                            "pigmented shadows that offer the perfect mix of today’s most coveted colours. " +
+                            "12 Beautiful, Blend able shades in both mega Matte and super shimmer Metallic finishes are everything you " +
+                            "need to Highlight, Blend and Define Eyes. " +
+                            "Fiery oranges, bright jewel tones, warm browns and Smokey blacks deliver a smooth flawless finish.  " +
+                            "CREATE INFINITE LOOKS: Get the perfect blend that suits your style using the 12 hues that you can mix and match" +
+                            " to create a variety of looks that fits different occasions. " +
+                            " Net.:15g",
+
+
+            }).Entity;
+
+
 
             //Mascara
 
@@ -1148,21 +1305,192 @@ namespace Infra.SQL.Data.DB
             Product productFrg1 = ctx.Products.Add(new Product()
             {
                 Id = 41,
-                SecondaryCategoryId = secClass16.Id,
-                ProductCode = "1501",
-                Name = "Saffron Compact Powder Beige",
-                Variant = "A4",
-                Price = 3.49,
-                GenderId = gender1.Id,
-                BrandId = brand7.Id,
-                Availability = 48,
-                SkuCode = "5055339902711",
-                Description = "Saffron Pressed Powder provides stunning coverage without compromising all day comfort wear. " +
-                          "Lightweight formula applies sheer and can be used as a setting powder, " +
-                          "or can be layered to double up as a full coverage foundation. " +
-                          "7.5 x 1.4cms; Net.: 12g",
+                SecondaryCategoryId = secClass27.Id,
+                ProductCode = "",
+                Name = "Ameer Al Oud VIP Special Edition Unisex Eau de Parfum with Free Deo",
+                Variant = "0",
+                Price = 14.99,
+                GenderId = gender3.Id,
+                BrandId = brand8.Id,
+                Availability = 20,
+                SkuCode = "",
+                Description = "Ameer Al Oud VIP Special Edition 100ml spray is a unique aromatic fragrance for both women and men,[unisex]. " +
+                              "Brown Orchid Gold Edition fragrance is naturally clean, pure and contemporary with a refreshingly " +
+                              "new point of view. The light, relaxed scent is designed to be used lavishly."+
+                              "100 ml",
 
             }).Entity;
+
+            Product productFrg2 = ctx.Products.Add(new Product()
+            {
+                Id = 42,
+                SecondaryCategoryId = secClass26.Id,
+                ProductCode = "",
+                Name = "Azure Blue",
+                Variant = "0",
+                Price = 5.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 11,
+                SkuCode = "35055339904432",
+                Description = "Azure Blue Women's Eau de Parfum 50ml Spray. " +
+                              "Each fragrance is made of layers of rich notes, unfolding to reveal a sublime and delicate experience, with the perfect blend of strength and softness." +
+                              " The Perfume is blended with magical French fragrances that capture hearts. " +
+                              "The fragrance will enchant and captivate you. Ideal for daily use." +
+                              " The perfect gift for any occassion",
+
+            }).Entity;
+
+            Product productFrg3 = ctx.Products.Add(new Product()
+            {
+                Id = 43,
+                SecondaryCategoryId = secClass27.Id,
+                ProductCode = "",
+                Name = "Black Kabul Eau de Parfum",
+                Variant = "0",
+                Price = 19.99,
+                GenderId = gender3.Id,
+                BrandId = brand8.Id,
+                Availability = 12,
+                SkuCode = "",
+                Description = "Black Kabul Eau de Parfum 60ml spray is a unique aromatic fragrance for both women and men [unisex]." +
+                              " Black Kabul fragrance is naturally clean, pure and contemporary with a refreshingly new point of view. " +
+                              "The light, relaxed scent is designed to be used lavishly.",
+
+            }).Entity;
+
+            Product productFrg4 = ctx.Products.Add(new Product()
+            {
+                Id = 44,
+                SecondaryCategoryId = secClass27.Id,
+                ProductCode = "",
+                Name = "Brown Orchid Gold Edition Unisex Eau de Parfum with Free Deo",
+                Variant = "0",
+                Price = 14.99,
+                GenderId = gender3.Id,
+                BrandId = brand8.Id,
+                Availability = 12,
+                SkuCode = "",
+                Description =  "Brown Orchid Gold Edition 80ml spray is a unique aromatic fragrance for both women and men [unisex]. " +
+                               "Brown Orchid Gold Edition fragrance is naturally clean, pure and contemporary with a refreshingly new point of view. " +
+                               "The light, relaxed scent is designed to be used lavishly.",
+
+            }).Entity;
+
+            Product productFrg5 = ctx.Products.Add(new Product()
+            {
+                Id = 45,
+                SecondaryCategoryId = secClass27.Id,
+                ProductCode = "",
+                Name = "Brown Orchid Oud Edition Unisex Eau de Parfum with Free Deo",
+                Variant = "0",
+                Price = 14.99,
+                GenderId = gender3.Id,
+                BrandId = brand8.Id,
+                Availability = 12,
+                SkuCode = "",
+                Description = "Brown Orchid Oud Edition 80ml spray is a unique aromatic fragrance for both women and men [unisex]. " +
+                              "Brown Orchid Oud Edition fragrance is naturally clean, pure and contemporary with a refreshingly new point of view. " +
+                              "The light, relaxed scent is designed to be used lavishly.",
+
+            }).Entity;
+
+            Product productFrg6 = ctx.Products.Add(new Product()
+            {
+                Id = 46,
+                SecondaryCategoryId = secClass26.Id,
+                ProductCode = " A7165A",
+                Name = "Bella Model Women's Eau de Parfum ",
+                Variant = "0",
+                Price = 9.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 12,
+                SkuCode = "",
+                Description = "Bella Model Women's Eau de Parfum fragrance is made of layers of rich notes, " +
+                              "unfolding to reveal a sublime and delicate experience, with the perfect blend of strength and softness. " +
+                              "The Perfume is blended with magical French fragrances that capture hearts. The fragrance will enchant and captivate you. Ideal for daily use. " +
+                              "THE PERFECT GIFT FOR ANY OCCASION",
+
+            }).Entity;
+
+            Product productFrg7 = ctx.Products.Add(new Product()
+            {
+                Id = 47,
+                SecondaryCategoryId = secClass25.Id,
+                ProductCode = " 4674",
+                Name = "AGUA BLANCA Men's Eau de Toilette Spray",
+                Variant = "0",
+                Price = 7.99,
+                GenderId = gender2.Id,
+                BrandId = brand7.Id,
+                Availability = 12,
+                SkuCode = "",
+                Description = "AGUA BLANCA - Men's Eau de Toilette 100ml Spray. " +
+                              "The fragrance is crafted to provoke the senses with an air of depth and enigma: powerful, rich, full bodied." +
+                              " It helps you stay fresh and in the limelight all day long. " +
+                              "THE PERFECT GIFT.",
+
+            }).Entity;
+
+            Product productFrg8 = ctx.Products.Add(new Product()
+            {
+                Id = 48,
+                SecondaryCategoryId = secClass25.Id,
+                ProductCode = "A7103C",
+                Name = "ART MAN Men's Eau de Toilette Spray",
+                Variant = "0",
+                Price = 7.99,
+                GenderId = gender2.Id,
+                BrandId = brand7.Id,
+                Availability = 12,
+                SkuCode = "",
+                Description = "AGUA BLANCA - Men's Eau de Toilette 100ml Spray. " +
+                             "The fragrance is crafted to provoke the senses with an air of depth and enigma: powerful, rich, full bodied." +
+                             " It helps you stay fresh and in the limelight all day long. " +
+                             "THE PERFECT GIFT.",
+
+            }).Entity;
+
+            Product productFrg9 = ctx.Products.Add(new Product()
+            {
+                Id = 49,
+                SecondaryCategoryId = secClass25.Id,
+                ProductCode = "A7157H",
+                Name = "Base Camp Men's Eau de Toilette",
+                Variant = "0",
+                Price = 7.99,
+                GenderId = gender2.Id,
+                BrandId = brand7.Id,
+                Availability = 11,
+                SkuCode = "",
+                Description = "Base Camp Men's Eau de Toilette 100ml Spray. " +
+                           "The fragrance is crafted to provoke the senses with an air of depth and enigma: powerful, rich, full bodied." +
+                           " It helps you stay fresh and in the limelight all day long. " +
+                           "THE PERFECT GIFT.",
+
+            }).Entity;
+
+            Product productFrg10 = ctx.Products.Add(new Product()
+            {
+                Id = 50,
+                SecondaryCategoryId = secClass25.Id,
+                ProductCode = "A1007",
+                Name = "BASE CODE Men's Eau de Toilette Spray",
+                Variant = "0",
+                Price = 6.99,
+                GenderId = gender2.Id,
+                BrandId = brand7.Id,
+                Availability = 12,
+                SkuCode = "",
+                Description = "BASE CODE Men's Eau de Toilette 100ml Spray.  " +
+                          "The fragrance is crafted to provoke the senses with an air of depth and enigma: powerful, rich, full bodied." +
+                          " It helps you stay fresh and in the limelight all day long. " +
+                          "THE PERFECT GIFT.",
+
+            }).Entity;
+
+
 
 
 
