@@ -14,13 +14,10 @@ namespace SafCos.Core.AppService.Service
     public class ProductService : IProductService
     {
         private readonly IProductRepo _productRepo;
-        private readonly ProductValidator _prodValidator;
-
         
-        public ProductService(IProductRepo productRepo, ProductValidator productValidator)
+        public ProductService(IProductRepo productRepo)
         {
-            _productRepo = productRepo;
-            _prodValidator = productValidator;
+            _productRepo = productRepo ?? throw new ArgumentNullException(nameof(productRepo), "Repository cannot be null.");
             
         }
 
@@ -36,7 +33,7 @@ namespace SafCos.Core.AppService.Service
         }
         public Product GetProductById(int id)
         {
-            if(id < 0 )
+            if(id <= 0 )
             {
                 throw new NullReferenceException("Invalid ID");
             }
@@ -65,7 +62,7 @@ namespace SafCos.Core.AppService.Service
         public Product DeleteProduct(int id)
         {
             if (id <= 0)
-                throw new NullReferenceException();
+                throw new NullReferenceException("Invalid ID");
             return _productRepo.GetProductById(id);
         }
 

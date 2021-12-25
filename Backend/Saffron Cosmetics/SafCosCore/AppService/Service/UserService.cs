@@ -14,16 +14,13 @@ namespace SafCos.Core.AppService.Service
     public class UserService : IUserService
     {
         private readonly IUserRepo _userRepo ;
-        private readonly UserValidator _userValidator;
         private readonly IAuthenticationHelper _authenticationHelper;
         
 
-        public UserService(IUserRepo userRepo , UserValidator userValidator, IAuthenticationHelper authentication)
+        public UserService(IUserRepo userRepo , IAuthenticationHelper authentication)
         {
-            _userRepo = userRepo;
-            _userValidator = userValidator;
-            _authenticationHelper = authentication;
-            
+            _userRepo = userRepo ?? throw new ArgumentNullException(nameof(userRepo), "Repository cannot be null.");
+            _authenticationHelper = authentication ?? throw new ArgumentNullException(nameof(authentication), "Authentication Helper cannot be null.");
         }
 
         User IUserService.CreateUser(LoginInputModel createdUser)
@@ -66,6 +63,7 @@ namespace SafCos.Core.AppService.Service
         {
             return _userRepo.UpdateUser(userUpdate);
         }
+
         public User FindUserByUsername(string username) 
         {
             var user = _userRepo.ReadByUsername(username);

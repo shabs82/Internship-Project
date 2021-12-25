@@ -55,12 +55,8 @@ namespace SafCos.WebApi.Controllers
         [HttpPost]
         public ActionResult<User> Post([FromBody] DTOs.Users.UserDTO userDto)
         {
-            //var newUser = new LoginInputModel()
-            //{
-            //    Email = userDto.Email,
-            //    Password = userDto.Password
-            //};
-
+            try
+            {
             var newUser = new LoginInputModel()
             {
                 Username = userDto.Email,
@@ -74,21 +70,16 @@ namespace SafCos.WebApi.Controllers
 
             var newuser = _userService.CreateUser(newUser);
             
-
             return Ok();
-
-            //try
-            //{
-            //    return Ok(_userService.CreateUser(user));
-            //}
-            //catch (System.Exception e)
-            //{
-            //    return BadRequest();
-            //}
+            }
+            catch (System.Exception e)
+            {
+                return BadRequest();
+            }
         }
 
         // PUT api/<UserController>/5
-        [HttpPut("{id}")]
+            [HttpPut("{id}")]
         public ActionResult<User> Put(int id, [FromBody] User user)
         {
             try

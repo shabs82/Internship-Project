@@ -22,10 +22,6 @@ namespace SafCos.Core.AppService.Service
             return _secondaryCategoryRepo.GetProductsBySecondaryCategoryId(id);
         }
 
-
-
-
-
         public SecondaryCategory CreateSecClass(SecondaryCategory secondaryClassifier)
         {
             throw new NotImplementedException();
