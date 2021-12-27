@@ -41,14 +41,13 @@ namespace WebApplication1
 
         public IWebHostEnvironment Environment { get; }
 
-
-        // This method gets called by the runtime. Use this method to add services to the container.
+         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             var loggerFactory = LoggerFactory.Create(builder => { builder.AddConsole(); });
+            #region DB Settings
             if (Environment.IsDevelopment())
             {
-            #region DB Settings
                 services.AddDbContext<SafCosmeticsContext>(
                     opt =>
                     {
@@ -65,6 +64,8 @@ namespace WebApplication1
                       opt.UseSqlServer(Configuration.GetConnectionString("defaultConnection"));
                   });
             }
+            #endregion
+            #region Authentication
             Byte[] secretBytes = new byte[40];
             Random rand = new Random();
             rand.NextBytes(secretBytes);
@@ -110,13 +111,6 @@ namespace WebApplication1
             services.AddSingleton<IAuthenticationHelper>(new
               AuthenticationHelper(secretBytes));
             #endregion
-            #region Ignore Loops
-            //JsonConvert.DefaultSettings = () => new JsonSerializerSettings
-            //{
-            //    ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-            //};
-
-            #endregion
             #region CORS
            
             services.AddCors(options => options.AddPolicy("AllowEverything", builder => builder.AllowAnyOrigin()
@@ -130,14 +124,6 @@ namespace WebApplication1
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApplication1", Version = "v1" });
             });
             #endregion
-
-            //services.AddFluentValidation( fv=>
-            //    {
-            //        fv.RunDefaultMvcValidationAfterFluentValidationExecutes = false;
-            //        fv.RegisterValidatorsFromAssemblyContaining<Startup>();
-
-            //     }
-            //    );
             services.AddMvc().AddNewtonsoftJson();
             services.AddControllers().AddNewtonsoftJson(options =>
             {    // Use the default property (Pascal) casing
@@ -160,9 +146,6 @@ namespace WebApplication1
                 ctx.Database.EnsureDeleted();
                 ctx.Database.EnsureCreated();
                 dbInitialiser.SeedDB(ctx);
-
-
-
             }
             else if (env.IsProduction())
             {
@@ -172,7 +155,6 @@ namespace WebApplication1
 
                 ctx.Database.EnsureCreated();
             }
-
 
                 app.UseCors("AllowEverything");
 
@@ -190,7 +172,6 @@ namespace WebApplication1
                 });
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApplication1 v1"));
-            
         }
     }
 }
