@@ -1482,7 +1482,7 @@ namespace Infra.SQL.Data.DB
                 GenderId = gender2.Id,
                 BrandId = brand7.Id,
                 Availability = 12,
-                SkuCode = "",
+                SkuCode = "5055339916671",
                 Description = "BASE CODE Men's Eau de Toilette 100ml Spray.  " +
                           "The fragrance is crafted to provoke the senses with an air of depth and enigma: powerful, rich, full bodied." +
                           " It helps you stay fresh and in the limelight all day long. " +
@@ -1490,7 +1490,49 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
+            //Gift Sets
 
+            Product productGS1 = ctx.Products.Add(new Product()
+            {
+                Id = 57,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "A7701",
+                Name = "FRAGRANCE CHRISTMAS ADVENT CALENDAR FOR HER by Saffron LONDON",
+                Variant = "0",
+                Price = 24.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 11,
+                SkuCode = "QC-RS9B-3RC0",
+                Description = "The perfect Christmas Gift for HER Fragrance Advent Calendar for WOMEN24 Individual " +
+                              "Fragrances: 23 Glass Bottles x 5 ml sprays + 1 Bottle x 15 ml sprayBox Size: 7 x 20 x 32 cms; Wt.: 590g " +
+                              "24 Fragrances: 01 Mamba Juice, 02 Lady in Gold, 03 Miss Dollar, 04 Secret Visit, 05 Red Ruby 999, 06 Hello Me, 07 Lady Love, " +
+                              "08 Gold Flame, 09 Figure Out, 10 Pink Diamond 999, 11 Miss Valentine, 12 Rose Gold 999, 13 Deep Love, 14 Bella Model, " +
+                              "15 Jeopardy, 16 Fresh Flower, 17 Wild Cobra, 18 Eau de Jasmine, 19 Figure Out Sensuelle, 20 Pink Purse, 21 Inquisitive, " +
+                              "22 Twinkle Touch, 23 Model Attitude, 24 Purse Strings.",
+
+            }).Entity;
+
+            Product productGS2 = ctx.Products.Add(new Product()
+            {
+                Id = 58,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "A3301",
+                Name = "FRAGRANCE CHRISTMAS ADVENT CALENDAR FOR HIM by Saffron LONDON",
+                Variant = "0",
+                Price = 24.99,
+                GenderId = gender2.Id,
+                BrandId = brand7.Id,
+                Availability = 8,
+                SkuCode = "81-NMW5-VCI5",
+                Description = "The perfect Christmas Gift for HIM 24 Days Fragrance Advent Calendar for Men 24 Individual Fragrances" +
+                             "23 Glass Bottles x 5 ml sprays + 1 Bottle x 15 ml spray.Box Size: 7 x 20 x 32 cms; Wt.: 590g " +
+                             "24 Fragrances:  01 Gold 999, 02 Dark Black, 03 Base Code, 04 It's My Time, 05 Silver 999, 06 Art Man," +
+                             " 07 Figure Out Red, 08 Private Club, 09 Gold Dollar, 10 X-one, 11 Figure Out Blue, 12 Jibe, " +
+                             "13 Magnitude, 14 Krowne Royale, 15 Star Men, 16 Best Man, 17 Blue Rock 999, 18 Secret Visit," +
+                             " 19 Italiano Men, 20 Jazz Club, 21 Dark Mode, 22 Real Pro, 23 Grenade, 24 Figure Out Black.",
+
+            }).Entity;
 
 
 
