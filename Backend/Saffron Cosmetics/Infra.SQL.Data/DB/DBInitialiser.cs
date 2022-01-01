@@ -1783,10 +1783,94 @@ namespace Infra.SQL.Data.DB
                 Availability = 24,
                 SkuCode = "5055339903671",
                 Description = "Saffron Foundation Brush: The flat structure and rounded tip of this brush is perfect for " +
-                "applying a flawless even base.",
+                              "applying a flawless even base.",
 
             }).Entity;
 
+            Product productBr6 = ctx.Products.Add(new Product()
+            {
+                Id = 72,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "9101",
+                Name = "Saffron Gift Box with 8 Pieces Makeup Brushes",
+                Variant = "0",
+                Price = 14.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903749",
+                Description = "Saffron Gift Box Contains 8 Different Makeup Brushes: Fan Brush, " +
+                              "Eyeshadow Brush, Stipple Brush, Slanted Eyeshadow, Foundation Brush, Slanted Foundation Brush," +
+                              " Pro Sculpting Brush.",
+
+            }).Entity;
+
+
+            Product productBr7 = ctx.Products.Add(new Product()
+            {
+                Id = 73,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8108",
+                Name = "Saffron Pro Sculpting Brush",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903725",
+                Description = "Saffron Pro Sculpting Brush: A thich bundled brush with a slightly angled end which fits perfectly " +
+                              "in the hollows of the cheek. The easiest way to add definition to your face.",
+
+            }).Entity;
+
+            Product productBr8 = ctx.Products.Add(new Product()
+            {
+                Id = 74,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8105",
+                Name = "Saffron Slanted EyeShadow Brush",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903695",
+                Description = "Saffron Slanted Eyeshadow Brush: Tapered brush perfect for shading the eye socket.",
+
+            }).Entity;
+
+            Product productBr9 = ctx.Products.Add(new Product()
+            {
+                Id = 75,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8107",
+                Name = "Saffron Slanted Foundation Brush",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903718",
+                Description = "Saffron Slanted Foundation Brush: The angled cut allows you to build up coverage creating high definition results.",
+
+            }).Entity;
+
+
+            Product productBr10 = ctx.Products.Add(new Product()
+            {
+                Id = 76,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8104",
+                Name = "Saffron Stipple Brush",
+                Variant = "0",
+                Price = 4.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903688",
+                Description = "Saffron Stipple Brush: Flat topped duo fibres, ideal for buffing and blending colours.",
+
+            }).Entity;
 
 
             #endregion
