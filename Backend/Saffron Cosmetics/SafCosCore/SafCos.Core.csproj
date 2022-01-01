@@ -6,13 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="AppService\ValidatorInterface\**" />
     <Compile Remove="AppService\Validator\**" />
     <Compile Remove="AuthHelper\**" />
-    <EmbeddedResource Remove="AppService\ValidatorInterface\**" />
     <EmbeddedResource Remove="AppService\Validator\**" />
     <EmbeddedResource Remove="AuthHelper\**" />
-    <None Remove="AppService\ValidatorInterface\**" />
     <None Remove="AppService\Validator\**" />
     <None Remove="AuthHelper\**" />
   </ItemGroup>

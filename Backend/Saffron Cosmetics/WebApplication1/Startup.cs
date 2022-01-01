@@ -15,7 +15,6 @@ using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using SafCos.Core.AppService.Service;
 using SafCos.Core.AppService.ServiceInterface;
-using SafCos.Core.AppService.Validators;
 using SafCos.Core.DomainService;
 using SafCos.Core.Entities;
 using System;
@@ -26,6 +25,8 @@ using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using SafCos.Core.Helper;
+using SafCos.Core.AppService.ValidatorInterface;
+using SafCos.Core.AppService.Validators;
 
 namespace WebApplication1
 {
@@ -97,7 +98,7 @@ namespace WebApplication1
 
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IProductRepo, ProductRepo>();
-            services.AddScoped<ProductValidator>();
+            services.AddScoped<IProductValidator,ProductValidator>();
 
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepo, UserRepo>();
