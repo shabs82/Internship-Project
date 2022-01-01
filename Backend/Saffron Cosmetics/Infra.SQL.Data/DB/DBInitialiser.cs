@@ -340,6 +340,13 @@ namespace Infra.SQL.Data.DB
                 BrandName = "Fragrance World"
 
             }).Entity;
+
+            Brand brand9 = ctx.Brands.Add(new Brand()
+            {
+                Id = 9,
+                BrandName = "Atika Perfumes"
+
+            }).Entity;
             #endregion
 
 
@@ -1531,6 +1538,252 @@ namespace Infra.SQL.Data.DB
                              " 07 Figure Out Red, 08 Private Club, 09 Gold Dollar, 10 X-one, 11 Figure Out Blue, 12 Jibe, " +
                              "13 Magnitude, 14 Krowne Royale, 15 Star Men, 16 Best Man, 17 Blue Rock 999, 18 Secret Visit," +
                              " 19 Italiano Men, 20 Jazz Club, 21 Dark Mode, 22 Real Pro, 23 Grenade, 24 Figure Out Black.",
+
+            }).Entity;
+
+            Product productGS3 = ctx.Products.Add(new Product()
+            {
+                Id = 59,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "J18M20 ",
+                Name = "QAMAR AL LAYL 3 Pcs Perfume/Roll-on/Body Spray Gift Set",
+                Variant = "0",
+                Price = 9.99,
+                GenderId = gender3.Id,
+                BrandId = brand9.Id,
+                Availability = 12,
+                SkuCode = "5055339917449",
+                Description = "Gender-neutral 3 Pcs Gift set (Eau de Parfum Spray 50ml/ Perfumed Body Spray 50ml/ Large Non-Alcoholic" +
+                              " Roll-on Perfume 29ml)Qamar Al Layl Fresh and Oriental Long Lasting Eau de Parfum spray 50mlQamar " +
+                              "Al Layl Perfumed all over body spray 50ml suit all occasions its keeps body odour away and fresh for " +
+                              "long.Qamar Al Layl Large Roll - on Perfumes 29ml are highly concentrated with perfume oil(alcohol free)" +
+                              " and perfectly portable to use discreetly anywhere.An Arabic oriental fragrance you will fall in love" +
+                              " with.A perfect gift for any OccasionSize: 18 x 5.5 x 21 cms.",
+
+            }).Entity;
+
+
+            Product productGS4 = ctx.Products.Add(new Product()
+            {
+                Id = 60,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "A771",
+                Name = "FRAGRANCE 7 DAYS ADVENT CALENDAR FOR HER by Saffron LONDON",
+                Variant = "0",
+                Price = 14.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 9,
+                SkuCode = "B08GJV5MGS",
+                Description = "Saffron London Perfume Seven Days Gift for Her A Gift for Every OccasionCHRISTMAS,VALENTINE DAY," +
+                              "BIRTHDAY,MOTHERS DAY......A fragrance gift you can open again and again.Open a new fragrance for every " +
+                              "day of the week.Enjoy your special occasion and make it last all week with a new scent each day." +
+                              "7 Sensational Fragrances: MAMBA JUICE 15ml, HELLO ME 15ml, MODEL ATTITUDE 15ml, FIGURE OUT SENSUELLE " +
+                              "15ml, JEOPARDY 15ml, MISS VALENTINE 15ml, PURSE STRINGS 15ml." +
+                              "Gift Box Weight with Content: 495g - Gift Box Size: 16 x 7.3 x 22 cms",
+
+            }).Entity;
+
+            Product productGS5 = ctx.Products.Add(new Product()
+            {
+                Id = 61,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "A772",
+                Name = "FRAGRANCE 7 DAYS ADVENT CALENDAR FOR HIM by Saffron LONDON",
+                Variant = "0",
+                Price = 14.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 12,
+                SkuCode = "B08GJV9987",
+                Description = "Saffron London Perfume Seven Days Gift for Him A Gift for Every Occasion. CHRISTMAS,VALENTINE DAY," +
+                              "BIRTHDAY,MOTHERS DAY......A fragrance gift you can open again and again.Open a new fragrance for every " +
+                              "day of the week.Enjoy your special occasion and make it last all week with a new scent each day." +
+                              "7 Sensational Fragrances: SECRET VISIT 15ml, JAZZ CLUB 15ml, PRIVATE CLUB 15ml, ITALIANO MAN 15ml, " +
+                              "JIBE INTENSE 15ml, FIGURE OUT MEN 15ml, GOLD DOLLAR 15ml." +
+                              "Gift Box Weight with Content: 495g - Gift Box Size: 16 x 7.3 x 22 cms",
+
+            }).Entity;
+
+            Product productGS6 = ctx.Products.Add(new Product()
+            {
+                Id = 62,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "J17M20",
+                Name = "MUKHALLAT AL RAISI 3 Pcs Perfume/Roll-on/Body Spray Gift Set",
+                Variant = "0",
+                Price = 9.99,
+                GenderId = gender3.Id,
+                BrandId = brand9.Id,
+                Availability = 12,
+                SkuCode = "5055339917456",
+                Description = "Gender-neutral 3 Pcs Gift set (Eau de Parfum Spray 50ml/ Perfumed Body Spray 50ml/ Large Non-Alcoholic " +
+                              "Roll-on Perfume 29ml)Mukhallat Al Raisi Fresh and Oriental Long Lasting Eau de Parfum spray 50ml " +
+                              "Mukhallat Al Raisi Perfumed all over body spray 50ml suit all occasions its keeps body odour away and fresh" +
+                              " for long.Mukhallat Al Raisi Large Roll - on Perfumes 29ml are highly concentrated with perfume oil(alcohol free) " +
+                              "and perfectly portable to use discreetly anywhere.An Arabic oriental fragrance you will fall in love with. " +
+                              "A perfect gift for any Occasion.Size: 18 x 5.5 x 21 cms.",
+
+            }).Entity;
+
+            Product productGS7 = ctx.Products.Add(new Product()
+            {
+                Id = 63,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "J19M20",
+                Name = "OUD MALAKI 3 Pcs Perfume/Roll-on/Body Spray Gift Set",
+                Variant = "0",
+                Price = 9.99,
+                GenderId = gender3.Id,
+                BrandId = brand9.Id,
+                Availability = 12,
+                SkuCode = "5055339917463",
+                Description = "Gender-neutral 3 Pcs Gift set (Eau de Parfum Spray 50ml/ Perfumed Body Spray 50ml/ Large Non-Alcoholic " +
+                "Roll-on Perfume 29ml)Oud Malaki Fresh and Oriental Long Lasting Eau de Parfum spray 50mlOud Malaki Perfumed " +
+                "all over body spray 50ml suit all occasions its keeps body odour away and fresh for long.Oud Malaki Large " +
+                "Roll - on Perfumes 29ml are highly concentrated with perfume oil(alcohol free) and perfectly portable to use " +
+                "discreetly anywhere.An Arabic Oud fragrance you will fall in love with.A perfect gift for any Occasion." +
+                "Size: 18 x 5.5 x 21 cms.",
+
+            }).Entity;
+
+            Product productGS8 = ctx.Products.Add(new Product()
+            {
+                Id = 64,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "A1235T",
+                Name = "Red Rose Gift Set for Women",
+                Variant = "0",
+                Price = 9.99,
+                GenderId = gender3.Id,
+                BrandId = brand7.Id,
+                Availability = 12,
+                SkuCode = "5055339902438",
+                Description = "Red Rose Gift Set for Women. THE PERFECT GIFT FOR WOMEN: This beautiful fresh Eau de Parfum & Body " +
+                "Lotion gift set will make the perfect perfume gift for all occasions. This Set Contains: 100ml Eau de Parfum " +
+                "Spray & 100g Body Lotion for women. Style: Sophisticated. Sensual. Warm. Box Size: 25 x 17 x 5 cm",
+
+            }).Entity;
+
+
+            // Accessories>>>>> Applicators
+
+            Product productApp1 = ctx.Products.Add(new Product()
+            { 
+                Id = 65,
+                SecondaryCategoryId = secClass22.Id,
+                ProductCode = "6001",
+                Name = "Saffron Foundation Sponge",
+                Variant = "0",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903466",
+                Description = "Makeup Sponges Gives flawless foundation application every single time when applying Foundations, " +
+                "Creams, Concealers or Blush. " +
+                "Square sponge is more convenient for Eye and Nose Makeup. Colour: MULTI Pack Content : 4 Pcs",
+
+            }).Entity;
+
+            Product productApp2 = ctx.Products.Add(new Product()
+            {
+                Id = 66,
+                SecondaryCategoryId = secClass22.Id,
+                ProductCode = "6101",
+                Name = "Saffron Make Up Removal Sponge",
+                Variant = "0",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903459",
+                Description = "Great for everyday use; apply or remove Powders, Creams, Foundations, Concealer, BB Creams. " +
+                "Unique latex-free Sponges will not crumble or flake, and are non-sensitive. Colour: BEIGE/WHITE Pack Content : 6 Pcs",
+
+            }).Entity;
+
+            //Brushes
+
+            Product productBr1 = ctx.Products.Add(new Product()
+            { 
+                Id = 67,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8109",
+                Name = "Saffron Body Brush",
+                Variant = "0",
+                Price = 6.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903732",
+                Description = "Saffron Body Brush: A short stem with wide rounded bristles with a super soft feel. " +
+                              "Allows wide spread coverage distributing product evenly across your face.",
+
+            }).Entity;
+
+            Product productBr2 = ctx.Products.Add(new Product()
+            {
+                Id = 68,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8102",
+                Name = "Saffron Concealer Brush",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903664",
+                Description = "Saffron Concealer Brush: A brush to pinpoint specfic areas that need extra coverage.",
+
+            }).Entity;
+
+            Product productBr3 = ctx.Products.Add(new Product()
+            {
+                Id = 69,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8103",
+                Name = "Saffron Concealer Brush",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903671",
+                Description = "Saffron Eye Shadow Brush: Use to apply and blend colours on the eyelid and highlight the brow bone.",
+
+            }).Entity;
+
+            Product productBr4 = ctx.Products.Add(new Product()
+            {
+                Id = 70,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8101",
+                Name = "Saffron Fan Brush",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903671",
+                Description = "Saffron Fan Brush: A multipurpose brush to sweep away any excess product or gently apply powders",
+
+            }).Entity;
+
+            Product productBr5 = ctx.Products.Add(new Product()
+            {
+                Id = 71,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8106",
+                Name = "Saffron Foundation Brush",
+                Variant = "0",
+                Price = 4.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903671",
+                Description = "Saffron Foundation Brush: The flat structure and rounded tip of this brush is perfect for " +
+                "applying a flawless even base.",
 
             }).Entity;
 
