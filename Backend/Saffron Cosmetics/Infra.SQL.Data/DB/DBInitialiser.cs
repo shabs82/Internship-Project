@@ -1872,6 +1872,172 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
+            // Foundation
+
+
+            Product productF1 = ctx.Products.Add(new Product()
+            { 
+                Id = 77,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "04",
+                Name = "Saffron BB Cream Soft Honey",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903084",
+                Description = "Saffron BB Cream works effectively to blur imperfections, even skin tone and to improve the quality" +
+                              "of the skin. Saffron BB cream hydrates, brightens, smooths and freshens your skin, so that your " +
+                              "skin looks beautiful all the time. With the Saffron BB cream, you can stop worrying about pimple " +
+                              "marks, uneven and rough skin. Suitable for all types of skin, the Saffron BB Cream is extremely " +
+                              "easy to use. Squeeze out a little cream and apply it on your face with quick, short stokes to get " +
+                              "a natural look. Nett:36g",
+
+            }).Entity;
+
+
+            Product productF2 = ctx.Products.Add(new Product()
+            {
+                Id = 78,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "06",
+                Name = "Saffron BB Cream Beige",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903084",
+                Description = "Saffron BB Cream works effectively to blur imperfections, even skin tone and to improve the quality" +
+                              "of the skin. Saffron BB cream hydrates, brightens, smooths and freshens your skin, so that your " +
+                              "skin looks beautiful all the time. With the Saffron BB cream, you can stop worrying about pimple " +
+                              "marks, uneven and rough skin. Suitable for all types of skin, the Saffron BB Cream is extremely " +
+                              "easy to use. Squeeze out a little cream and apply it on your face with quick, short stokes to get " +
+                              "a natural look. Nett:36g",
+
+            }).Entity;
+
+            Product productF3 = ctx.Products.Add(new Product()
+            {
+                Id = 79,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Ivory",
+                Variant = "01",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339907990",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                              "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF4 = ctx.Products.Add(new Product()
+            {
+                Id = 80,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Sand",
+                Variant = "02",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339907990",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                            "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF5 = ctx.Products.Add(new Product()
+            {
+                Id = 81,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Beige",
+                Variant = "03",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                          "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF6 = ctx.Products.Add(new Product()
+            {
+                Id = 82,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Suntan",
+                Variant = "04",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                         "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF7 = ctx.Products.Add(new Product()
+            {
+                Id = 83,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Honey",
+                Variant = "05",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                        "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF8 = ctx.Products.Add(new Product()
+            {
+                Id = 84,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Caramel",
+                Variant = "06",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                        "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF9 = ctx.Products.Add(new Product()
+            {
+                Id = 85,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Coffee",
+                Variant = "07",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                      "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+
 
             #endregion
 
