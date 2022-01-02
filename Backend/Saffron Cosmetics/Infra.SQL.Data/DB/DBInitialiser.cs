@@ -1929,7 +1929,7 @@ namespace Infra.SQL.Data.DB
                 GenderId = gender4.Id,
                 BrandId = brand7.Id,
                 Availability = 23,
-                SkuCode = "5055339907990",
+                SkuCode = "5055339907686",
                 Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
                               "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
 
@@ -1946,7 +1946,7 @@ namespace Infra.SQL.Data.DB
                 GenderId = gender4.Id,
                 BrandId = brand7.Id,
                 Availability = 23,
-                SkuCode = "5055339907990",
+                SkuCode = "5055339907686",
                 Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
                             "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
 
@@ -1963,7 +1963,7 @@ namespace Infra.SQL.Data.DB
                 GenderId = gender4.Id,
                 BrandId = brand7.Id,
                 Availability = 24,
-                SkuCode = "5055339907990",
+                SkuCode = "5055339907686",
                 Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
                           "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
 
@@ -1980,7 +1980,7 @@ namespace Infra.SQL.Data.DB
                 GenderId = gender4.Id,
                 BrandId = brand7.Id,
                 Availability = 24,
-                SkuCode = "5055339907990",
+                SkuCode = "5055339907686",
                 Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
                          "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
 
@@ -1997,7 +1997,7 @@ namespace Infra.SQL.Data.DB
                 GenderId = gender4.Id,
                 BrandId = brand7.Id,
                 Availability = 24,
-                SkuCode = "5055339907990",
+                SkuCode = "5055339907686",
                 Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
                         "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
 
@@ -2014,7 +2014,7 @@ namespace Infra.SQL.Data.DB
                 GenderId = gender4.Id,
                 BrandId = brand7.Id,
                 Availability = 24,
-                SkuCode = "5055339907990",
+                SkuCode = "5055339907686",
                 Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
                         "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
 
@@ -2031,12 +2031,326 @@ namespace Infra.SQL.Data.DB
                 GenderId = gender4.Id,
                 BrandId = brand7.Id,
                 Availability = 24,
-                SkuCode = "5055339907990",
+                SkuCode = "5055339907686",
                 Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
                       "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
 
             }).Entity;
 
+            Product productF10 = ctx.Products.Add(new Product()
+            {
+                Id = 86,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Latte",
+                Variant = "08",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907686",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                    "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF11 = ctx.Products.Add(new Product()
+            {
+                Id = 87,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Ivory",
+                Variant = "01",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                              "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                              " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                              "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                              "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                              "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF12 = ctx.Products.Add(new Product()
+            {
+                Id = 88,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Sand",
+                Variant = "02",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF13 = ctx.Products.Add(new Product()
+            {
+                Id = 89,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Beige",
+                Variant = "03",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF14 = ctx.Products.Add(new Product()
+            {
+                Id = 90,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Latte",
+                Variant = "03A",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF15 = ctx.Products.Add(new Product()
+            {
+                Id = 91,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Suntan",
+                Variant = "04",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF16 = ctx.Products.Add(new Product()
+            {
+                Id = 92,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Honey",
+                Variant = "05",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF17 = ctx.Products.Add(new Product()
+            {
+                Id = 93,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Coffee",
+                Variant = "07",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF18 = ctx.Products.Add(new Product()
+            {
+                Id = 94,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Caramel",
+                Variant = "06",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+          
+            Product productBL1 = ctx.Products.Add(new Product()
+            {
+                Id = 95,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "828",
+                Name = "Big Blusher Colour",
+                Variant = "01",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339900175",
+                Description = "SAFFRON JUMBO BLUSHER Instantly gives skin a pretty natural glow, Blusher offers the right " +
+                              "colour & brightens your looks, Large size & Light-weight convenient compact ensures for easy " +
+                              "application. Suitable for all skin types. Great for contouring, shading, sculpting, and " +
+                              "highlighting. Available in 3 classic shades. 9.5 x 1.6 cms; Net.:15g.",
+
+            }).Entity;
+
+            Product productBL2 = ctx.Products.Add(new Product()
+            {
+                Id = 96,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "828",
+                Name = "Big Blusher Colour",
+                Variant = "02",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 22,
+                SkuCode = "5055339900175",
+                Description = "SAFFRON JUMBO BLUSHER Instantly gives skin a pretty natural glow, Blusher offers the right " +
+                             "colour & brightens your looks, Large size & Light-weight convenient compact ensures for easy " +
+                             "application. Suitable for all skin types. Great for contouring, shading, sculpting, and " +
+                             "highlighting. Available in 3 classic shades. 9.5 x 1.6 cms; Net.:15g.",
+
+            }).Entity;
+
+            Product productBL3 = ctx.Products.Add(new Product()
+            {
+                Id = 97,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "828",
+                Name = "Big Blusher Colour",
+                Variant = "03",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 22,
+                SkuCode = "5055339900175",
+                Description = "SAFFRON JUMBO BLUSHER Instantly gives skin a pretty natural glow, Blusher offers the right " +
+                            "colour & brightens your looks, Large size & Light-weight convenient compact ensures for easy " +
+                            "application. Suitable for all skin types. Great for contouring, shading, sculpting, and " +
+                            "highlighting. Available in 3 classic shades. 9.5 x 1.6 cms; Net.:15g.",
+
+            }).Entity;
+
+            Product productBL4 = ctx.Products.Add(new Product()
+            {
+                Id = 98,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "01",
+                Name = " Matte Duo Blusher ",
+                Variant = "01",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904197",
+                Description = "Enhance your complexion with this Saffron Matte Duo Blusher. " +
+                              "Enjoy a natural and soft look all day with the blend-able and customisable pressed formula. " +
+                              "Duo Colours to mix and match shade. 7.3 x 1.5 cm; 12g net",
+
+            }).Entity;
+
+            Product productBL5 = ctx.Products.Add(new Product()
+            {
+                Id = 99,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "02",
+                Name = " Matte Duo Blusher ",
+                Variant = "02",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 0,
+                SkuCode = "5055339904197",
+                Description = "Enhance your complexion with this Saffron Matte Duo Blusher. " +
+                             "Enjoy a natural and soft look all day with the blend-able and customisable pressed formula. " +
+                             "Duo Colours to mix and match shade. 7.3 x 1.5 cm; 12g net",
+
+            }).Entity;
+
+            Product productBL6 = ctx.Products.Add(new Product()
+            {
+                Id = 100,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "03",
+                Name = " Matte Duo Blusher ",
+                Variant = "03",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904197",
+                Description = "Enhance your complexion with this Saffron Matte Duo Blusher. " +
+                            "Enjoy a natural and soft look all day with the blend-able and customisable pressed formula. " +
+                            "Duo Colours to mix and match shade. 7.3 x 1.5 cm; 12g net",
+
+            }).Entity;
+
+            Product productBL7 = ctx.Products.Add(new Product()
+            {
+                Id = 101,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "04",
+                Name = " Matte Duo Blusher ",
+                Variant = "04",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904197",
+                Description = "Enhance your complexion with this Saffron Matte Duo Blusher. " +
+                            "Enjoy a natural and soft look all day with the blend-able and customisable pressed formula. " +
+                            "Duo Colours to mix and match shade. 7.3 x 1.5 cm; 12g net",
+
+            }).Entity;
 
 
             #endregion
