@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using SafCos.Core.AppService.ServiceInterface;
+using SafCos.Core.AppService.ValidatorInterface;
 using SafCos.Core.AppService.Validators;
 using SafCos.Core.DomainService;
 using SafCos.Core.Entities;
@@ -14,26 +15,30 @@ namespace SafCos.Core.AppService.Service
     public class ProductService : IProductService
     {
         private readonly IProductRepo _productRepo;
+        //private readonly ProductValidator _prodValidator;
+        private readonly IProductValidator _productValidator;
+
         
-        public ProductService(IProductRepo productRepo)
+        public ProductService(IProductRepo productRepo, IProductValidator productValidator)
         {
-            _productRepo = productRepo ?? throw new ArgumentNullException(nameof(productRepo), "Repository cannot be null.");
+            _productRepo = productRepo ?? throw new NullReferenceException("Repo cannot be null");
+            _productValidator = productValidator ?? throw new NullReferenceException("Validator cannot be null"); ;
             
         }
 
         public Product CreateProduct(Product product)
         {
-           
+            _productValidator.DefaultValidation(product);
             return _productRepo.CreateProduct(product);
 
         }
         public List<Product> ReadAllProducts()
         {
-            return _productRepo.ReadAllProducts();
+            return _productRepo.ReadAllProducts().ToList();
         }
         public Product GetProductById(int id)
         {
-            if(id <= 0 )
+            if(id < 0 )
             {
                 throw new NullReferenceException("Invalid ID");
             }
@@ -42,27 +47,13 @@ namespace SafCos.Core.AppService.Service
         }
         public Product UpdateProduct(Product prodToUpdate)
         {
-            if (prodToUpdate.Id < 0 || prodToUpdate.Name == null)
-                throw new ArgumentNullException("Invalid Id or Name");
-            if (prodToUpdate.Price <= 0)
-                throw new ArgumentOutOfRangeException("price cannot be 0 or in negative");
-            if (prodToUpdate.SkuCode == null)
-                throw new Exception("skuCode cannot be empty");
-            if (prodToUpdate.Description == string.Empty)
-                throw new MissingFieldException("please describe the product");
-            if (prodToUpdate.Availability <= 5)
-                throw new NullReferenceException("product is unavailable");
-            if (prodToUpdate.ProductCode == null)
-                throw new NullReferenceException("invalid product code");
+            _productValidator.UpdateProduct(prodToUpdate);
             return _productRepo.UpdateProduct(prodToUpdate);
-        }
-
-       
+        }      
 
         public Product DeleteProduct(int id)
         {
-            if (id <= 0)
-                throw new NullReferenceException("Invalid ID");
+            _productValidator.DeleteProduct(id);
             return _productRepo.GetProductById(id);
         }
 

@@ -6,32 +6,35 @@ using FluentAssertions;
 using Moq;
 using SafCos.Core.AppService.Service;
 using SafCos.Core.AppService.ServiceInterface;
+using SafCos.Core.AppService.ValidatorInterface;
 using SafCos.Core.DomainService;
 using SafCos.Core.Entities;
 using Xunit;
 
-namespace UnitTests
+namespace SaffronCosmetics.UnitTests.ProductServiceTest
 {
     public class ProductServiceTest
     {
         private Mock<IProductRepo> _productRepoMock;
+        private Mock<IProductValidator> _productValidatorMock;
 
         public ProductServiceTest()
         {
             _productRepoMock = new Mock<IProductRepo>();
+            _productValidatorMock = new Mock<IProductValidator>();
         }
 
         [Fact]
         public void NewProductService_WithNullRepository_ShouldThrowException()
         {
-            Action action = () => new ProductService(null);
+            Action action = () => new ProductService(null,_productValidatorMock.Object);
             action.Should().Throw<ArgumentNullException>().WithMessage(("Repository Cannot be Null. (Parameter 'productRepo')"));
         }
 
         [Fact]
         public void GetAllProducts__ShouldCallRepo_Once()
         {
-            IProductService productService = new ProductService(_productRepoMock.Object);
+            IProductService productService = new ProductService(_productRepoMock.Object,_productValidatorMock.Object);
             _productRepoMock.Setup(m => m.ReadAllProducts()).Returns(() => new List<Product>());
             productService.ReadAllProducts();
             _productRepoMock.Verify(repo => repo.ReadAllProducts(), Times.Once);
@@ -40,7 +43,8 @@ namespace UnitTests
         [Fact]
         public void GetProductById_WithZeroId_ShouldThrowException()
         {
-            var service = new ProductService(_productRepoMock.Object);
+                       
+            IProductService service = new ProductService(_productRepoMock.Object, _productValidatorMock.Object);
 
             Action action = () => service.GetProductById(0);
             action.Should().Throw<NullReferenceException>().WithMessage(("Invalid ID"));
@@ -49,7 +53,7 @@ namespace UnitTests
         [Fact]
         public void DeleteProduct_WithZeroId_ShouldThrowException()
         {
-            var service = new ProductService(_productRepoMock.Object);
+            var service = new ProductService(_productRepoMock.Object, _productValidatorMock.Object);
 
             Action action = () => service.DeleteProduct(0);
             action.Should().Throw<NullReferenceException>().WithMessage(("Invalid ID"));

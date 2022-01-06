@@ -340,6 +340,13 @@ namespace Infra.SQL.Data.DB
                 BrandName = "Fragrance World"
 
             }).Entity;
+
+            Brand brand9 = ctx.Brands.Add(new Brand()
+            {
+                Id = 9,
+                BrandName = "Atika Perfumes"
+
+            }).Entity;
             #endregion
 
 
@@ -1482,7 +1489,7 @@ namespace Infra.SQL.Data.DB
                 GenderId = gender2.Id,
                 BrandId = brand7.Id,
                 Availability = 12,
-                SkuCode = "",
+                SkuCode = "5055339916671",
                 Description = "BASE CODE Men's Eau de Toilette 100ml Spray.  " +
                           "The fragrance is crafted to provoke the senses with an air of depth and enigma: powerful, rich, full bodied." +
                           " It helps you stay fresh and in the limelight all day long. " +
@@ -1490,8 +1497,860 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
+            //Gift Sets
+
+            Product productGS1 = ctx.Products.Add(new Product()
+            {
+                Id = 57,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "A7701",
+                Name = "FRAGRANCE CHRISTMAS ADVENT CALENDAR FOR HER by Saffron LONDON",
+                Variant = "0",
+                Price = 24.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 11,
+                SkuCode = "QC-RS9B-3RC0",
+                Description = "The perfect Christmas Gift for HER Fragrance Advent Calendar for WOMEN24 Individual " +
+                              "Fragrances: 23 Glass Bottles x 5 ml sprays + 1 Bottle x 15 ml sprayBox Size: 7 x 20 x 32 cms; Wt.: 590g " +
+                              "24 Fragrances: 01 Mamba Juice, 02 Lady in Gold, 03 Miss Dollar, 04 Secret Visit, 05 Red Ruby 999, 06 Hello Me, 07 Lady Love, " +
+                              "08 Gold Flame, 09 Figure Out, 10 Pink Diamond 999, 11 Miss Valentine, 12 Rose Gold 999, 13 Deep Love, 14 Bella Model, " +
+                              "15 Jeopardy, 16 Fresh Flower, 17 Wild Cobra, 18 Eau de Jasmine, 19 Figure Out Sensuelle, 20 Pink Purse, 21 Inquisitive, " +
+                              "22 Twinkle Touch, 23 Model Attitude, 24 Purse Strings.",
+
+            }).Entity;
+
+            Product productGS2 = ctx.Products.Add(new Product()
+            {
+                Id = 58,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "A3301",
+                Name = "FRAGRANCE CHRISTMAS ADVENT CALENDAR FOR HIM by Saffron LONDON",
+                Variant = "0",
+                Price = 24.99,
+                GenderId = gender2.Id,
+                BrandId = brand7.Id,
+                Availability = 8,
+                SkuCode = "81-NMW5-VCI5",
+                Description = "The perfect Christmas Gift for HIM 24 Days Fragrance Advent Calendar for Men 24 Individual Fragrances" +
+                             "23 Glass Bottles x 5 ml sprays + 1 Bottle x 15 ml spray.Box Size: 7 x 20 x 32 cms; Wt.: 590g " +
+                             "24 Fragrances:  01 Gold 999, 02 Dark Black, 03 Base Code, 04 It's My Time, 05 Silver 999, 06 Art Man," +
+                             " 07 Figure Out Red, 08 Private Club, 09 Gold Dollar, 10 X-one, 11 Figure Out Blue, 12 Jibe, " +
+                             "13 Magnitude, 14 Krowne Royale, 15 Star Men, 16 Best Man, 17 Blue Rock 999, 18 Secret Visit," +
+                             " 19 Italiano Men, 20 Jazz Club, 21 Dark Mode, 22 Real Pro, 23 Grenade, 24 Figure Out Black.",
+
+            }).Entity;
+
+            Product productGS3 = ctx.Products.Add(new Product()
+            {
+                Id = 59,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "J18M20 ",
+                Name = "QAMAR AL LAYL 3 Pcs Perfume/Roll-on/Body Spray Gift Set",
+                Variant = "0",
+                Price = 9.99,
+                GenderId = gender3.Id,
+                BrandId = brand9.Id,
+                Availability = 12,
+                SkuCode = "5055339917449",
+                Description = "Gender-neutral 3 Pcs Gift set (Eau de Parfum Spray 50ml/ Perfumed Body Spray 50ml/ Large Non-Alcoholic" +
+                              " Roll-on Perfume 29ml)Qamar Al Layl Fresh and Oriental Long Lasting Eau de Parfum spray 50mlQamar " +
+                              "Al Layl Perfumed all over body spray 50ml suit all occasions its keeps body odour away and fresh for " +
+                              "long.Qamar Al Layl Large Roll - on Perfumes 29ml are highly concentrated with perfume oil(alcohol free)" +
+                              " and perfectly portable to use discreetly anywhere.An Arabic oriental fragrance you will fall in love" +
+                              " with.A perfect gift for any OccasionSize: 18 x 5.5 x 21 cms.",
+
+            }).Entity;
 
 
+            Product productGS4 = ctx.Products.Add(new Product()
+            {
+                Id = 60,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "A771",
+                Name = "FRAGRANCE 7 DAYS ADVENT CALENDAR FOR HER by Saffron LONDON",
+                Variant = "0",
+                Price = 14.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 9,
+                SkuCode = "B08GJV5MGS",
+                Description = "Saffron London Perfume Seven Days Gift for Her A Gift for Every OccasionCHRISTMAS,VALENTINE DAY," +
+                              "BIRTHDAY,MOTHERS DAY......A fragrance gift you can open again and again.Open a new fragrance for every " +
+                              "day of the week.Enjoy your special occasion and make it last all week with a new scent each day." +
+                              "7 Sensational Fragrances: MAMBA JUICE 15ml, HELLO ME 15ml, MODEL ATTITUDE 15ml, FIGURE OUT SENSUELLE " +
+                              "15ml, JEOPARDY 15ml, MISS VALENTINE 15ml, PURSE STRINGS 15ml." +
+                              "Gift Box Weight with Content: 495g - Gift Box Size: 16 x 7.3 x 22 cms",
+
+            }).Entity;
+
+            Product productGS5 = ctx.Products.Add(new Product()
+            {
+                Id = 61,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "A772",
+                Name = "FRAGRANCE 7 DAYS ADVENT CALENDAR FOR HIM by Saffron LONDON",
+                Variant = "0",
+                Price = 14.99,
+                GenderId = gender1.Id,
+                BrandId = brand7.Id,
+                Availability = 12,
+                SkuCode = "B08GJV9987",
+                Description = "Saffron London Perfume Seven Days Gift for Him A Gift for Every Occasion. CHRISTMAS,VALENTINE DAY," +
+                              "BIRTHDAY,MOTHERS DAY......A fragrance gift you can open again and again.Open a new fragrance for every " +
+                              "day of the week.Enjoy your special occasion and make it last all week with a new scent each day." +
+                              "7 Sensational Fragrances: SECRET VISIT 15ml, JAZZ CLUB 15ml, PRIVATE CLUB 15ml, ITALIANO MAN 15ml, " +
+                              "JIBE INTENSE 15ml, FIGURE OUT MEN 15ml, GOLD DOLLAR 15ml." +
+                              "Gift Box Weight with Content: 495g - Gift Box Size: 16 x 7.3 x 22 cms",
+
+            }).Entity;
+
+            Product productGS6 = ctx.Products.Add(new Product()
+            {
+                Id = 62,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "J17M20",
+                Name = "MUKHALLAT AL RAISI 3 Pcs Perfume/Roll-on/Body Spray Gift Set",
+                Variant = "0",
+                Price = 9.99,
+                GenderId = gender3.Id,
+                BrandId = brand9.Id,
+                Availability = 12,
+                SkuCode = "5055339917456",
+                Description = "Gender-neutral 3 Pcs Gift set (Eau de Parfum Spray 50ml/ Perfumed Body Spray 50ml/ Large Non-Alcoholic " +
+                              "Roll-on Perfume 29ml)Mukhallat Al Raisi Fresh and Oriental Long Lasting Eau de Parfum spray 50ml " +
+                              "Mukhallat Al Raisi Perfumed all over body spray 50ml suit all occasions its keeps body odour away and fresh" +
+                              " for long.Mukhallat Al Raisi Large Roll - on Perfumes 29ml are highly concentrated with perfume oil(alcohol free) " +
+                              "and perfectly portable to use discreetly anywhere.An Arabic oriental fragrance you will fall in love with. " +
+                              "A perfect gift for any Occasion.Size: 18 x 5.5 x 21 cms.",
+
+            }).Entity;
+
+            Product productGS7 = ctx.Products.Add(new Product()
+            {
+                Id = 63,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "J19M20",
+                Name = "OUD MALAKI 3 Pcs Perfume/Roll-on/Body Spray Gift Set",
+                Variant = "0",
+                Price = 9.99,
+                GenderId = gender3.Id,
+                BrandId = brand9.Id,
+                Availability = 12,
+                SkuCode = "5055339917463",
+                Description = "Gender-neutral 3 Pcs Gift set (Eau de Parfum Spray 50ml/ Perfumed Body Spray 50ml/ Large Non-Alcoholic " +
+                "Roll-on Perfume 29ml)Oud Malaki Fresh and Oriental Long Lasting Eau de Parfum spray 50mlOud Malaki Perfumed " +
+                "all over body spray 50ml suit all occasions its keeps body odour away and fresh for long.Oud Malaki Large " +
+                "Roll - on Perfumes 29ml are highly concentrated with perfume oil(alcohol free) and perfectly portable to use " +
+                "discreetly anywhere.An Arabic Oud fragrance you will fall in love with.A perfect gift for any Occasion." +
+                "Size: 18 x 5.5 x 21 cms.",
+
+            }).Entity;
+
+            Product productGS8 = ctx.Products.Add(new Product()
+            {
+                Id = 64,
+                SecondaryCategoryId = secClass28.Id,
+                ProductCode = "A1235T",
+                Name = "Red Rose Gift Set for Women",
+                Variant = "0",
+                Price = 9.99,
+                GenderId = gender3.Id,
+                BrandId = brand7.Id,
+                Availability = 12,
+                SkuCode = "5055339902438",
+                Description = "Red Rose Gift Set for Women. THE PERFECT GIFT FOR WOMEN: This beautiful fresh Eau de Parfum & Body " +
+                "Lotion gift set will make the perfect perfume gift for all occasions. This Set Contains: 100ml Eau de Parfum " +
+                "Spray & 100g Body Lotion for women. Style: Sophisticated. Sensual. Warm. Box Size: 25 x 17 x 5 cm",
+
+            }).Entity;
+
+
+            // Accessories>>>>> Applicators
+
+            Product productApp1 = ctx.Products.Add(new Product()
+            { 
+                Id = 65,
+                SecondaryCategoryId = secClass22.Id,
+                ProductCode = "6001",
+                Name = "Saffron Foundation Sponge",
+                Variant = "0",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903466",
+                Description = "Makeup Sponges Gives flawless foundation application every single time when applying Foundations, " +
+                "Creams, Concealers or Blush. " +
+                "Square sponge is more convenient for Eye and Nose Makeup. Colour: MULTI Pack Content : 4 Pcs",
+
+            }).Entity;
+
+            Product productApp2 = ctx.Products.Add(new Product()
+            {
+                Id = 66,
+                SecondaryCategoryId = secClass22.Id,
+                ProductCode = "6101",
+                Name = "Saffron Make Up Removal Sponge",
+                Variant = "0",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903459",
+                Description = "Great for everyday use; apply or remove Powders, Creams, Foundations, Concealer, BB Creams. " +
+                "Unique latex-free Sponges will not crumble or flake, and are non-sensitive. Colour: BEIGE/WHITE Pack Content : 6 Pcs",
+
+            }).Entity;
+
+            //Brushes
+
+            Product productBr1 = ctx.Products.Add(new Product()
+            { 
+                Id = 67,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8109",
+                Name = "Saffron Body Brush",
+                Variant = "0",
+                Price = 6.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903732",
+                Description = "Saffron Body Brush: A short stem with wide rounded bristles with a super soft feel. " +
+                              "Allows wide spread coverage distributing product evenly across your face.",
+
+            }).Entity;
+
+            Product productBr2 = ctx.Products.Add(new Product()
+            {
+                Id = 68,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8102",
+                Name = "Saffron Concealer Brush",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903664",
+                Description = "Saffron Concealer Brush: A brush to pinpoint specfic areas that need extra coverage.",
+
+            }).Entity;
+
+            Product productBr3 = ctx.Products.Add(new Product()
+            {
+                Id = 69,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8103",
+                Name = "Saffron Concealer Brush",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903671",
+                Description = "Saffron Eye Shadow Brush: Use to apply and blend colours on the eyelid and highlight the brow bone.",
+
+            }).Entity;
+
+            Product productBr4 = ctx.Products.Add(new Product()
+            {
+                Id = 70,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8101",
+                Name = "Saffron Fan Brush",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903671",
+                Description = "Saffron Fan Brush: A multipurpose brush to sweep away any excess product or gently apply powders",
+
+            }).Entity;
+
+            Product productBr5 = ctx.Products.Add(new Product()
+            {
+                Id = 71,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8106",
+                Name = "Saffron Foundation Brush",
+                Variant = "0",
+                Price = 4.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903671",
+                Description = "Saffron Foundation Brush: The flat structure and rounded tip of this brush is perfect for " +
+                              "applying a flawless even base.",
+
+            }).Entity;
+
+            Product productBr6 = ctx.Products.Add(new Product()
+            {
+                Id = 72,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "9101",
+                Name = "Saffron Gift Box with 8 Pieces Makeup Brushes",
+                Variant = "0",
+                Price = 14.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903749",
+                Description = "Saffron Gift Box Contains 8 Different Makeup Brushes: Fan Brush, " +
+                              "Eyeshadow Brush, Stipple Brush, Slanted Eyeshadow, Foundation Brush, Slanted Foundation Brush," +
+                              " Pro Sculpting Brush.",
+
+            }).Entity;
+
+
+            Product productBr7 = ctx.Products.Add(new Product()
+            {
+                Id = 73,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8108",
+                Name = "Saffron Pro Sculpting Brush",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903725",
+                Description = "Saffron Pro Sculpting Brush: A thich bundled brush with a slightly angled end which fits perfectly " +
+                              "in the hollows of the cheek. The easiest way to add definition to your face.",
+
+            }).Entity;
+
+            Product productBr8 = ctx.Products.Add(new Product()
+            {
+                Id = 74,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8105",
+                Name = "Saffron Slanted EyeShadow Brush",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903695",
+                Description = "Saffron Slanted Eyeshadow Brush: Tapered brush perfect for shading the eye socket.",
+
+            }).Entity;
+
+            Product productBr9 = ctx.Products.Add(new Product()
+            {
+                Id = 75,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8107",
+                Name = "Saffron Slanted Foundation Brush",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903718",
+                Description = "Saffron Slanted Foundation Brush: The angled cut allows you to build up coverage creating high definition results.",
+
+            }).Entity;
+
+
+            Product productBr10 = ctx.Products.Add(new Product()
+            {
+                Id = 76,
+                SecondaryCategoryId = secClass23.Id,
+                ProductCode = "8104",
+                Name = "Saffron Stipple Brush",
+                Variant = "0",
+                Price = 4.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903688",
+                Description = "Saffron Stipple Brush: Flat topped duo fibres, ideal for buffing and blending colours.",
+
+            }).Entity;
+
+            // Foundation
+
+
+            Product productF1 = ctx.Products.Add(new Product()
+            { 
+                Id = 77,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "04",
+                Name = "Saffron BB Cream Soft Honey",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903084",
+                Description = "Saffron BB Cream works effectively to blur imperfections, even skin tone and to improve the quality" +
+                              "of the skin. Saffron BB cream hydrates, brightens, smooths and freshens your skin, so that your " +
+                              "skin looks beautiful all the time. With the Saffron BB cream, you can stop worrying about pimple " +
+                              "marks, uneven and rough skin. Suitable for all types of skin, the Saffron BB Cream is extremely " +
+                              "easy to use. Squeeze out a little cream and apply it on your face with quick, short stokes to get " +
+                              "a natural look. Nett:36g",
+
+            }).Entity;
+
+
+            Product productF2 = ctx.Products.Add(new Product()
+            {
+                Id = 78,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "06",
+                Name = "Saffron BB Cream Beige",
+                Variant = "0",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903084",
+                Description = "Saffron BB Cream works effectively to blur imperfections, even skin tone and to improve the quality" +
+                              "of the skin. Saffron BB cream hydrates, brightens, smooths and freshens your skin, so that your " +
+                              "skin looks beautiful all the time. With the Saffron BB cream, you can stop worrying about pimple " +
+                              "marks, uneven and rough skin. Suitable for all types of skin, the Saffron BB Cream is extremely " +
+                              "easy to use. Squeeze out a little cream and apply it on your face with quick, short stokes to get " +
+                              "a natural look. Nett:36g",
+
+            }).Entity;
+
+            Product productF3 = ctx.Products.Add(new Product()
+            {
+                Id = 79,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Ivory",
+                Variant = "01",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339907686",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                              "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF4 = ctx.Products.Add(new Product()
+            {
+                Id = 80,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Sand",
+                Variant = "02",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339907686",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                            "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF5 = ctx.Products.Add(new Product()
+            {
+                Id = 81,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Beige",
+                Variant = "03",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907686",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                          "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF6 = ctx.Products.Add(new Product()
+            {
+                Id = 82,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Suntan",
+                Variant = "04",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907686",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                         "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF7 = ctx.Products.Add(new Product()
+            {
+                Id = 83,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Honey",
+                Variant = "05",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907686",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                        "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF8 = ctx.Products.Add(new Product()
+            {
+                Id = 84,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Caramel",
+                Variant = "06",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907686",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                        "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF9 = ctx.Products.Add(new Product()
+            {
+                Id = 85,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Coffee",
+                Variant = "07",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907686",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                      "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF10 = ctx.Products.Add(new Product()
+            {
+                Id = 86,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "556",
+                Name = "Saffron Liquid Foundation Latte",
+                Variant = "08",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907686",
+                Description = "Saffron Flawless Liquid Foundation that provides buildable coverage helps even out skin & impart " +
+                    "a glowing, satin finish. Feels extremely light on the skin. 8 shades to choose from. Net.: 35ml",
+
+            }).Entity;
+
+            Product productF11 = ctx.Products.Add(new Product()
+            {
+                Id = 87,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Ivory",
+                Variant = "01",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                              "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                              " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                              "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                              "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                              "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF12 = ctx.Products.Add(new Product()
+            {
+                Id = 88,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Sand",
+                Variant = "02",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF13 = ctx.Products.Add(new Product()
+            {
+                Id = 89,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Beige",
+                Variant = "03",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF14 = ctx.Products.Add(new Product()
+            {
+                Id = 90,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Latte",
+                Variant = "03A",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF15 = ctx.Products.Add(new Product()
+            {
+                Id = 91,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Suntan",
+                Variant = "04",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF16 = ctx.Products.Add(new Product()
+            {
+                Id = 92,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Honey",
+                Variant = "05",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF17 = ctx.Products.Add(new Product()
+            {
+                Id = 93,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Coffee",
+                Variant = "07",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+            Product productF18 = ctx.Products.Add(new Product()
+            {
+                Id = 94,
+                SecondaryCategoryId = secClass17.Id,
+                ProductCode = "155",
+                Name = "Liquid Foundation Tube Caramel",
+                Variant = "06",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339907990",
+                Description = "Saffron Tube Liquid Foundation: If you’re looking for a natural-looking, medium coverage liquid " +
+                             "foundation, look no further, you'll find a fit for every skin tone, a perfect foundation for normal" +
+                             " to oily skin and refines pores for a natural finish. Get That Flawless Face: With Saffron Tube " +
+                             "Liquid Foundation in 8 popular shades. For best results, use with Saffron Primer to prep your skin " +
+                             "for a flawless makeup application. Saffron Tube Foundation is convenient to store and carry, ideal " +
+                             "for travelling. Can cover up fleck, dark heavy skin, pore etc… Net: 35ml",
+
+            }).Entity;
+
+          
+            Product productBL1 = ctx.Products.Add(new Product()
+            {
+                Id = 95,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "828",
+                Name = "Big Blusher Colour 01",
+                Variant = "01",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339900175",
+                Description = "SAFFRON JUMBO BLUSHER Instantly gives skin a pretty natural glow, Blusher offers the right " +
+                              "colour & brightens your looks, Large size & Light-weight convenient compact ensures for easy " +
+                              "application. Suitable for all skin types. Great for contouring, shading, sculpting, and " +
+                              "highlighting. Available in 3 classic shades. 9.5 x 1.6 cms; Net.:15g.",
+
+            }).Entity;
+
+            Product productBL2 = ctx.Products.Add(new Product()
+            {
+                Id = 96,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "828",
+                Name = "Big Blusher Colour 02",
+                Variant = "02",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 22,
+                SkuCode = "5055339900175",
+                Description = "SAFFRON JUMBO BLUSHER Instantly gives skin a pretty natural glow, Blusher offers the right " +
+                             "colour & brightens your looks, Large size & Light-weight convenient compact ensures for easy " +
+                             "application. Suitable for all skin types. Great for contouring, shading, sculpting, and " +
+                             "highlighting. Available in 3 classic shades. 9.5 x 1.6 cms; Net.:15g.",
+
+            }).Entity;
+
+            Product productBL3 = ctx.Products.Add(new Product()
+            {
+                Id = 97,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "828",
+                Name = "Big Blusher Colour 03",
+                Variant = "03",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 22,
+                SkuCode = "5055339900175",
+                Description = "SAFFRON JUMBO BLUSHER Instantly gives skin a pretty natural glow, Blusher offers the right " +
+                            "colour & brightens your looks, Large size & Light-weight convenient compact ensures for easy " +
+                            "application. Suitable for all skin types. Great for contouring, shading, sculpting, and " +
+                            "highlighting. Available in 3 classic shades. 9.5 x 1.6 cms; Net.:15g.",
+
+            }).Entity;
+
+            Product productBL4 = ctx.Products.Add(new Product()
+            {
+                Id = 98,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "01",
+                Name = " Matte Duo Blusher 01 ",
+                Variant = "01",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904197",
+                Description = "Enhance your complexion with this Saffron Matte Duo Blusher. " +
+                              "Enjoy a natural and soft look all day with the blend-able and customisable pressed formula. " +
+                              "Duo Colours to mix and match shade. 7.3 x 1.5 cm; 12g net",
+
+            }).Entity;
+
+            Product productBL5 = ctx.Products.Add(new Product()
+            {
+                Id = 99,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "02",
+                Name = " Matte Duo Blusher 01",
+                Variant = "02",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 0,
+                SkuCode = "5055339904197",
+                Description = "Enhance your complexion with this Saffron Matte Duo Blusher. " +
+                             "Enjoy a natural and soft look all day with the blend-able and customisable pressed formula. " +
+                             "Duo Colours to mix and match shade. 7.3 x 1.5 cm; 12g net",
+
+            }).Entity;
+
+            Product productBL6 = ctx.Products.Add(new Product()
+            {
+                Id = 100,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "03",
+                Name = " Matte Duo Blusher 03",
+                Variant = "03",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904197",
+                Description = "Enhance your complexion with this Saffron Matte Duo Blusher. " +
+                            "Enjoy a natural and soft look all day with the blend-able and customisable pressed formula. " +
+                            "Duo Colours to mix and match shade. 7.3 x 1.5 cm; 12g net",
+
+            }).Entity;
+
+            Product productBL7 = ctx.Products.Add(new Product()
+            {
+                Id = 101,
+                SecondaryCategoryId = secClass18.Id,
+                ProductCode = "04",
+                Name = " Matte Duo Blusher 04",
+                Variant = "04",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904197",
+                Description = "Enhance your complexion with this Saffron Matte Duo Blusher. " +
+                            "Enjoy a natural and soft look all day with the blend-able and customisable pressed formula. " +
+                            "Duo Colours to mix and match shade. 7.3 x 1.5 cm; 12g net",
+
+            }).Entity;
 
 
             #endregion
