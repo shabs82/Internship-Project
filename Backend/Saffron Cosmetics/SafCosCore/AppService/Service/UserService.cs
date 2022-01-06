@@ -71,6 +71,5 @@ namespace SafCos.Core.AppService.Service
             if (user == null) throw new ArgumentException("This username does not exist");
             return user;
         }
-
     }
 }
