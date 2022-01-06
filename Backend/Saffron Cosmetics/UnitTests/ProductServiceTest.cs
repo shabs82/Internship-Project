@@ -21,7 +21,7 @@ namespace SaffronCosmetics.UnitTests.ProductServiceTest
         public ProductServiceTest()
         {
             _productRepoMock = new Mock<IProductRepo>();
-            _productRepoMock = new Mock<IProductValidator>;
+            _productValidatorMock = new Mock<IProductValidator>();
         }
 
         [Fact]
