@@ -63,7 +63,8 @@ namespace WebApplication1
                   opt =>
                   {
                       opt.UseLoggerFactory(loggerFactory);
-                      opt.UseSqlServer(Configuration.GetConnectionString("defaultConnection"));
+                      opt.UseSqlite("Data Source = safCosmetics.db");
+                      //opt.UseSqlServer(Configuration.GetConnectionString("defaultConnection"));
                   });
             }
             Byte[] secretBytes = new byte[40];
@@ -161,9 +162,6 @@ namespace WebApplication1
                 ctx.Database.EnsureDeleted();
                 ctx.Database.EnsureCreated();
                 dbInitialiser.SeedDB(ctx);
-
-
-
             }
             else if (env.IsProduction())
             {
@@ -171,7 +169,9 @@ namespace WebApplication1
                 var ctx = scope.ServiceProvider.GetRequiredService<SafCosmeticsContext>();
                 var dbInitialiser = scope.ServiceProvider.GetRequiredService<IDBInitialiser>();
 
+                //ctx.Database.EnsureDeleted();
                 ctx.Database.EnsureCreated();
+                //dbInitialiser.SeedDB(ctx);
             }
 
 
