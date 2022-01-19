@@ -52,6 +52,7 @@ namespace Infra.SQL.Data.Repositories
         public User UpdateUser(User userUpdate)
         {
             _safCosmeticsCtx.Attach(userUpdate).State = EntityState.Modified;
+            _safCosmeticsCtx.Update(userUpdate);
             _safCosmeticsCtx.SaveChanges();
             return userUpdate;
         }
