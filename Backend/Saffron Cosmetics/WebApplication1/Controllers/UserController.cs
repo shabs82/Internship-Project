@@ -84,10 +84,12 @@ namespace SafCos.WebApi.Controllers
         {
             try
             {
+                //Checks if Id is larger than 0 and if there is a user with the given id
                 if (id < 1 || user.Id != id)
                 {
                     return BadRequest("Please enter correct id. Id must be bigger than 0");
                 }
+                //otherwise continues onwards, passing the information into the method.
                 return Ok(_userService.UpdateUser(user));
             }
             catch (System.Exception)

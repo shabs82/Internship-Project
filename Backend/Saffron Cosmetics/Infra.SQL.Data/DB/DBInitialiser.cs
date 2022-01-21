@@ -281,6 +281,15 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
+            //SecondaryCategory secClass29 = ctx.SecondaryCategories.Add(new SecondaryCategory()
+            //{
+            //    Id = 29,
+            //    Name = "ZombieNights",
+            //    PrimaryCategoryId = 2
+
+            //}).Entity;
+
+
             #endregion
 
 
@@ -1162,6 +1171,641 @@ namespace Infra.SQL.Data.DB
                     "Sleek silver packaging with a transparent see through cap to identify the shade without having to open the case.",
 
             }).Entity;
+
+
+            ////////////////////////////CONTINUE
+            Product productLs11 = ctx.Products.Add(new Product()
+            {
+                Id = 105,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "402",
+                Name = " Saffron Zombie Nights Matte Velvet Lipstick True Ebony ",
+                Variant = "01",
+                Price = 4.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339904319",
+                Description = "Saffron Zombie Nights Matte Velvet finish Lipstick is pigment-rich, delivering intense colour payoff and a no-shine, all-matte finish." +
+                              "Halloween, Gothic, Skull Series 9.5 x 2.2 cm; Net.:3.5g.",
+
+            }).Entity;
+
+            Product productLs12 = ctx.Products.Add(new Product()
+            {
+                Id = 106,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "402",
+                Name = " Saffron Zombie Nights Matte Velvet Lipstick Mid Night ",
+                Variant = "02",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904319",
+                Description = "Saffron Zombie Nights Matte Velvet finish Lipstick is pigment-rich, delivering intense colour payoff and a no-shine, all-matte finish." +
+                              "Halloween, Gothic, Skull Series 9.5 x 2.2 cm; Net.:3.5g.",
+
+            }).Entity;
+
+            Product productLs13 = ctx.Products.Add(new Product()
+            {
+                Id = 107,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "402",
+                Name = " Saffron Zombie Nights Matte Velvet Lipstick Fetish ",
+                Variant = "03",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904319",
+                Description = "Saffron Zombie Nights Matte Velvet finish Lipstick is pigment-rich, delivering intense colour payoff and a no-shine, all-matte finish." +
+                              "Halloween, Gothic, Skull Series 9.5 x 2.2 cm; Net.:3.5g.",
+
+            }).Entity;
+
+            Product productLs14 = ctx.Products.Add(new Product()
+            {
+                Id = 108,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "402",
+                Name = " Saffron Zombie Nights Matte Velvet Lipstick Chocolate ",
+                Variant = "04",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904319",
+                Description = "Saffron Zombie Nights Matte Velvet finish Lipstick is pigment-rich, delivering intense colour payoff and a no-shine, all-matte finish." +
+                            "Halloween, Gothic, Skull Series 9.5 x 2.2 cm; Net.:3.5g.",
+
+            }).Entity;
+
+            Product productLs15 = ctx.Products.Add(new Product()
+            {
+                Id = 109,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "402",
+                Name = " Saffron Zombie Nights Matte Velvet Lipstick Red Velvet ",
+                Variant = "05",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904319",
+                Description = "Saffron Zombie Nights Matte Velvet finish Lipstick is pigment-rich, delivering intense colour payoff and a no-shine, all-matte finish." +
+                            "Halloween, Gothic, Skull Series 9.5 x 2.2 cm; Net.:3.5g.",
+
+            }).Entity;
+
+            Product productLs16 = ctx.Products.Add(new Product()
+            {
+                Id = 110,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "402",
+                Name = " Saffron Zombie Nights Matte Velvet Lipstick Pink Velvet ",
+                Variant = "06",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339904319",
+                Description = "Saffron Zombie Nights Matte Velvet finish Lipstick is pigment-rich, delivering intense colour payoff and a no-shine, all-matte finish." +
+                           "Halloween, Gothic, Skull Series 9.5 x 2.2 cm; Net.:3.5g.",
+
+            }).Entity;
+
+            Product productLs17 = ctx.Products.Add(new Product()
+            {
+                Id = 111,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "402",
+                Name = " Saffron Zombie Nights Matte Velvet Lipstick Peacock ",
+                Variant = "07",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904319",
+                Description = "Saffron Zombie Nights Matte Velvet finish Lipstick is pigment-rich, delivering intense colour payoff and a no-shine, all-matte finish." +
+                           "Halloween, Gothic, Skull Series 9.5 x 2.2 cm; Net.:3.5g.",
+
+            }).Entity;
+
+            Product productLs18 = ctx.Products.Add(new Product()
+            {
+                Id = 112,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "402",
+                Name = " Saffron Zombie Nights Matte Velvet Lipstick Deep Plum ",
+                Variant = "08",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904319",
+                Description = "Saffron Zombie Nights Matte Velvet finish Lipstick is pigment-rich, delivering intense colour payoff and a no-shine, all-matte finish." +
+                         "Halloween, Gothic, Skull Series 9.5 x 2.2 cm; Net.:3.5g.",
+
+            }).Entity;
+
+            Product productLs19 = ctx.Products.Add(new Product()
+            {
+                Id = 113,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "402",
+                Name = " Saffron Zombie Nights Matte Velvet Lipstick Rock Star ",
+                Variant = "09",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339904319",
+                Description = "Saffron Zombie Nights Matte Velvet finish Lipstick is pigment-rich, delivering intense colour payoff and a no-shine, all-matte finish." +
+             "Halloween, Gothic, Skull Series 9.5 x 2.2 cm; Net.:3.5g.",
+
+            }).Entity;
+
+            Product productLs20 = ctx.Products.Add(new Product()
+            {
+                Id = 114,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "402",
+                Name = " Saffron Zombie Nights Matte Velvet Lipstick Spicy ",
+                Variant = "10",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339904319",
+                Description = "Saffron Zombie Nights Matte Velvet finish Lipstick is pigment-rich, delivering intense colour payoff and a no-shine, all-matte finish." +
+             "Halloween, Gothic, Skull Series 9.5 x 2.2 cm; Net.:3.5g.",
+
+            }).Entity;
+
+            Product productLs21 = ctx.Products.Add(new Product()
+            {
+                Id = 115,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "402",
+                Name = " Saffron Zombie Nights Matte Velvet Lipstick Hot Stuff ",
+                Variant = "11",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904319",
+                Description = "Saffron Zombie Nights Matte Velvet finish Lipstick is pigment-rich, delivering intense colour payoff and a no-shine, all-matte finish." +
+             "Halloween, Gothic, Skull Series 9.5 x 2.2 cm; Net.:3.5g.",
+
+            }).Entity;
+
+            //Diamond SHine Lipsticks
+            Product productLs22 = ctx.Products.Add(new Product()
+            {
+                Id = 116,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1307-01",
+                Name = " Saffron Diamond Shine Lipstick Deep Gold  ",
+                Variant = "01",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904975",
+                Description = "SAFFRON DIAMOND SHINE LIPSTICK A High-Gloss, Moisturising Colour Riche Gold Obsession with all the Shine and Brilliance of a Diamond." +
+                "Super Creamy, High Shine." + "Presenting in 6 Glamorous Shades.  Net.: 3.5g",
+
+            }).Entity;
+
+            Product productLs23 = ctx.Products.Add(new Product()
+            {
+                Id = 117,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1307-02",
+                Name = " Saffron Diamond Shine Lipstick Copper Gold  ",
+                Variant = "02",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904975",
+                Description = "SAFFRON DIAMOND SHINE LIPSTICK A High-Gloss, Moisturising Colour Riche Gold Obsession with all the Shine and Brilliance of a Diamond." +
+               "Super Creamy, High Shine." + "Presenting in 6 Glamorous Shades.  Net.: 3.5g",
+
+            }).Entity;
+
+            Product productLs24 = ctx.Products.Add(new Product()
+            {
+                Id = 117,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1307-03",
+                Name = " Saffron Diamond Shine Lipstick Rose Gold  ",
+                Variant = "03",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339904975",
+                Description = "SAFFRON DIAMOND SHINE LIPSTICK A High-Gloss, Moisturising Colour Riche Gold Obsession with all the Shine and Brilliance of a Diamond." +
+               "Super Creamy, High Shine." + "Presenting in 6 Glamorous Shades.  Net.: 3.5g",
+
+            }).Entity;
+
+            Product productLs25 = ctx.Products.Add(new Product()
+            {
+                Id = 117,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1307-04",
+                Name = " Saffron Diamond Shine Lipstick Rouge Gold  ",
+                Variant = "04",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339904975",
+                Description = "SAFFRON DIAMOND SHINE LIPSTICK A High-Gloss, Moisturising Colour Riche Gold Obsession with all the Shine and Brilliance of a Diamond." +
+               "Super Creamy, High Shine." + "Presenting in 6 Glamorous Shades.  Net.: 3.5g",
+
+            }).Entity;
+
+            Product productLs26 = ctx.Products.Add(new Product()
+            {
+                Id = 118,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1307-04",
+                Name = " Saffron Diamond Shine Lipstick Rouge Gold  ",
+                Variant = "04",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339904975",
+                Description = "SAFFRON DIAMOND SHINE LIPSTICK A High-Gloss, Moisturising Colour Riche Gold Obsession with all the Shine and Brilliance of a Diamond." +
+               "Super Creamy, High Shine." + "Presenting in 6 Glamorous Shades.  Net.: 3.5g",
+
+            }).Entity;
+
+            Product productLs27 = ctx.Products.Add(new Product()
+            {
+                Id = 119,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1307-05",
+                Name = " Saffron Diamond Shine Lipstick Bronze Gold  ",
+                Variant = "05",
+                Price = 5.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339904975",
+                Description = "SAFFRON DIAMOND SHINE LIPSTICK A High-Gloss, Moisturising Colour Riche Gold Obsession with all the Shine and Brilliance of a Diamond." +
+               "Super Creamy, High Shine." + "Presenting in 6 Glamorous Shades.  Net.: 3.5g",
+
+            }).Entity;
+
+            Product productLs28 = ctx.Products.Add(new Product()
+            {
+                Id = 120,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1307-06",
+                Name = " Saffron Diamond Shine Lipstick Tan Gold  ",
+                Variant = "06",
+                Price = 3.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904975",
+                Description = "SAFFRON DIAMOND SHINE LIPSTICK A High-Gloss, Moisturising Colour Riche Gold Obsession with all the Shine and Brilliance of a Diamond." +
+                "Super Creamy, High Shine." + "Presenting in 6 Glamorous Shades.  Net.: 3.5g",
+
+            }).Entity;
+
+            //Pro-Matte Lipstick
+            Product productLs29 = ctx.Products.Add(new Product()
+            {
+                Id = 121,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Matte Tea Rose  ",
+                Variant = "01",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs30 = ctx.Products.Add(new Product()
+            {
+                Id = 122,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Matte Nude  ",
+                Variant = "02",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs31 = ctx.Products.Add(new Product()
+            {
+                Id = 123,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Matte Natural  ",
+                Variant = "03",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs32 = ctx.Products.Add(new Product()
+            {
+                Id = 124,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Matte Candy  ",
+                Variant = "04",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs33 = ctx.Products.Add(new Product()
+            {
+                Id = 125,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Matte Diamond Red  ",
+                Variant = "05",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs34 = ctx.Products.Add(new Product()
+            {
+                Id = 126,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Matte Ginger Toast ",
+                Variant = "06",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs35 = ctx.Products.Add(new Product()
+            {
+                Id = 127,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Matte Brown Sugar ",
+                Variant = "07",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs36 = ctx.Products.Add(new Product()
+            {
+                Id = 128,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Matte Honey ",
+                Variant = "08",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs37 = ctx.Products.Add(new Product()
+            {
+                Id = 129,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Matt Spice ",
+                Variant = "09",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs38 = ctx.Products.Add(new Product()
+            {
+                Id = 130,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Matte Perfect Red ",
+                Variant = "10",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs39 = ctx.Products.Add(new Product()
+            {
+                Id = 131,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Matte Whipped Caviar ",
+                Variant = "11",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs40 = ctx.Products.Add(new Product()
+            {
+                Id = 132,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Wine ",
+                Variant = "12",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 20,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs41 = ctx.Products.Add(new Product()
+            {
+                Id = 133,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Coral Red ",
+                Variant = "13",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs42 = ctx.Products.Add(new Product()
+            {
+                Id = 134,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Purple Passion ",
+                Variant = "14",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs43 = ctx.Products.Add(new Product()
+            {
+                Id = 135,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Deep Pink ",
+                Variant = "15",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs44 = ctx.Products.Add(new Product()
+            {
+                Id = 136,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Wine ",
+                Variant = "16",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs45 = ctx.Products.Add(new Product()
+            {
+                Id = 137,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Burgundy ",
+                Variant = "17",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
+            Product productLs46 = ctx.Products.Add(new Product()
+            {
+                Id = 138,
+                SecondaryCategoryId = secClass10.Id,
+                ProductCode = "1301",
+                Name = " Saffron Pro-Matte Lipstick Diamond Red ",
+                Variant = "18",
+                Price = 2.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 23,
+                SkuCode = "5055339904937",
+                Description = "SAFFRON PRO-MATTE LIPSTICK is everything a woman needs for picture-perfect lips. It's available in 12 vibrant and trendy shades." +
+                "These are long-lasting and designed to give an even and luscious finish to your lips." +
+                "Matching colour combination of lipstick and casing for easy colour recognition. Colours to suit all skin tones. Net.:4g.",
+
+            }).Entity;
+
             //Nails
 
             Product product1Np = ctx.Products.Add(new Product()
@@ -2351,6 +2995,65 @@ namespace Infra.SQL.Data.DB
                             "Duo Colours to mix and match shade. 7.3 x 1.5 cm; 12g net",
 
             }).Entity;
+
+
+            //LipLiner
+            Product productLL1 = ctx.Products.Add(new Product()
+            {
+                Id = 102,
+                SecondaryCategoryId = secClass12.Id,
+                ProductCode = "337",
+                Name = " Saffron Invisible Lip Liner",
+                Variant = "",
+                Price = 2.49,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 24,
+                SkuCode = "5055339903404",
+                Description = "Saffron Invisible Lip Liner It's the liner that goes with every single lip colour and skin tone, " +
+                            "A totally invisible lip liner that stops lipstick and gloss from moving away from your lips. " +
+                            "Stops any lipstick or lip gloss from bleeding or feathering. Net.:1.1g",
+
+            }).Entity;
+
+            Product productLL2 = ctx.Products.Add(new Product()
+            {
+                Id = 103,
+                SecondaryCategoryId = secClass12.Id,
+                ProductCode = "119",
+                Name = " Saffron Lip Liner Pencil Diamond Red",
+                Variant = "",
+                Price = 1.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 72,
+                SkuCode = "5055339901103",
+                Description = "Saffron offers a fabulous set of lip liners that enable you to match your lipstick or flesh tone for a soft, natural look." +
+                         "Gives precise lip definition and avoids bleeding of lip colour" +
+                         "Ensures long lasting lip hue all day long.",
+
+            }).Entity;
+
+            Product productLL3 = ctx.Products.Add(new Product()
+            {
+                Id = 104,
+                SecondaryCategoryId = secClass12.Id,
+                ProductCode = "114",
+                Name = " Saffron Lip Liner Pencil – Wine",
+                Variant = "",
+                Price = 1.99,
+                GenderId = gender4.Id,
+                BrandId = brand7.Id,
+                Availability = 72,
+                SkuCode = "5055339901059",
+                Description = "Saffron offers a fabulous set of lip liners that enable you to match your lipstick or flesh tone for a soft, natural look." +
+                         "Gives precise lip definition and avoids bleeding of lip colour." +
+                         "Ensures long lasting lip hue all day long.",
+
+            }).Entity;
+
+            
+            
 
 
             #endregion

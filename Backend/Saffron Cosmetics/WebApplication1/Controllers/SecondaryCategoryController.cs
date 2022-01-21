@@ -29,14 +29,17 @@ namespace SafCos.WebApi.Controllers
             {
                 return BadRequest("Request Failed - Id must be greater than zero");
             }
+
             IEnumerable<Product> productsBySecondaryCategory = _secCatategoryService.GetProductsBySecondaryCategoryId(id);
+
             List<Product> secCategoryProductList = productsBySecondaryCategory.ToList();
+
             if (secCategoryProductList.Count == 0)
             {
-                return StatusCode(404, "No posters in collection with id " + id + " were found");
+                return StatusCode(404, "No products under secondary category: " + id + " were found");
             }
+
             return StatusCode(200, secCategoryProductList);
-            return null;
         }
     }
 }
