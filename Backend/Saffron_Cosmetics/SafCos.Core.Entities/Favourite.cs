@@ -11,9 +11,9 @@ namespace SafCos.Core.Entities
         public int Id { get; set; }
 
         public Product Product { get; set; }
-        public int productId { get; set; }
+        public int productid { get; set; }
 
-        public User User { get; set; }
+        public User user { get; set; }
 
         public int userId { get; set; }
 

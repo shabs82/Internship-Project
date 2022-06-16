@@ -49,7 +49,6 @@ namespace SaffronCosmetics.UnitTests.ProductServiceTest
             Action action = () => service.GetProductById(0);
             action.Should().Throw<NullReferenceException>().WithMessage(("Invalid ID"));
         }
-       
 
         [Fact]
         public void DeleteProduct_WithZeroId_ShouldThrowException()

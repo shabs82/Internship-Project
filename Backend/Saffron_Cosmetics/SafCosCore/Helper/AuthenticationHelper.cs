@@ -37,8 +37,7 @@ namespace SafCos.Core.Helper
                 var computedHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password)); //Crypt user password 
                 for (int i = 0; i < computedHash.Length; i++)
                 {
-                    if (computedHash[i] != storedHash[i]) return false;//checking every single byte is correct in the
-                                                                       //crypted password
+                    if (computedHash[i] != storedHash[i]) return false;//checking every single byte is correct in the crypted password
                 }
             }
             return true;

@@ -31,20 +31,7 @@ namespace Infra.SQL.Data.Repositories
         public Product GetProductById(int id)
         {
             Product prod = _ctx.Products.FirstOrDefault(prod => prod.Id == id);
-<<<<<<< Updated upstream:Backend/Saffron_Cosmetics/Infra.SQL.Data/Repositories/ProductRepo.cs
 
-=======
-            if(prod.Availability <2)
-            {
-    
-               throw new NullReferenceException("out of stock");
-               
-            }
-            if(prod.Availability <5)
-            {
-                throw new NullReferenceException("product low on stock");
-            }
->>>>>>> Stashed changes:Backend/Saffron Cosmetics/Infra.SQL.Data/Repositories/ProductRepo.cs
             return prod;
         }
 
