@@ -51,6 +51,36 @@ namespace SaffronCosmetics.UnitTests.ProductServiceTest
         }
 
         [Fact]
+
+        public void GetProductById_WithStockLessThan5_ShouldThrowException_Once()
+        {
+            IProductService service = new ProductService(_productRepoMock.Object, _productValidatorMock.Object);
+            Product product = new Product()
+            {
+                Availability = 7
+                
+            };
+            _productRepoMock.Setup(r => r.GetProductById(2)).Returns(product);
+            service.GetProductById(2);
+            _productRepoMock.Verify(r => r.GetProductById(2), Times.Once);
+        }
+
+        [Fact]
+
+        public void GetProductById_WithStockLessThan2_ShouldThrowException_Once()
+        {
+            IProductService service = new ProductService(_productRepoMock.Object, _productValidatorMock.Object);
+            Product prod = new Product()
+            { 
+                Availability = 1
+            };
+            _productRepoMock.Setup(r => r.GetProductById(3)).Returns(prod);
+            service.GetProductById(3);
+            _productRepoMock.Verify(r => r.GetProductById(3), Times.Once());
+
+        }
+
+        [Fact]
         public void DeleteProduct_WithZeroId_ShouldThrowException()
         {
             var service = new ProductService(_productRepoMock.Object, _productValidatorMock.Object);

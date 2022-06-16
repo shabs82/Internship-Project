@@ -32,6 +32,16 @@ namespace Infra.SQL.Data.Repositories
         {
             Product prod = _ctx.Products.FirstOrDefault(prod => prod.Id == id);
 
+           if(prod.Availability < 5)
+            {
+                throw new Exception("low on stock");
+
+            }
+           if(prod.Availability <2 && prod.Availability >=0)
+            {
+                throw new ArgumentException("out of stock");
+
+            }
             return prod;
         }
 
