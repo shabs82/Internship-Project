@@ -31,13 +31,7 @@ namespace Infra.SQL.Data.Repositories
         public Product GetProductById(int id)
         {
             Product prod = _ctx.Products.FirstOrDefault(prod => prod.Id == id);
-            if(prod.Availability <5)
-            {
-                prod.Availability = -1;
 
-                //throw exception or modify the variable to indicate that it is out of stock
-               
-            }
             return prod;
         }
 

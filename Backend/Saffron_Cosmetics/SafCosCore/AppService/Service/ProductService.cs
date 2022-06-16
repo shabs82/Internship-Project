@@ -42,8 +42,19 @@ namespace SafCos.Core.AppService.Service
             {
                 throw new NullReferenceException("Invalid ID");
             }
+            
+            var product = _productRepo.GetProductById(id);
 
-            return _productRepo.GetProductById(id);
+            if (product.Availability < 5 && product.Availability > 0)
+            {
+                product.Availability = -1;
+            }
+            else if (product.Availability == 0)
+            {
+                throw new IndexOutOfRangeException("Product is not available. Sold Out");
+            }
+
+            return product;
         }
         public Product UpdateProduct(Product prodToUpdate)
         {
