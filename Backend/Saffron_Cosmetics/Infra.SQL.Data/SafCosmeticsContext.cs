@@ -57,15 +57,16 @@ namespace Infra.SQL.Data
             .HasForeignKey(ad => ad.SecondaryCategoryId)
             .OnDelete(DeleteBehavior.Cascade);
 
-            //modelBuilder.Entity<Favourite>()
-            //.HasOne(f => f.user)
-            //.WithMany(u => u.Favourite)
-            //.HasForeignKey
+            modelBuilder.Entity<Favourite>()
+            .HasOne(f => f.User)
+            .WithMany(u => u.Favourites)
+            .HasForeignKey(f => f.userId)
+            .OnDelete(DeleteBehavior.Cascade);
 
-            //modelBuilder.Entity<User>()
+            //modelBuilder.Entity<Favourite>()
             //.HasMany(u => u.Favourite)
-          
-          
+
+
             #endregion
 
         }

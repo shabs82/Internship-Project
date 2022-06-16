@@ -1,4 +1,4 @@
-using FluentValidation;
+ using FluentValidation;
 using Infra.SQL.Data;
 using Infra.SQL.Data.DB;
 using Infra.SQL.Data.Repositories;
@@ -75,12 +75,18 @@ namespace WebApplication1
             {
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
+<<<<<<< Updated upstream:Backend/Saffron_Cosmetics/WebApplication1/Startup.cs
                     ValidateAudience = false,
                     ValidateIssuer = false,
                     ValidateIssuerSigningKey = true,
+=======
+                    ValidateAudience = false,//can be used for external providers like google, fb, twitter....
+                    ValidateIssuer = false,//can be used for external providers like google, fb, twitter....
+                    ValidateIssuerSigningKey = true, // to validate signature
+>>>>>>> Stashed changes:Backend/Saffron Cosmetics/WebApplication1/Startup.cs
                     IssuerSigningKey = new SymmetricSecurityKey(secretBytes),
-                    ValidateLifetime = true,
-                    ClockSkew = TimeSpan.FromMinutes(5)
+                    ValidateLifetime = true,// expiration time for the token. 
+                    ClockSkew = TimeSpan.FromMinutes(60)// tolerance for the expiration date
                 };
             });
             #endregion

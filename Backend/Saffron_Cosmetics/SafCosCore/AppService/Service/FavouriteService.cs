@@ -37,14 +37,14 @@ namespace SafCos.Core.AppService.Service
             return _favouriteRepo.GetFavouritesByUserId(userId);
         }
 
-        public Favourite New(Favourite favourite)
-        {
-            Favourite fav = new Favourite()
-            {
-                Id = favourite.Id
-            };
-            return fav;
-        }
+        //public Favourite New(Favourite favourite)
+        //{
+        //    Favourite fav = new Favourite()
+        //    {
+        //        Id = favourite.Id
+        //    };
+        //    return fav;
+        //}
         public  Favourite AddFavourite(Favourite favourite)
         {
             _favouriteValidator.ValidateFavourite(favourite);

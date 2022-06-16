@@ -18,6 +18,12 @@ namespace SafCos.Core.Entities
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
         public bool IsAdmin { get; set; }
+<<<<<<< Updated upstream:Backend/Saffron_Cosmetics/SafCos.Core.Entities/User.cs
+=======
+       
+        public ICollection<Favourite> Favourites { get; set; }
+
+>>>>>>> Stashed changes:Backend/Saffron Cosmetics/SafCos.Core.Entities/User.cs
        
     }
 }

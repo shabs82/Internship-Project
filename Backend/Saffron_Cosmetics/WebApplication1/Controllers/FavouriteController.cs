@@ -81,10 +81,19 @@ namespace SafCos.WebApi.Controllers
 
 
         // PUT api/<FavouriteController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+        //[HttpPut("{id}")]
+        //public ActionResult<Favourite> Put(int id, [FromBody] Favourite favourite)
+        //{
+        //    try
+        //    {
+        //        return Ok(_favService.RemoveFavoriteFromUser(favourite));
+        //    }
+
+        //    catch (MissingMemberException e)
+        //    {
+        //        return NotFound(e.Message);
+        //    }
+        //}
 
         // DELETE api/<FavouriteController>/5
         [HttpDelete("{id}")]
