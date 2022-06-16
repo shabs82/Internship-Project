@@ -11,7 +11,6 @@ namespace SafCos.Core.AppService.ServiceInterface
         IEnumerable<Product> GetProductsBySecondaryCategoryId(int id);
 
 
-
         SecondaryCategory CreateSecClass(SecondaryCategory secondaryClassifier);
         List<SecondaryCategory> ReadAllSecClass();
         SecondaryCategory UpdateSecClass(int id);

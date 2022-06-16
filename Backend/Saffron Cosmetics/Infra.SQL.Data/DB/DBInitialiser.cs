@@ -1379,40 +1379,6 @@ namespace Infra.SQL.Data.DB
 
             }).Entity;
 
-            Product productLs23 = ctx.Products.Add(new Product()
-            {
-                Id = 117,
-                SecondaryCategoryId = secClass10.Id,
-                ProductCode = "1307-02",
-                Name = " Saffron Diamond Shine Lipstick Copper Gold  ",
-                Variant = "02",
-                Price = 3.49,
-                GenderId = gender4.Id,
-                BrandId = brand7.Id,
-                Availability = 24,
-                SkuCode = "5055339904975",
-                Description = "SAFFRON DIAMOND SHINE LIPSTICK A High-Gloss, Moisturising Colour Riche Gold Obsession with all the Shine and Brilliance of a Diamond." +
-               "Super Creamy, High Shine." + "Presenting in 6 Glamorous Shades.  Net.: 3.5g",
-
-            }).Entity;
-
-            Product productLs24 = ctx.Products.Add(new Product()
-            {
-                Id = 117,
-                SecondaryCategoryId = secClass10.Id,
-                ProductCode = "1307-03",
-                Name = " Saffron Diamond Shine Lipstick Rose Gold  ",
-                Variant = "03",
-                Price = 3.49,
-                GenderId = gender4.Id,
-                BrandId = brand7.Id,
-                Availability = 23,
-                SkuCode = "5055339904975",
-                Description = "SAFFRON DIAMOND SHINE LIPSTICK A High-Gloss, Moisturising Colour Riche Gold Obsession with all the Shine and Brilliance of a Diamond." +
-               "Super Creamy, High Shine." + "Presenting in 6 Glamorous Shades.  Net.: 3.5g",
-
-            }).Entity;
-
             Product productLs25 = ctx.Products.Add(new Product()
             {
                 Id = 117,

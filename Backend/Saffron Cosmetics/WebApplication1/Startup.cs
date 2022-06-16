@@ -75,8 +75,8 @@ namespace WebApplication1
             {
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidateAudience = false,//can be used for external providers like google, fb, twitter....
-                    ValidateIssuer = false,//can be used for external providers like google, fb, twitter....
+                    ValidateAudience = false,
+                    ValidateIssuer = false,
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(secretBytes),
                     ValidateLifetime = true,

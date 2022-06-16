@@ -60,6 +60,7 @@ namespace SafCos.Core.Helper
                 new JwtPayload(null, null, claims.ToArray(), DateTime.Now, DateTime.Now.AddMinutes(60)));
             return new JwtSecurityTokenHandler().WriteToken(tokenHandler);
         }
+
         public ClaimsPrincipal getExpiredClaims(string token) //disecting an expired jwt token to get the claims for reusing.
         {
             var tokenValidationParameters = new TokenValidationParameters

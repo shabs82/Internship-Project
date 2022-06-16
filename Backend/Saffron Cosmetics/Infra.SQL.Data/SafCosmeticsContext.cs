@@ -25,6 +25,8 @@ namespace Infra.SQL.Data
 
         public DbSet<User> Users { get; set; }
 
+        public DbSet<Favourite> Favourites { get; set; }
+
         
         public void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -54,6 +56,16 @@ namespace Infra.SQL.Data
             .WithMany(sc => sc.Products)
             .HasForeignKey(ad => ad.SecondaryCategoryId)
             .OnDelete(DeleteBehavior.Cascade);
+
+            //modelBuilder.Entity<Favourite>()
+            //.HasOne(f => f.user)
+            //.WithMany(u => u.Favourite)
+            //.HasForeignKey
+
+            //modelBuilder.Entity<User>()
+            //.HasMany(u => u.Favourite)
+          
+          
             #endregion
 
         }
