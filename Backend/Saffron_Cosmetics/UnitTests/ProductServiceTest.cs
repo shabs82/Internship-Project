@@ -77,7 +77,6 @@ namespace SaffronCosmetics.UnitTests.ProductServiceTest
             _productRepoMock.Setup(r => r.GetProductById(3)).Returns(prod);
             service.GetProductById(3);
             _productRepoMock.Verify(r => r.GetProductById(3), Times.Once());
-
         }
 
         [Fact]
@@ -90,31 +89,26 @@ namespace SaffronCosmetics.UnitTests.ProductServiceTest
         }
 
         [Fact]
-        public void SearchByName_ShouldReturnCorrectProducts_Test()
+        public void GetProductById_WhereAvailabilityIsBetweenOneAndFive_SetAvailabilityToMinusOne()
         {
             var listOfProducts = new List<Product>{
-                new Product {Id =  1, ProductCode="123code", Name = "Eye Lashes", Variant = null, Price = 10.00, Availability = 26,
-                    Description = "Good Product", SkuCode = "123sh12", SecondaryCategoryId = 1},
-                new Product {Id =  2, ProductCode="123code", Name = "Eye Pencil", Variant = null, Price = 10.00, Availability = 26,
-                    Description = "Good Product", SkuCode = "123sh12", SecondaryCategoryId = 1},
-                new Product {Id =  3, ProductCode="123code", Name = "Lipstick", Variant = null, Price = 10.00, Availability = 26,
-                    Description = "Good Product", SkuCode = "123sh12", SecondaryCategoryId = 1},
-                };
+                    new Product {Id =  1, ProductCode="123cod1e", Name = "Eye Lashes", Variant = null, Price = 10.00, Availability = 2,
+                        Description = "Good Product", SkuCode = "123sh12", SecondaryCategoryId = 1},
+                    new Product {Id =  2, ProductCode="123code", Name = "Eye Pencil", Variant = null, Price = 10.00, Availability = 26,
+                        Description = "Good Product", SkuCode = "123sh12", SecondaryCategoryId = 1},
+                    new Product {Id =  3, ProductCode="123code", Name = "Lipstick", Variant = null, Price = 10.00, Availability = 26,
+                        Description = "Good Product", SkuCode = "123sh12", SecondaryCategoryId = 2},
+                    };
 
-            //_productRepoMock.Setup(repo => repo.Search("ey")).Returns(() => listOfProducts.Where(p => p.Name.Contains("ye")) as Task<IEnumerable<Product>>);
+            _productRepoMock.Setup(repo => repo.GetProductById(1)).Returns(() => listOfProducts[0]);
 
-            //var service = new ProductService(_productRepoMock.Object);
+            var service = new ProductService(_productRepoMock.Object, _productValidatorMock.Object);
 
-            var actual = listOfProducts.Where(p => p.Name.Contains("ye"));
+            int actualAvailability = service.GetProductById(1).Availability;
 
-            var expected = new List<Product>{
-                new Product {Id =  1, ProductCode="123code", Name = "Eye Lashes", Variant = null, Price = 10.00, Availability = 26,
-                    Description = "Good Product", SkuCode = "123sh12", SecondaryCategoryId = 1},
-                new Product {Id =  2, ProductCode="123code", Name = "Eye Pencil", Variant = null, Price = 10.00, Availability = 26,
-                    Description = "Good Product", SkuCode = "123sh12", SecondaryCategoryId = 1}
-                } ;
+            int expectedAvailability = -1;
 
-            actual.Should().BeEquivalentTo(expected);
+            Assert.Equal(expectedAvailability, actualAvailability);
         }
     }
 }
