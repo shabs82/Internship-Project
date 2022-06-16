@@ -38,7 +38,7 @@ namespace SafCos.Core.AppService.Service
         }
         public Product GetProductById(int id)
         {
-            if(id < 0 )
+            if(id <= 0 )
             {
                 throw new NullReferenceException("Invalid ID");
             }
@@ -53,6 +53,10 @@ namespace SafCos.Core.AppService.Service
 
         public Product DeleteProduct(int id)
         {
+            if (id <= 0)
+            {
+                throw new NullReferenceException("Invalid ID");
+            }
             _productValidator.DeleteProduct(id);
             return _productRepo.GetProductById(id);
         }
