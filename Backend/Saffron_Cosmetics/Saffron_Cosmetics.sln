@@ -28,6 +28,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{D8615584-74D1-41D9-84B4-B6574E8B7C9C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpecFlow", "SpecFlow", "{58D60833-F761-4595-9304-D04C0741EBF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowProj", "SpecFlowProj\SpecFlowProj.csproj", "{ACE9CB9F-B935-4783-A2C6-0E0A73126598}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +58,10 @@ Global
 		{D8615584-74D1-41D9-84B4-B6574E8B7C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8615584-74D1-41D9-84B4-B6574E8B7C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8615584-74D1-41D9-84B4-B6574E8B7C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACE9CB9F-B935-4783-A2C6-0E0A73126598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACE9CB9F-B935-4783-A2C6-0E0A73126598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACE9CB9F-B935-4783-A2C6-0E0A73126598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACE9CB9F-B935-4783-A2C6-0E0A73126598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +72,7 @@ Global
 		{77E0E288-ECEE-43D5-99D3-7932D29B4C5B} = {11990DFB-08E7-4673-8783-412D1952774E}
 		{74563B21-ACC2-4E3C-B1A8-DFABCA4A79C4} = {18C67235-E3FB-4BCF-BA33-09C63DA91EEF}
 		{D8615584-74D1-41D9-84B4-B6574E8B7C9C} = {30E932F0-B784-43F3-AC10-335BE5CDD9DF}
+		{ACE9CB9F-B935-4783-A2C6-0E0A73126598} = {58D60833-F761-4595-9304-D04C0741EBF7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3B44C56-580F-42B8-B79E-E707558EBB51}
