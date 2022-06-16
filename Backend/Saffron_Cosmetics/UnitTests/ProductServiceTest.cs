@@ -28,7 +28,7 @@ namespace SaffronCosmetics.UnitTests.ProductServiceTest
         public void NewProductService_WithNullRepository_ShouldThrowException()
         {
             Action action = () => new ProductService(null,_productValidatorMock.Object);
-            action.Should().Throw<ArgumentNullException>().WithMessage(("Repository Cannot be Null. (Parameter 'productRepo')"));
+            action.Should().Throw<NullReferenceException>().WithMessage(("Repo cannot be null"));
         }
 
         [Fact]
